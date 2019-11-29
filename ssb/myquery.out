@@ -1,0 +1,21 @@
+                                                                      QUERY PLAN                                                                       
+-------------------------------------------------------------------------------------------------------------------------------------------------------
+ Finalize Aggregate  (cost=416926.00..416926.01 rows=1 width=8) (actual time=9852.176..9852.177 rows=1 loops=1)
+   ->  Gather  (cost=416925.38..416925.99 rows=6 width=8) (actual time=9728.629..9907.015 rows=7 loops=1)
+         Workers Planned: 6
+         Workers Launched: 6
+         ->  Partial Aggregate  (cost=415925.38..415925.39 rows=1 width=8) (actual time=9740.428..9740.428 rows=1 loops=7)
+               ->  Hash Join  (cost=79.51..415556.32 rows=73812 width=8) (actual time=2.166..9687.338 rows=68150 loops=7)
+                     Hash Cond: (lineorder.lo_orderdate = ddate.d_datekey)
+                     ->  Parallel Seq Scan on lineorder  (cost=0.00..412800.38 rows=516883 width=12) (actual time=0.063..9415.089 rows=448764 loops=7)
+                           Filter: ((lo_discount >= 1) AND (lo_discount <= 3) AND (lo_quantity < 25))
+                           Rows Removed by Filter: 2979332
+                     ->  Hash  (cost=74.95..74.95 rows=365 width=4) (actual time=1.408..1.408 rows=365 loops=7)
+                           Buckets: 1024  Batches: 1  Memory Usage: 21kB
+                           ->  Seq Scan on ddate  (cost=0.00..74.95 rows=365 width=4) (actual time=0.243..1.294 rows=365 loops=7)
+                                 Filter: (d_year = 1993)
+                                 Rows Removed by Filter: 2191
+ Planning time: 6.027 ms
+ Execution time: 9907.360 ms
+(17 rows)
+
