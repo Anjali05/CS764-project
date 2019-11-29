@@ -12,7 +12,7 @@ from
 where
   ps_suppkey = s_suppkey
   and s_nationkey = n_nationkey
-  and n_name = 'MOZAMBIQUE'
+  and n_name = 'GERMANY'
 group by
   ps_partkey
 having
@@ -26,7 +26,7 @@ having
     where
       ps_suppkey = s_suppkey
       and s_nationkey = n_nationkey
-      and n_name = 'MOZAMBIQUE'
+      and n_name = 'GERMANY'
   )
 order by
   value desc;

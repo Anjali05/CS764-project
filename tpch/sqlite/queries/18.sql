@@ -22,7 +22,7 @@ where
     group by
       l_orderkey
     having
-      sum(l_quantity) > 314
+      sum(l_quantity) > 300
   )
   and c_custkey = o_custkey
   and o_orderkey = l_orderkey
@@ -34,5 +34,6 @@ group by
   o_totalprice
 order by
   o_totalprice desc,
-  o_orderdate;
+  o_orderdate
+  limit 100;
 
