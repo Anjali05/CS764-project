@@ -21,7 +21,7 @@ where
         from
           PART
         where
-          p_name like 'green%'
+          p_name like 'forest%'
       )
       and ps_availqty > (
         select
@@ -36,6 +36,6 @@ where
       )
   )
   and s_nationkey = n_nationkey
-  and n_name = 'ALGERIA'
+  and n_name = 'CANADA'
 order by
   s_name;
