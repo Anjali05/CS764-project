@@ -14,15 +14,16 @@ from
   ORDERS,
   LINEITEM
 where
-  c_mktsegment = 'AUTOMOBILE'
+  c_mktsegment = 'BUILDING'
   and c_custkey = o_custkey
   and l_orderkey = o_orderkey
-  and o_orderdate < date('1995-03-13')
-  and l_shipdate > date('1995-03-13')
+  and o_orderdate < date('1995-03-15')
+  and l_shipdate > date('1995-03-15')
 group by
   l_orderkey,
   o_orderdate,
   o_shippriority
 order by
   revenue desc,
-  o_orderdate;
+  o_orderdate
+limit 10;

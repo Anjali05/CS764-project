@@ -29,12 +29,12 @@ from
       and c_nationkey = n2.n_nationkey
       and (
         (
-          n1.n_name = 'JAPAN'
-          and n2.n_name = 'INDIA'
+          n1.n_name = 'FRANCE'
+          and n2.n_name = 'GERMANY'
         )
         or (
-          n1.n_name = 'INDIA'
-          and n2.n_name = 'JAPAN'
+          n1.n_name = 'GERMANY'
+          and n2.n_name = 'FRANCE'
         )
       )
       and l_shipdate between date('1995-01-01')

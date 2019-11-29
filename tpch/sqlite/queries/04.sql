@@ -8,8 +8,8 @@ select
 from
   ORDERS
 where
-  o_orderdate >= date('1995-01-01')
-  and o_orderdate < date('1995-01-01' + '+3 month')
+  o_orderdate >= date('1993-07-01')
+  and o_orderdate < date('1993-07-01' + '+3 month')
   and exists (
     select
       *
