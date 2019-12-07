@@ -1,4 +1,4 @@
-SSB_TABLE_FILES_DIR="/Users/Sakshi/Documents/UWAcads/Sem1/projects/cs764/SQL-benchmark/ssb-100"
+SSB_TABLE_FILES_DIR="/my-disk/project/ssb-100"
 
 POSTGRES_EXEC="psql"
 

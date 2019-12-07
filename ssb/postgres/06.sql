@@ -1,9 +1,10 @@
-select
-	sum(l_extendedprice * l_discount) as revenue
-from
-	LINEITEM
-where
-	l_shipdate >= date('1994-01-01')
-	and l_shipdate < date('1994-01-01', '+1 year')
-	and l_discount between 0.06 - 0.01 and 0.06 + 0.01
-	and l_quantity < 24;
+SELECT SUM(lo_revenue), d_year, p_brand1
+FROM  lineorder, ddate, part, supplier
+WHERE lo_orderdate = d_datekey
+  AND lo_partkey = p_partkey
+  AND lo_suppkey = s_suppkey
+  AND p_brand1 = 'MFGR#2221'
+  AND s_region = 'EUROPE'
+GROUP BY d_year, p_brand1
+ORDER BY d_year, p_brand1;
+

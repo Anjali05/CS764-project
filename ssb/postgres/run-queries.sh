@@ -2,11 +2,6 @@
 
 source config.sh
 
-$POSTGRES_EXEC $POSTGRES_DB_NAME <<EOF
-.timer on
-set max_parallel_workers_per_gather = 0;
-EOF
-
 for i in `seq -f "%02g" 1 13`; do
     echo "QUERY ${i}"
     for j in `seq 1 5`; do

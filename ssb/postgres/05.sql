@@ -1,26 +1,9 @@
-select
-  n_name,
-  sum(
-    l_extendedprice * (1 - l_discount)
-  ) as revenue
-from
-  CUSTOMER,
-  ORDERS,
-  LINEITEM,
-  SUPPLIER,
-  NATION,
-  REGION
-where
-  c_custkey = o_custkey
-  and l_orderkey = o_orderkey
-  and l_suppkey = s_suppkey
-  and c_nationkey = s_nationkey
-  and s_nationkey = n_nationkey
-  and n_regionkey = r_regionkey
-  and r_name = 'MIDDLE EAST'
-  and o_orderdate >= date('1994-01-01')
-  and o_orderdate < date ('1994-01-01', '+1 year')
-group by
-  n_name
-order by
-  revenue desc;
+SELECT SUM(lo_revenue), d_year, p_brand1
+FROM  lineorder, ddate, part, supplier
+WHERE lo_orderdate = d_datekey
+  AND lo_partkey = p_partkey
+  AND lo_suppkey = s_suppkey
+  AND p_brand1 BETWEEN 'MFGR#2221' AND 'MFGR#2228'
+  AND s_region = 'AMERICA'
+GROUP BY d_year, p_brand1
+ORDER BY d_year, p_brand1;
