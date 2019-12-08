@@ -6,7 +6,7 @@ Timing is on.
  1788370119741
 (1 row)
 
-Time: 3218.904 ms (00:03.219)
+Time: 4982.552 ms (00:04.983)
 Run 2
 Timing is on.
     revenue    
@@ -14,7 +14,7 @@ Timing is on.
  1788370119741
 (1 row)
 
-Time: 3290.313 ms (00:03.290)
+Time: 3382.760 ms (00:03.383)
 Run 3
 Timing is on.
     revenue    
@@ -22,7 +22,7 @@ Timing is on.
  1788370119741
 (1 row)
 
-Time: 3273.566 ms (00:03.274)
+Time: 3393.446 ms (00:03.393)
 Run 4
 Timing is on.
     revenue    
@@ -30,7 +30,7 @@ Timing is on.
  1788370119741
 (1 row)
 
-Time: 3284.895 ms (00:03.285)
+Time: 3351.271 ms (00:03.351)
 Run 5
 Timing is on.
     revenue    
@@ -38,7 +38,7 @@ Timing is on.
  1788370119741
 (1 row)
 
-Time: 3317.068 ms (00:03.317)
+Time: 3355.870 ms (00:03.356)
 QUERY 02
 Run 1
 Timing is on.
@@ -47,7 +47,7 @@ Timing is on.
  389074339621
 (1 row)
 
-Time: 3249.622 ms (00:03.250)
+Time: 3147.377 ms (00:03.147)
 Run 2
 Timing is on.
    revenue    
@@ -55,7 +55,7 @@ Timing is on.
  389074339621
 (1 row)
 
-Time: 3223.739 ms (00:03.224)
+Time: 3352.442 ms (00:03.352)
 Run 3
 Timing is on.
    revenue    
@@ -63,7 +63,7 @@ Timing is on.
  389074339621
 (1 row)
 
-Time: 3337.811 ms (00:03.338)
+Time: 3213.722 ms (00:03.214)
 Run 4
 Timing is on.
    revenue    
@@ -71,7 +71,7 @@ Timing is on.
  389074339621
 (1 row)
 
-Time: 3195.397 ms (00:03.195)
+Time: 3153.415 ms (00:03.153)
 Run 5
 Timing is on.
    revenue    
@@ -79,7 +79,7 @@ Timing is on.
  389074339621
 (1 row)
 
-Time: 3233.333 ms (00:03.233)
+Time: 3236.654 ms (00:03.237)
 QUERY 03
 Run 1
 Timing is on.
@@ -88,7 +88,7 @@ Timing is on.
  70025542738
 (1 row)
 
-Time: 3120.373 ms (00:03.120)
+Time: 3149.073 ms (00:03.149)
 Run 2
 Timing is on.
    revenue   
@@ -96,7 +96,7 @@ Timing is on.
  70025542738
 (1 row)
 
-Time: 3156.156 ms (00:03.156)
+Time: 3159.272 ms (00:03.159)
 Run 3
 Timing is on.
    revenue   
@@ -104,7 +104,7 @@ Timing is on.
  70025542738
 (1 row)
 
-Time: 3003.382 ms (00:03.003)
+Time: 3294.221 ms (00:03.294)
 Run 4
 Timing is on.
    revenue   
@@ -112,7 +112,7 @@ Timing is on.
  70025542738
 (1 row)
 
-Time: 3202.045 ms (00:03.202)
+Time: 3149.572 ms (00:03.150)
 Run 5
 Timing is on.
    revenue   
@@ -120,7 +120,7 @@ Timing is on.
  70025542738
 (1 row)
 
-Time: 3012.811 ms (00:03.013)
+Time: 3053.466 ms (00:03.053)
 QUERY 04
 Run 1
 Timing is on.
@@ -408,7 +408,7 @@ Timing is on.
  1554163376 |   1998 | MFGR#129 
 (280 rows)
 
-Time: 4080.233 ms (00:04.080)
+Time: 4710.296 ms (00:04.710)
 Run 2
 Timing is on.
     sum     | d_year | p_brand1  
@@ -695,7 +695,7 @@ Timing is on.
  1554163376 |   1998 | MFGR#129 
 (280 rows)
 
-Time: 4219.368 ms (00:04.219)
+Time: 4636.347 ms (00:04.636)
 Run 3
 Timing is on.
     sum     | d_year | p_brand1  
@@ -982,7 +982,7 @@ Timing is on.
  1554163376 |   1998 | MFGR#129 
 (280 rows)
 
-Time: 4022.605 ms (00:04.023)
+Time: 4449.130 ms (00:04.449)
 Run 4
 Timing is on.
     sum     | d_year | p_brand1  
@@ -1269,7 +1269,7 @@ Timing is on.
  1554163376 |   1998 | MFGR#129 
 (280 rows)
 
-Time: 4161.116 ms (00:04.161)
+Time: 4505.511 ms (00:04.506)
 Run 5
 Timing is on.
     sum     | d_year | p_brand1  
@@ -1556,7 +1556,7 @@ Timing is on.
  1554163376 |   1998 | MFGR#129 
 (280 rows)
 
-Time: 4104.120 ms (00:04.104)
+Time: 4707.792 ms (00:04.708)
 QUERY 05
 Run 1
 Timing is on.
@@ -1620,7 +1620,7 @@ Timing is on.
  1753303247 |   1998 | MFGR#2228
 (56 rows)
 
-Time: 3644.534 ms (00:03.645)
+Time: 3735.982 ms (00:03.736)
 Run 2
 Timing is on.
     sum     | d_year | p_brand1  
@@ -1683,7 +1683,7 @@ Timing is on.
  1753303247 |   1998 | MFGR#2228
 (56 rows)
 
-Time: 3661.945 ms (00:03.662)
+Time: 3812.823 ms (00:03.813)
 Run 3
 Timing is on.
     sum     | d_year | p_brand1  
@@ -1746,7 +1746,7 @@ Timing is on.
  1753303247 |   1998 | MFGR#2228
 (56 rows)
 
-Time: 3769.500 ms (00:03.770)
+Time: 3925.302 ms (00:03.925)
 Run 4
 Timing is on.
     sum     | d_year | p_brand1  
@@ -1809,7 +1809,7 @@ Timing is on.
  1753303247 |   1998 | MFGR#2228
 (56 rows)
 
-Time: 3821.654 ms (00:03.822)
+Time: 3930.179 ms (00:03.930)
 Run 5
 Timing is on.
     sum     | d_year | p_brand1  
@@ -1872,7 +1872,7 @@ Timing is on.
  1753303247 |   1998 | MFGR#2228
 (56 rows)
 
-Time: 3607.329 ms (00:03.607)
+Time: 3952.578 ms (00:03.953)
 QUERY 06
 Run 1
 Timing is on.
@@ -1887,7 +1887,7 @@ Timing is on.
  1707717037 |   1998 | MFGR#2221
 (7 rows)
 
-Time: 3041.295 ms (00:03.041)
+Time: 3102.445 ms (00:03.102)
 Run 2
 Timing is on.
     sum     | d_year | p_brand1  
@@ -1901,7 +1901,7 @@ Timing is on.
  1707717037 |   1998 | MFGR#2221
 (7 rows)
 
-Time: 3097.032 ms (00:03.097)
+Time: 3000.538 ms (00:03.001)
 Run 3
 Timing is on.
     sum     | d_year | p_brand1  
@@ -1915,7 +1915,7 @@ Timing is on.
  1707717037 |   1998 | MFGR#2221
 (7 rows)
 
-Time: 3177.373 ms (00:03.177)
+Time: 3106.427 ms (00:03.106)
 Run 4
 Timing is on.
     sum     | d_year | p_brand1  
@@ -1929,7 +1929,7 @@ Timing is on.
  1707717037 |   1998 | MFGR#2221
 (7 rows)
 
-Time: 3027.802 ms (00:03.028)
+Time: 3054.472 ms (00:03.054)
 Run 5
 Timing is on.
     sum     | d_year | p_brand1  
@@ -1943,7 +1943,7 @@ Timing is on.
  1707717037 |   1998 | MFGR#2221
 (7 rows)
 
-Time: 3125.497 ms (00:03.125)
+Time: 3045.214 ms (00:03.045)
 QUERY 07
 Run 1
 Timing is on.
@@ -2101,7 +2101,7 @@ Timing is on.
  INDIA           | JAPAN           |   1997 | 19830781394
 (150 rows)
 
-Time: 5176.593 ms (00:05.177)
+Time: 5533.923 ms (00:05.534)
 Run 2
 Timing is on.
     c_nation     |    s_nation     | d_year |   revenue   
@@ -2258,7 +2258,7 @@ Timing is on.
  INDIA           | JAPAN           |   1997 | 19830781394
 (150 rows)
 
-Time: 5069.221 ms (00:05.069)
+Time: 5560.349 ms (00:05.560)
 Run 3
 Timing is on.
     c_nation     |    s_nation     | d_year |   revenue   
@@ -2415,7 +2415,7 @@ Timing is on.
  INDIA           | JAPAN           |   1997 | 19830781394
 (150 rows)
 
-Time: 5135.823 ms (00:05.136)
+Time: 5620.579 ms (00:05.621)
 Run 4
 Timing is on.
     c_nation     |    s_nation     | d_year |   revenue   
@@ -2572,7 +2572,7 @@ Timing is on.
  INDIA           | JAPAN           |   1997 | 19830781394
 (150 rows)
 
-Time: 5023.224 ms (00:05.023)
+Time: 5516.521 ms (00:05.517)
 Run 5
 Timing is on.
     c_nation     |    s_nation     | d_year |   revenue   
@@ -2729,7 +2729,7 @@ Timing is on.
  INDIA           | JAPAN           |   1997 | 19830781394
 (150 rows)
 
-Time: 5139.714 ms (00:05.140)
+Time: 5635.908 ms (00:05.636)
 QUERY 08
 Run 1
 Timing is on.
@@ -3337,7 +3337,7 @@ Timing is on.
  UNITED ST1 | UNITED ST0 |   1997 | 132444390
 (600 rows)
 
-Time: 3497.346 ms (00:03.497)
+Time: 3847.567 ms (00:03.848)
 Run 2
 Timing is on.
    c_city   |   s_city   | d_year |  revenue  
@@ -3944,7 +3944,7 @@ Timing is on.
  UNITED ST1 | UNITED ST0 |   1997 | 132444390
 (600 rows)
 
-Time: 3406.919 ms (00:03.407)
+Time: 3755.711 ms (00:03.756)
 Run 3
 Timing is on.
    c_city   |   s_city   | d_year |  revenue  
@@ -4551,7 +4551,7 @@ Timing is on.
  UNITED ST1 | UNITED ST0 |   1997 | 132444390
 (600 rows)
 
-Time: 3364.305 ms (00:03.364)
+Time: 3713.667 ms (00:03.714)
 Run 4
 Timing is on.
    c_city   |   s_city   | d_year |  revenue  
@@ -5158,7 +5158,7 @@ Timing is on.
  UNITED ST1 | UNITED ST0 |   1997 | 132444390
 (600 rows)
 
-Time: 3348.022 ms (00:03.348)
+Time: 3778.482 ms (00:03.778)
 Run 5
 Timing is on.
    c_city   |   s_city   | d_year |  revenue  
@@ -5765,7 +5765,7 @@ Timing is on.
  UNITED ST1 | UNITED ST0 |   1997 | 132444390
 (600 rows)
 
-Time: 3449.442 ms (00:03.449)
+Time: 3832.269 ms (00:03.832)
 QUERY 09
 Run 1
 Timing is on.
@@ -5797,7 +5797,7 @@ Timing is on.
  UNITED KI1 | UNITED KI1 |   1997 | 184524832
 (24 rows)
 
-Time: 3160.279 ms (00:03.160)
+Time: 3043.847 ms (00:03.044)
 Run 2
 Timing is on.
    c_city   |   s_city   | d_year |  revenue  
@@ -5828,7 +5828,7 @@ Timing is on.
  UNITED KI1 | UNITED KI1 |   1997 | 184524832
 (24 rows)
 
-Time: 2961.127 ms (00:02.961)
+Time: 2971.976 ms (00:02.972)
 Run 3
 Timing is on.
    c_city   |   s_city   | d_year |  revenue  
@@ -5859,7 +5859,7 @@ Timing is on.
  UNITED KI1 | UNITED KI1 |   1997 | 184524832
 (24 rows)
 
-Time: 2995.270 ms (00:02.995)
+Time: 3129.385 ms (00:03.129)
 Run 4
 Timing is on.
    c_city   |   s_city   | d_year |  revenue  
@@ -5890,7 +5890,7 @@ Timing is on.
  UNITED KI1 | UNITED KI1 |   1997 | 184524832
 (24 rows)
 
-Time: 3075.746 ms (00:03.076)
+Time: 3193.485 ms (00:03.193)
 Run 5
 Timing is on.
    c_city   |   s_city   | d_year |  revenue  
@@ -5921,7 +5921,7 @@ Timing is on.
  UNITED KI1 | UNITED KI1 |   1997 | 184524832
 (24 rows)
 
-Time: 3091.181 ms (00:03.091)
+Time: 3043.159 ms (00:03.043)
 QUERY 10
 Run 1
 Timing is on.
@@ -5933,7 +5933,7 @@ Timing is on.
  UNITED KI1 | UNITED KI1 |   1997 | 11795152
 (4 rows)
 
-Time: 3078.269 ms (00:03.078)
+Time: 3056.080 ms (00:03.056)
 Run 2
 Timing is on.
    c_city   |   s_city   | d_year | revenue  
@@ -5944,7 +5944,7 @@ Timing is on.
  UNITED KI1 | UNITED KI1 |   1997 | 11795152
 (4 rows)
 
-Time: 2889.244 ms (00:02.889)
+Time: 2901.471 ms (00:02.901)
 Run 3
 Timing is on.
    c_city   |   s_city   | d_year | revenue  
@@ -5955,7 +5955,7 @@ Timing is on.
  UNITED KI1 | UNITED KI1 |   1997 | 11795152
 (4 rows)
 
-Time: 2867.513 ms (00:02.868)
+Time: 3192.809 ms (00:03.193)
 Run 4
 Timing is on.
    c_city   |   s_city   | d_year | revenue  
@@ -5966,7 +5966,7 @@ Timing is on.
  UNITED KI1 | UNITED KI1 |   1997 | 11795152
 (4 rows)
 
-Time: 3059.834 ms (00:03.060)
+Time: 3018.574 ms (00:03.019)
 Run 5
 Timing is on.
    c_city   |   s_city   | d_year | revenue  
@@ -5977,7 +5977,7 @@ Timing is on.
  UNITED KI1 | UNITED KI1 |   1997 | 11795152
 (4 rows)
 
-Time: 3216.469 ms (00:03.216)
+Time: 3044.376 ms (00:03.044)
 QUERY 11
 Run 1
 Timing is on.
@@ -6020,7 +6020,7 @@ Timing is on.
    1998 | UNITED STATES   | 24794917530
 (35 rows)
 
-Time: 4943.677 ms (00:04.944)
+Time: 4880.834 ms (00:04.881)
 Run 2
 Timing is on.
  d_year |    c_nation     |   profit    
@@ -6062,7 +6062,7 @@ Timing is on.
    1998 | UNITED STATES   | 24794917530
 (35 rows)
 
-Time: 5031.684 ms (00:05.032)
+Time: 5196.479 ms (00:05.196)
 Run 3
 Timing is on.
  d_year |    c_nation     |   profit    
@@ -6104,7 +6104,7 @@ Timing is on.
    1998 | UNITED STATES   | 24794917530
 (35 rows)
 
-Time: 4980.706 ms (00:04.981)
+Time: 4895.324 ms (00:04.895)
 Run 4
 Timing is on.
  d_year |    c_nation     |   profit    
@@ -6146,7 +6146,7 @@ Timing is on.
    1998 | UNITED STATES   | 24794917530
 (35 rows)
 
-Time: 5042.463 ms (00:05.042)
+Time: 5050.059 ms (00:05.050)
 Run 5
 Timing is on.
  d_year |    c_nation     |   profit    
@@ -6188,7 +6188,7 @@ Timing is on.
    1998 | UNITED STATES   | 24794917530
 (35 rows)
 
-Time: 4980.117 ms (00:04.980)
+Time: 4894.218 ms (00:04.894)
 QUERY 12
 Run 1
 Timing is on.
@@ -6296,7 +6296,7 @@ Timing is on.
    1998 | UNITED STATES   | MFGR#25    | 2411716051
 (100 rows)
 
-Time: 4658.899 ms (00:04.659)
+Time: 4677.625 ms (00:04.678)
 Run 2
 Timing is on.
  d_year |    s_nation     | p_category |   profit   
@@ -6403,7 +6403,7 @@ Timing is on.
    1998 | UNITED STATES   | MFGR#25    | 2411716051
 (100 rows)
 
-Time: 4565.904 ms (00:04.566)
+Time: 4579.540 ms (00:04.580)
 Run 3
 Timing is on.
  d_year |    s_nation     | p_category |   profit   
@@ -6510,7 +6510,7 @@ Timing is on.
    1998 | UNITED STATES   | MFGR#25    | 2411716051
 (100 rows)
 
-Time: 4634.046 ms (00:04.634)
+Time: 4608.733 ms (00:04.609)
 Run 4
 Timing is on.
  d_year |    s_nation     | p_category |   profit   
@@ -6617,7 +6617,7 @@ Timing is on.
    1998 | UNITED STATES   | MFGR#25    | 2411716051
 (100 rows)
 
-Time: 4575.226 ms (00:04.575)
+Time: 4616.633 ms (00:04.617)
 Run 5
 Timing is on.
  d_year |    s_nation     | p_category |   profit   
@@ -6724,7 +6724,7 @@ Timing is on.
    1998 | UNITED STATES   | MFGR#25    | 2411716051
 (100 rows)
 
-Time: 4897.135 ms (00:04.897)
+Time: 4583.195 ms (00:04.583)
 QUERY 13
 Run 1
 Timing is on.
@@ -7450,7 +7450,7 @@ Timing is on.
    1998 | UNITED ST9 | MFGR#149  |  9279655
 (718 rows)
 
-Time: 4285.099 ms (00:04.285)
+Time: 4180.050 ms (00:04.180)
 Run 2
 Timing is on.
  d_year |   s_city   | p_brand1  |  profit  
@@ -8175,7 +8175,7 @@ Timing is on.
    1998 | UNITED ST9 | MFGR#149  |  9279655
 (718 rows)
 
-Time: 4126.354 ms (00:04.126)
+Time: 4238.423 ms (00:04.238)
 Run 3
 Timing is on.
  d_year |   s_city   | p_brand1  |  profit  
@@ -8900,7 +8900,7 @@ Timing is on.
    1998 | UNITED ST9 | MFGR#149  |  9279655
 (718 rows)
 
-Time: 4111.791 ms (00:04.112)
+Time: 4139.804 ms (00:04.140)
 Run 4
 Timing is on.
  d_year |   s_city   | p_brand1  |  profit  
@@ -9625,7 +9625,7 @@ Timing is on.
    1998 | UNITED ST9 | MFGR#149  |  9279655
 (718 rows)
 
-Time: 4069.713 ms (00:04.070)
+Time: 4178.525 ms (00:04.179)
 Run 5
 Timing is on.
  d_year |   s_city   | p_brand1  |  profit  
@@ -10350,4 +10350,4 @@ Timing is on.
    1998 | UNITED ST9 | MFGR#149  |  9279655
 (718 rows)
 
-Time: 3943.514 ms (00:03.944)
+Time: 4169.742 ms (00:04.170)
