@@ -1,0 +1,20 @@
+\section{Benchmarks}
+\label{sec:bench}
+
+\subsection{TPCH}
+\fig{width=\columnwidth}{tpch}{\textmd{TPCH schema}}{fig:tpch}
+
+The TPC Benchmark™H (TPC-H) is a decision support benchmark. It consists of a suite of business oriented ad-hoc queries and concurrent data modifications. The queries and the 
+data populating the database have been chosen to have broad industry-wide relevance while maintaining a sufficient degree of ease of implementation. It  evaluates the performance of various decision support systems by the execution of sets of queries against a standard database under controlled conditions.
+
+
+
+\subsection{SSB}
+
+The Star Schema Benchmark (SSB) was designed to test star schema optimization to address the issues outlined in TPC-H with the goal of measuring performance of database  products  and  to  test  a  new  materialization  strategy. The  SSB  is  a  simple  benchmark  that  consists  of  four  query flights,  four  dimensions,  and  a  simple  roll-up  hierarchy . The SSB is significantly based on the TPC-H benchmark with improvements  that  implements  a  traditional  pure  star-schema and allows column and table compression.
+
+The  SSB  is  designed  to  measure the performance  of  database products  against  a  traditional  data  warehouse  scheme.  It  implements  the  same  logical  data  in  a  traditional  star  schema whereas TPC-H models the data in pseudo 3NF schema.
+
+Schema  modifications  were  made  to  the  TPC-H  schema to transform  it  into  a star  schema  form.  The TPC-H tables LINEITEM and ORDERS are combined into one sales fact table named LINEORDER. The PARTSUPP table  is  dropped.  The comment  attributes  for LINEITEMS, ORDERS,  and  shipping instructions  are  also  dropped  as  a  data  warehouse  does  not store such information in a fact table, they can’t be aggregated and take significant storage space. A  dimension  table  called DATE is  added  to  the  schema as  is  in  line  with  a  typical  data  warehouse. LINEORDER serves  as  a  central  fact  table.  Dimension Tables  are  created  for CUSTOMER, PART, SUPPLIER and DATE.
+
+SSBM concentrates on queries that select from the LINEORDER table  exactly  once.  It  avoids   the use  of  self-joins  or  subqueries  as  well  as  or  table  queries also  involving LINEORDER.  The  classic  warehouse  query selects  from  the  table  with  restrictions  on  the  dimension table attributes. SSBM supports queries that appear in TPC-H.SSB consists of one large fact table (LINEORDER) and four dimensions tables (CUSTOMER, SUPPLIER, PART and DATE).

@@ -1,0 +1,15 @@
+\section{Databases}
+\label{sec:db}
+
+\subsection{Postgresql}
+PostgreSQL is a relational database management system following a client-server architecture. At the server side the PostgreSQL's processes and shared memory work together and build an instance, which handles the access to the data. Client programs connect to the instance and request read and write operations.
+
+\subsection{SQLite}
+
+\fig{width=\columnwidth}{sqlite}{\textmd{SQLite Architecture)}}{fig:sqlite}
+
+SQLite is a relational database management system embedded in a C library  which can be linked statically or dynamically with the application program. It does not have a client-server database engine which makes the SQLite applications require less configuration. 
+
+SQLite is ACID  (atomicity, consistency, isolation, durability) compliant and implements the SQL standard. It stores the entire database as a single cross platform file on a host machine. 
+
+SQLite database architecture split into two different sections named as core and backend. Core section contains Interface, Tokenizer, Parser, Code generator, and the virtual machine, which create an execution order for database transactions. Backend contains B-tree, Pager and OS interface to access the file system. Tokenizer, Parser and code generator altogether named as the compiler which generates a set of opcodes that runs on a virtual machine.

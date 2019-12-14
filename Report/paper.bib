@@ -1,0 +1,4472 @@
+@string{IEEE = "{Institute of Electronic and Electrical Engineers (IEEE)}"}
+@string{NSDI = "Proc. Networked Systems Design and Implementation"}
+%
+% Theses
+%
+
+@inproceedings{ref:tyler,
+ author = {Young, Ethan G. and Zhu, Pengfei and Caraza-Harter, Tyler and Arpaci-Dusseau, Andrea C. and Arpaci-Dusseau, Remzi H.},
+ title = {The True Cost of Containing: A gVisor Case Study},
+ booktitle = {Proceedings of the 11th USENIX Conference on Hot Topics in Cloud Computing},
+ series = {HotCloud'19},
+ year = {2019},
+ location = {Renton, WA, USA},
+ pages = {16--16},
+ numpages = {1},
+ url = {http://dl.acm.org/citation.cfm?id=3357034.3357054},
+ acmid = {3357054},
+ publisher = {USENIX Association},
+ address = {Berkeley, CA, USA},
+}
+@inproceedings{ref:peeking,
+ author = {Wang, Liang and Li, Mengyuan and Zhang, Yinqian and Ristenpart, Thomas and Swift, Michael},
+ title = {Peeking Behind the Curtains of Serverless Platforms},
+ booktitle = {Proceedings of the 2018 USENIX Conference on Usenix Annual Technical Conference},
+ series = {USENIX ATC '18},
+ year = {2018},
+ isbn = {978-1-931971-44-7},
+ location = {Boston, MA, USA},
+ pages = {133--145},
+ numpages = {13},
+ url = {http://dl.acm.org/citation.cfm?id=3277355.3277369},
+ acmid = {3277369},
+ publisher = {USENIX Association},
+ address = {Berkeley, CA, USA},
+} 
+
+
+@inproceedings{ref:rfa,
+ author = {Varadarajan, Venkatanathan and Kooburat, Thawan and Farley, Benjamin and Ristenpart, Thomas and Swift, Michael M.},
+ title = {Resource-freeing Attacks: Improve Your Cloud Performance (at Your Neighbor's Expense)},
+ booktitle = {Proceedings of the 2012 ACM Conference on Computer and Communications Security},
+ series = {CCS '12},
+ year = {2012},
+ isbn = {978-1-4503-1651-4},
+ location = {Raleigh, North Carolina, USA},
+ pages = {281--292},
+ numpages = {12},
+ url = {http://doi.acm.org/10.1145/2382196.2382228},
+ doi = {10.1145/2382196.2382228},
+ acmid = {2382228},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {cloud computing, resource-freeing attacks, scheduling, security, virtualization},
+} 
+
+@article{ref:ncsu,
+ author = {Shu, Rui and Wang, Peipei and Gorski III, Sigmund A and Andow, Benjamin and Nadkarni, Adwait and Deshotels, Luke and Gionta, Jason and Enck, William and Gu, Xiaohui},
+ title = {A Study of Security Isolation Techniques},
+ journal = {ACM Comput. Surv.},
+ issue_date = {December 2016},
+ volume = {49},
+ number = {3},
+ month = oct,
+ year = {2016},
+ issn = {0360-0300},
+ pages = {50:1--50:37},
+ articleno = {50},
+ numpages = {37},
+ url = {http://doi.acm.org/10.1145/2988545},
+ doi = {10.1145/2988545},
+ acmid = {2988545},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+ keywords = {Security isolation, access control, resilient architectures},
+} 
+
+@misc{ref:firecracker,
+  title = "Firecracker documentation",
+  note="\url{https://github.com/firecracker-microvm/firecracker/tree/master/docs}",
+  year="2019",
+}
+
+@misc{ref:azure,
+  title = "Azure Functions",
+  note="\url{https://azure.microsoft.com/en-us/services/functions/}",
+}
+
+@misc{ref:lambda,
+  title = "AWS Lambda",
+  note="\url{https://cloud.google.com/functions/}",
+}
+
+
+
+@misc{ref:cf,
+  title = "Cloud Functions ",
+  note="\url{https://aws.amazon.com/lambda/}",
+}
+
+
+@misc{ref:kata,
+  title = "Kata Containers",
+  note="\url{https://katacontainers.io/}",
+
+}
+
+@misc{ref:nabla,
+  title = "Nabla Containers",
+  note="\url{https://nabla-containers.github.io/}",
+
+}
+
+
+@misc{ref:fc-start,
+  title = "Firecracker Getting started",
+  note="\url{https://github.com/firecracker-microvm/firecracker/blob/master/docs/getting-started.md}",
+  year="2019",
+}
+
+@misc{gvisor-blog,
+  title = "gVisor Security Basics - Part 1",
+  note="\url{https://gvisor.dev/blog/2019/11/18/gvisor-security-basics-part-1/}",
+  author ="Jeremiah Spradlin and Zach Koopmans", 
+  year = 2019, month = nov,
+}
+
+
+@misc{ref:gvisor-doc,
+  title = "gVisor Documentation",
+  note="\url{https://gvisor.dev/docs/}",
+
+}
+
+@misc{ref:isolation,
+  title = "Cloud Computing issues",
+  note="\url{https://wikipedia.org/wiki/Cloud\_computing\_issues}",
+}
+
+
+
+@misc{ref:lxc,
+  title = "LXC",
+  note="\url{https://en.wikipedia.org/wiki/LXC}",
+}
+
+
+@misc{ref:docker,
+  title = "Docker",
+  note="\url{https://docs.docker.com/}",
+}
+
+@misc{ref:sysbench,
+  title = "sysbench",
+  note="\url{https://github.com/akopytov/sysbench}",
+}
+
+@misc{ref:cloudlab,
+  title = "Cloudlab",
+  note="\url{https://www.cloudlab.us/}",
+}
+
+
+@misc{ref:fc-seccomp,
+  title = "Firecracker seccomp",
+  note="\url{https://github.com/firecracker-microvm/firecracker/tree/master/src/vmm/src/default\_syscalls}",
+}
+
+@misc{ref:docker-seccomp,
+  title = "Docker seccomp",
+  note="\url{https://docs.docker.com/engine/security/seccomp/}",
+}
+
+@misc{ref:lcov,
+  title = "lcov",
+  note="\url{http://ltp.sourceforge.net/coverage/lcov.php}",
+}
+
+
+@misc{ref:iperf3,
+  title = "LCOV",
+  note="\url{https://github.com/esnet/iperf}",
+}
+
+@misc{ref:cloudsuite,
+  title = "Cloudsuite",
+  note="\url{https://github.com/parsa-epfl/cloudsuite}",
+}
+
+@misc{ref:runsc-mm,
+  title = "gVisor mm",
+  note="\url{https://github.com/google/gvisor/tree/master/pkg/sentry/mm}",
+}
+
+@misc{ref:seccomp,
+  title = "Linux seccomp",
+  note="\url{http://man7.org/linux/man-pages/man2/seccomp.2.html}",
+}
+
+
+@misc{ref:blog1,
+  title = "How to Implement Secure Containers Using Google's gVisor",
+  note="\url{https://thenewstack.io/how-to-implement-secure-containers-using-googles-gvisor/}",
+  author="Karthikeyan Shanmugam",
+  year = 2018, month = dec
+}
+
+
+@misc{ref:flame,
+  title = "Flame Graphs",
+  note="\url{http://www.brendangregg.com/flamegraphs.html}",
+  author="Brendan Gregg.",
+  year = 2019
+}
+
+
+
+@misc{ref:blog2,
+  title = "The Firecracker virtual machine monitor",
+  note="\url{https://lwn.net/Articles/775736/}",
+  author = "Azhar Desai",
+  year = "2019",
+  month = jan,
+}
+
+@misc{ref:blog3,
+  title = "Updates in container isolation",
+  note="\url{https://lwn.net/Articles/754433/}",
+  author="Antoine Beaupr\'e", 
+  year=2018, month = may
+}
+
+@misc{ref:blog4,
+  title = "CHAPTER 1. INTRODUCTION TO LINUX CONTAINERS",
+  note="\url{https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux_atomic_host/7/html/overview_of_containers_in_red_hat_systems/introduction_to_linux_containers}",
+}
+
+@misc{ref:kvm,
+  title = "KVM",
+  note="\url{https://wiki.archlinux.org/index.php/KVM}",
+}
+
+@misc{ref:qemu,
+  title = "QEMU",
+  note="\url{https://wiki.archlinux.org/index.php/QEMU}",
+}
+
+@phdthesis{douglis,
+  author = "Frederick Douglis",
+  title = "Transparent Process Migration in the Sprite Operating System",
+  school = "University of California at Berkeley",
+  year = 1990, month = sep,
+}
+
+@phdthesis{kaplan,
+  author = "Scott F. Kaplan",
+  title = "Compressed Caching and Modern Virtual Memory Simulation",
+  school = "University of Texas at Austin",
+  year = 1999, month = dec,
+}
+
+@mastersthesis{salz,
+  author = "Jon M. Salz",
+  title = "\textsc{tesla}: A Transparent, Extensible Session-Layer Framework for End-to-End Network Services",
+  school = "Massachusetts Institute of Technology",
+  year = 2002, month = may,
+}
+
+@phdthesis{parekh,
+author = {A. Parekh},
+title  = {A Generalized Processor Sharing Approach to Flow Control in Integrated Services
+Network"},
+school = {Masschusetts Institute of Technology},
+year = 1992, month = feb,
+}
+
+
+%
+% RFCs
+%
+
+@techreport{iso8326,
+  author = "{International Organization for Standardization (ISO)}",
+  title = "Information processing systems -- {Open Systems Interconnection} -- Basic connection oriented session service definition",
+  type = "{ISO~8326}",
+  year = 1987, month = aug,
+}
+
+
+@techreport{rfc768,
+  author = "Jon Postel",
+  title = "User Datagram Protocol",
+  type = "{RFC~768}",
+  institution = IETF,
+  year = 1980, month = aug,
+}
+
+@techreport{rfc791,
+  author = "Jon Postel",
+  title = "{I}nternet {P}rotocol",
+  type = "{RFC~791}",
+  institution = IETF,
+  year = 1981, month = sep,
+}
+
+@techreport{rfc792,
+  author = "Jon Postel",
+  title = "{I}nternet Control Message Protocol",
+  type = "{RFC~792}",
+  institution = IETF,
+  year = 1981, month = sep,
+}
+
+@techreport{rfc793,
+  author = "Jon Postel",
+  title = "Transmission Control Protocol",
+  type = "{RFC~793}",
+  institution = IETF,
+  year = 1981, month = sep,
+}
+
+@techreport{rfc854,
+  author = "Jon Postel and Joyce K. Reynolds",
+  title = "{TELNET} Protocol Specification",
+  type = "{RFC~854}",
+  institution = IETF,
+  year = 1983, month = may,
+}
+
+@techreport{rfc896,
+  author = "John Nagle",
+  title = "Congestion Control in {IP}/{TCP} Internetworks",
+  type = "{RFC~896}",
+  institution = IETF,
+  year = 1984, month = jan,
+}
+
+@techreport{rfc959,
+        author = "J. Postel and J. Reynolds",
+        title = "File Transfer Protocol ({FTP})",
+        note = "{RFC~959}",
+        institution = IETF,
+        month = oct,
+        year = 1985,
+}
+
+@techreport{rfc1112,
+  author = "Stephen E. Deering",
+  title = "Host Extensions for {IP} Multicasting",
+  type = "{RFC~1122}",
+  institution = IETF,
+  year = 1989, month = aug,
+}
+
+@techreport{rfc1122,
+  author = "Robert {Braden, ed.}",
+  title = "Requirements for {I}nternet Hosts - Communication layers",
+  type = "{RFC~1122}",
+  institution = IETF,
+  year = 1989, month = aug,
+}
+
+@techreport{rfc1191,
+  author = "Jeffrey C. Mogul and Stephen E. Deering",
+  title = "Path {MTU} Discovery",
+  type = "{RFC~1191}",
+  institution = IETF,
+  year = 1990, month = nov,
+}
+
+@techreport{rfc1321,
+  author = "Ronald R. Rivest",
+  title = "The {MD5} Message-Digest Algorithm",
+  type = "{RFC~1321}",
+  institution = IETF,
+  year = 1992, month = apr,
+}
+
+@techreport{rfc1323,
+  author = "Van Jacobson and Robert Braden and David Borman",
+  title = "{TCP} Extensions for High Performance",
+  type = "{RFC~1323}",
+  institution = IETF,
+  year = 1992, month = may,
+}
+
+@techreport{rfc1498,
+  author = "Jerome H. Saltzer",
+  title = "On the Naming and Binding of Network Destinations",
+  type = "{RFC~1498}",
+  institution = IETF,
+  year = 1993, month = aug,
+}
+
+@techreport{rfc1661,
+  author = "William A. Simpson",
+  title = "The Point-to-Point Protocol ({PPP})",
+  type = "{RFC~1661}",
+  institution = IETF,
+  year = 1994, month = jul,
+}
+
+@techreport{rfc1738,
+  author = "Tim Berners-Lee and Larry Masinter and Mark McCahill",
+  title = "Uniform Resource Locators ({URL})",
+  type = "{RFC~1738}",
+  institution = IETF,
+  year = 1994, month = dec,
+}
+
+@techreport{rfc1825,
+  author = "Randall Atkinson",
+  title = "Security Architecture for the {I}nternet Protocol",
+  type = "{RFC~1825}",
+  institution = IETF,
+  year = 1995, month = aug,
+}
+
+@techreport{rfc1833,
+  author = "Raj Srinivasan",
+  title = "Binding Protocols for {ONC} {RPC} Version 2",
+  type = "{RFC~1833}",
+  institution = IETF,
+  year = 1995, month = aug,
+}
+
+@techreport{rfc1889,
+  author = "Henning Schulzrinne and Steve Casner and Ron Frederick and Van Jacobson",
+  title = "{RTP}: A Transport Protocol for Real-Time Applications",
+  type = "{RFC~1889}",
+  institution = IETF,
+  year = 1996, month = jan,
+}
+
+@techreport{rfc1918,
+  author = "Yakov Rekhter and Robert G. Moskowitz and Daniel Karrenberg Geert Jan de Groot and Eliot Lear",
+  title = "Address Allocation for Private Internets",
+  type = "{RFC~1918}",
+  institution = IETF,
+  year = 1996, month = feb,
+}
+
+@techreport{rfc1928,
+  author = "Marcus Leech and M. Ganis and Y. Lee and R. Kuris and D. Koblas and L. Jones",
+  title = "{SOCKS} Protocol Version 5",
+  type = "{RFC~1928}",
+  institution = IETF,
+  year = 1996, month = mar,
+}
+
+@techreport{rfc1948,
+  author = "Stephen Bellovin",
+  title = "Defending Against Sequence Number Attacks",
+  type = "{RFC~1948}",
+  institution = IETF,
+  year = 1996, month = may,
+}
+
+@techreport{rfc1992,
+  author = "Isidro Casti{\~n}eyra and Noel Chiappa and Martha Steenstrup",
+  title = "The {Nimrod} Routing Architecture",
+  type = "{RFC~1992}",
+  institution = IETF,
+  year = 1996, month = aug,
+}
+
+@techreport{rfc2001,
+  author = "W. Richard Stevens",
+  title = "{TCP} TCP Slow Start, Congestion Avoidance, Fast Retransmit, and Fast Recovery Algorithms",
+  type = "{RFC~2001}",
+  institution = IETF,
+  year = 1997, month = jan,
+}
+
+@techreport{rfc2003,
+  author = "Charles E. Perkins",
+  title = "{IP} Encapsulation within {IP}",
+  type = "{RFC~2003}",
+  institution = IETF,
+  year = 1996, month = oct,
+}
+
+
+@techreport{rfc2018,
+  author = "Matt Mathis and Jamshid Mahdavi and Sally Floyd and Allyn Romanow",
+  title = "{TCP} Selective Acknowledgment Options",
+  type = "{RFC~2018}",
+  institution = IETF,
+  year = 1996, month = oct,
+}
+
+@techreport{rfc2103,
+  author = "Ram Ramanathan",
+  title = "Nimrod Mobility Support",
+  type = "{RFC~2103}",
+  institution = IETF,
+  year = 1997, month = feb,
+}
+
+@techreport{rfc2109,
+  author = "David M. Kristol and Lou Montulli",
+  title = "{HTTP} State Management Mechanism",
+  type = "{RFC~2109}",
+  institution = IETF,
+  year = 1997, month = feb,
+}
+
+@techreport{rfc2131,
+  author = "Ralph Droms",
+  title = "{D}ynamic {H}ost {C}onfiguration {P}rotocol",
+  type = "{RFC~2131}",
+  institution = IETF,
+  year = 1997, month = mar,
+}
+
+@techreport{rfc2136,
+  author = "Paul Vixie and Susan Thomson and Yakov Rekhter and Jim Bound",
+  title = "Dynamic Updates in the Domain Name System ({DNS} {UPDATE})",
+  type = "{RFC~2136}",
+  institution = IETF,
+  year = 1997, month = apr,
+}
+
+@techreport{rfc2137,
+  author = "Donald E. {Eastlake, 3rd}",
+  title = "Secure Domain Name System Dynamic Update",
+  type = "{RFC~2137}",
+  institution = IETF,
+  year = 1997, month = apr,
+}
+
+@techreport{rfc2205,
+  author = "Robert {Braden, ed.} and Lixia Zhang and Steve Berson and Shai Herzog and Sugih Jamin",
+  title = "{R}esource Re{S}er{V}ation {P}rotocol ({RSVP}) -- Version 1 functional specification",
+  type = "{RFC~2205}",
+  institution = IETF,
+  year = 1997, month = sep,
+}
+
+@techreport{rfc2246,
+  author = "Tim Dierks and Christopher Allen",
+  title = "The {TLS} Protocol",
+  type = "{RFC~2246}",
+  institution = IETF,
+  year = 1998, month = jan,
+}
+
+@techreport{rfc2267,
+  author = "Paul Ferguson and Daniel Senie",
+  title = "Network Ingress Filtering: Defeating Denial of Service Attacks which employ {IP} Source Address Spoofing",
+  type = "{RFC~2267}",
+  institution = IETF,
+  year = 1998, month = jan,
+}
+
+@techreport{rfc2401,
+  author = "Stephen Kent and Randall Atkinson",
+  title = "Security Architecture for the {I}nternet Protocol",
+  type = "{RFC~2401}",
+  institution = IETF,
+  year = 1998, month = nov,
+}
+
+@techreport{rfc2460,
+  author = "Stephen E. Deering and Robert M. Hinden",
+  title = "Internet Protocol, Version 6 ({IPv6}) Specification",
+  type = "{RFC~2460}",
+  institution = IETF,
+  year = 1998, month = dec,
+}
+
+@techreport{rfc2462,
+  author = "Susan Thomson and Thomas Narten",
+  title = "{IPv6} Stateless Address Autoconfiguration",
+  type = "{RFC~2462}",
+  institution = IETF,
+  year = 1998, month = dec,
+}
+
+@techreport{rfc2535,
+  author = "Donald E. {Eastlake, 3rd}",
+  title = "Domain Name System Security Extensions",
+  type = "{RFC~2535}",
+  institution = IETF,
+  year = 1999, month = mar,
+}
+
+@techreport{rfc2543,
+  author = "Mark Handley and Henning Schulzrinne and Eve Schooler and Jonathan Rosenberg",
+  title = "{SIP}: Session Initiation Protocol",
+  type = "{RFC~2543}",
+  institution = IETF,
+  year = 1999, month = mar,
+}
+
+@TECHREPORT{rfc2608,
+  AUTHOR="E. Guttman and Charles E. Perkins and J. Veizades and M. Day",
+  TITLE="Service Location Protocol, Ver. 2",
+ INSTITUTION= IETF,
+  TYPE="{RFC~2608}",
+  YEAR=1999, MONTH=jun,
+}
+
+@techreport{rfc2616,
+  author = "Roy T. Fielding and James Gettys and Jeffrey C. Mogul and Henrik {Frystyk Nielsen} and Larry Masinter and Paul J. Leach and Tim Berners-Lee",
+  title = "Hypertext Transfer Protocol --- {HTTP/1.1}",
+  type = "{RFC~2616}",
+  institution = IETF,
+  year = 1999, month = jun,
+}
+
+@techreport{rfc2960,
+  author = "Randall R. Stewart and Qiaobing Xie and Ken Morneault and Chip Sharp and Hanns J. Schwarzbauer and Tom Taylor and Ian Rytina and Malleswar Kalla and Lixia Zhang and Vern Paxson",
+  title = "Stream Control Transmission Protocol",
+  type = "{RFC~2960}",
+  institution = IETF,
+  year = 2000, month = oct,
+}
+
+@techreport{rfc2988,
+  author = "Vern Paxson and Mark Allman",
+  title = "Computing {TCP}'s Retransmission Timer",
+  type = "{RFC~2988}",
+  institution = IETF,
+  year = 2000, month = nov,
+}
+
+@techreport{rfc2991,
+  author = "Dave Thaler and Christian E. Hopps",
+  title = "Multipath Issues in Unicast and Multicast Next-Hop Selection",
+  type = "{RFC~2991}",
+  institution = IETF,
+  year = 2000, month = nov,
+}
+
+@techreport{rfc3007,
+  author = "Brian Wellington",
+  title = "Secure Domain Name System ({DNS}) Dynamic Update",
+  type = "{RFC~3007}",
+  institution = IETF,
+  year = 2000, month = nov,
+}
+
+@techreport{rfc3012,
+  author = "Charles E. Perkins and Pat R. Calhoun",
+  title = "Mobile {IP} Challenge/Response Extensions",
+  type = "{RFC~3012}",
+  institution = IETF,
+  year = 2000, month = nov,
+}
+
+@techreport{rfc3022,
+  title = "Traditional {IP} Network Address Translator (Traditional {NAT})",
+  author = "Pyda Srisuresh and Kjeld B. Egevang",
+  type = "{RFC~3022}",
+  institution = IETF,
+  year = 2001, month = jan,
+}
+
+@techreport{rfc3024,
+  title = "Reverse Tunneling for Mobile {IP}, revised",
+  author = "Gabriel E. Montenegro",
+  type = "{RFC~3024}",
+  institution = IETF,
+  year = 2001, month = jan,
+}
+
+@techreport{rfc3220,
+  author = "Charles E. Perkins",
+  title = "{IP} Mobility Support for {IPv4}",
+  type = "{RFC~3220}",
+  institution = IETF,
+  year = 2002, month = jan,
+}
+
+@techreport{rfc3261,
+  author = "Jonathan Rosenberg and Henning Schulzrinne and Gonzalo Caramillo and Alan Jonston and Jon Peterson and Robert Sparks and Mark Handley and Eve Schooler",
+  title = "{SIP}: Session Initiation Protocol",
+  type = "{RFC~3261}",
+  institution = IETF,
+  year = 2002, month = jun,
+}
+
+@techreport{rfc3945,
+  author = "E. Mannie",
+  title = "Generalized Multi-Protocol Label Switching ({GMPLS}) Architecture",
+  type = "{RFC 3945}",
+  month = OCT,
+  year = 2004
+}
+%  institution = IETF,
+
+%
+% I-Ds
+%
+
+@techreport{unsaf,
+  author = "Leslie Daigle",
+  title = "{IAB} Considerations for UNilateral Self-Address Fixing ({UNSAF})  Across Network Address Translation",
+    type = "{I}nternet {D}raft",
+  institution = IETF,
+  year = 2002, month = jun,
+  note = "\url{draft-iab-unsaf-considerations-02.txt} (work in progress)",
+}
+
+@techreport{dccp,
+  author = "Eddie Kohler and Mark Handley and Sally Floyd and Jitendra Padhye",
+  title = "Datagram Congestion Control Protocol ({DCCP})",
+  type = "{I}nternet {D}raft",
+  institution = IETF,
+  year = 2002, month = jun,
+  note = "\url{draft-kohler-dcp-04.txt} (work in progress)",
+}
+
+@techreport{hip,
+  author = "Robert Moskowitz",
+  title = "Host Identity Payload",
+  type = "{I}nternet {D}raft",
+  institution = IETF,
+  year = 2001, month = feb,
+  note = "\url{draft-moskowitz-hip-arch-02.txt} (expired)",
+}
+
+@techreport{hip:proto,
+  author = "Robert Moskowitz",
+  title = "Host Identity Payload And Protocol",
+  type = "{I}nternet {D}raft",
+  institution = IETF,
+  year = 2001, month = oct,
+  note = "\url{draft-ietf-moskowitz-hip-05.txt} (expired)",
+}
+
+@techreport{hip:impl,
+  author = "Robert Moskowitz",
+  title = "Host Identity Payload Implementation",
+  type = "{I}nternet {D}raft",
+  institution = IETF,
+  year = 2001, month = feb,
+  note = "\url{draft-moskowitz-hip-impl-01.txt} (expired)",
+}
+
+@techreport{sctp:mobility,
+  author = "Maximilan Riegel and Michael Tuexen",
+  title = "Mobile {SCTP}",
+  type = "{I}nternet {D}raft",
+  institution = IETF,
+  year = 2002, month = feb,
+  note = "\url{draft-riegel-tuexen-mobile-sctp-00.txt} (work in progress)",
+}
+
+@techreport{sctp:addip,
+  author = "Randall R. Stewart and Michael A. Ramalho and Qiaobing Xie and Michael Tuexen and Ian Rytina and Maria-Carmen Belinchon and Phil Conrad",
+  title = "Stream Control Transmission Protocol ({SCTP}) Dynamic Address Reconfiguration",
+  type = "{I}nternet {D}raft",
+  institution = IETF,
+  year = 2002, month = may,
+  note = "\url{draft-ietf-tsvwg-addip-sctp-05.txt} (work in progress)",
+}
+
+@techreport{ssh,
+  author = "Tatu Ylonen and Tero Kivinen and Timo J. Rinne and Sami Lehtinen",
+  title = "{SSH} Protocol Architecture",
+  type = "{I}nternet {D}raft",
+  institution = IETF,
+  year = 2001, month = jan,
+  note = "\url{draft-ietf-secsh-architecture-12.txt} (work in progress)",
+}
+
+@techreport{sip:mobility,
+  author = "Faramak Vakil and Ashutosh Dutta and Jyh-Cheng Chen and Shinichi Baba and Nobuyasu Nakajima and Yasuro Shobatake and Henning Schulzrinne",
+  title = "Mobility Management in a {SIP} Environment",
+  type = "{I}nternet {D}raft",
+  institution = IETF,
+  year = 2000, month = dec,
+  note = "\url{draft-itsumo-sip-mobility-req-02.txt} (expired)",
+}
+
+@techreport{mobileip:optim,
+  author = "Charles E. Perkins and David B. Johnson",
+  title = "Route Optimization in Mobile {IP}",
+  type = "{I}nternet {D}raft",
+  institution = IETF,
+  year = 2001, month = sep,
+  note = "\url{draft-ietf-mobileip-optim-11.txt} (work in progress)",
+}
+
+@techreport{mobileip:challenge,
+  author = "Charles E. Perkins and Pat R. Calhoun",
+  title = "Mobile {IPv4} Challenge/Response Extensions",
+  type = "{I}nternet {D}raft",
+  institution = IETF,
+  year = 2002, month = may,
+  note = "\url{draft-ietf-mobileip-optim-11.txt} (work in progress)",
+}
+
+
+@techreport{ecdh,
+  author = "Robert Zuccherato and Carlisle Adams",
+  title = "Using Elliptic Curve {D}iffie-{H}ellman in the {SPKM} {GSS-API}",
+  type = "{I}nternet {D}raft",
+  institution = IETF,
+  year = 1999, month = aug,
+  note = "\url{draft-ietf-cat-ecdh-spkm-00.txt} (work in progress)",
+}
+
+@techreport{huitema,
+  author = "Christian Huitema",
+  title = "Multi-Homed {TCP}",
+  type = "{I}nternet {D}raft",
+  institution = IETF,
+  year = 1995, month = may,
+  note = "(expired)",
+}
+
+@techreport{yalagandula,
+  author = "Praveen Yalagandula and Amit Garg and Mike Dahlin and Lorenzo Alvisi and Harrick Vin",
+  title = "Transparent Mobility with Minimal Infrastructure",
+  institution = "UT Austin",
+  year = 2001, month = aug,
+  type = "{CS-TR-01-30}",
+}
+
+%
+% STDs
+%
+
+@techreport{x962,
+  author = "{American National Standards Institute}",
+  title = "Public Key Cryptography for the Financial Service Industry: The Elliptic Curve Digital Signature Algorithm",
+  type = "{ANSI} {X9.62 - 1998}",
+  month = jan, year = 1999,
+}
+
+@techreport{802.3,
+  author = IEEE,
+  title = "Carrier Sense Multiple Access with Collision Detection ({CSMA/CD}) access method and physical specifications",
+  type = "Standard 802.3",
+  year = 2002,
+}
+@techreport{802.11,
+  author = IEEE,
+  title = "Wireless Medium Access Control ({MAC}) and Physical layer ({PHY}) specifications",
+  type = "Standard 802.11",
+  year = 1999,
+}
+
+@techreport{sha,
+  author = "{National Institute of Standards and Technology}",
+  title = "The Secure Hash Algorithm ({SHA-1})",
+  type = "{NIST FIPS PUB} 180-1",
+  institution = "{U.S. Department of Commerce}",
+  year = 1995, month = apr,
+}
+
+@techreport{3g,
+  author = "{Federal Communications Commission}",
+  title = "Spectrum Study of {2500--2690 MHz} Band: The Potential for Accommodating Third Generation Mobile Systems",
+  type = "{ET Docket No. 00-258}",
+  year = 2001, month = mar,
+}
+
+%
+% Tech Reports
+%
+
+@techreport{qu97b,
+  author = "Xun Qu and Jeffrey Xu Yu and Richard P. Brent",
+  title = "A Mobile {TCP} Socket",
+  type = "{TR-CS-97-09}",
+  year = 1997, month = apr,
+  institution = "The Australian National University",
+}
+
+@techreport{synflood,
+  author = "{CERT}",
+  title = "{TCP SYN} Flooding and {IP} Spoofing Attacks",
+  type = "{CERT} Advisory {CA-1996-21}",
+  year = 1996, month = sep,
+}
+
+
+@techreport{dahlin,
+  author = "Mike Dahlin and Bharat Chandra and Lei Gao and Amjad-Ali Khoja and Amol Nayate and Asim Razzaq and Anil Sewani",
+  title = "Using Mobile Extensions to Support Disconnected Services",
+  institution = "UT Austin",
+  year = 2000, month = apr,
+  type = "{CS-TR-00-20}",
+}
+
+@techreport{j2ee,
+  title = "Java Servlet 2.3 Specification",
+  author = "{Sun Microsystems, Inc.}",
+  type = "Final Release",
+  month = sep, year = 2001,
+}
+
+@techreport{morris,
+  author = "Robert T. Morris",
+  title = "A weakness in the 4.2{BSD} {UNIX} {TCP/IP} Software",
+  type = "Computing Science Technical Report 117",
+  institution = "AT\&T Bell Laboratories",
+  address = "Murray Hill, New Jersey",
+  year = 1985, month = feb,
+}
+
+@techreport{Rabin,
+  author = "Michael O. Rabin",
+  title = "Fingerprinting by random polynomials",
+  type = "{TR-15-81}",
+  institution = "Center for Research in Computing Technology, Harvard University",
+  year = 1981,
+}
+
+@techreport{steele,
+  author = "Guy L. Steele",
+  title = "{RABBIT}: A Compiler for Scheme",
+  type = "{AI} Memo 474",
+  institution = "Massachusetts Institute of Technology",
+  month = may, year = 1978,
+}
+
+@techreport{su,
+  author = "Gong Su and Jason Nieh",
+  title = "Mobile Communications with Virtual Network Address Translation",
+  type = "{CUCS-003-02}",
+  institution = "Columbia University",
+  year = 2002, month = feb,
+}
+
+
+%
+% Journal Articles
+%
+
+@article{adler55,
+   author = "F. P. Adler",
+   title = "Minimum Energy Cost of an Observation",
+   journal = "{IEEE} Transactions on Information Theory",
+   volume = 1, number = 3,
+   year = 1955, month = dec,
+   pages = "28--32",
+}
+
+@article{spin,
+   author = "Joanna Kulik and Wendi Rabiner Heinzelman and Hari Balakrishnan",
+   title = "Negotiation-Based Protocols for Disseminating Information in Wireless Sensor Networks",
+   journal = "Wireless Networks",
+   year = 2002, month = "March--May",
+   volume = 8, number = "2--3",
+   pages = "169--185",
+}
+
+@article{kleinrock75,
+   author = "Leonard Kleinrock and Fouad A. Tobagi",
+   title = "Packet Switching in Radio Channels: {Part I}---Carrier Sense Multiple-Access Modes and their Throughput-Delay Characteristics",
+   journal = "{IEEE} Transactions on Communications",
+   volume = "{COM-23}", number = 12,
+   year = 1975, month = dec,
+   pages = "272--288",
+}
+
+@inproceedings{mckenney,
+ author = "P. McKenney",
+ title = "Stochastic Fairness Queuing",
+ booktitle= "{IEEE} INFOCOM",
+ year = "1990",
+ month = jun
+}
+
+@InProceedings{wilder,
+Author ="K. Thompson and G. Miller and R. Wilder",
+Title = "Wide-area traffic patterns and characterizations",
+booktitle = "IEEE Network",
+month = "December",
+Year = "1997"}
+
+
+
+@inproceedings{bsfq,
+  author = "Shun Y. Cheung and 	Corneliu S. Pencea",
+  title  = "BSFQ : Bin Sort Fair Queuing",
+  booktitle = "{IEEE} INFOCOM",
+  year = 2002, month = jun
+}
+
+
+@inproceedings{sriram03counter,
+   author = "Sriram Ramabhadran and George Varghese",
+   title = "Efficient Implementation of a Statistics Counter Architecture",
+   booktitle= "{ACM} SIGMETRICS",
+   year = 2003, month = jun
+}
+
+@inproceedings{ florin,
+    author = "Florin Baboescu and George Varghese",
+    title = "Scalable Packet Classification",
+    pages = "199--210",
+    booktitle="{ACM} SIGCOMM",
+    year = 2001, month = aug
+}
+
+@inproceedings{sriram03fcfq,
+  author = "Sriram Ramabhadran and Joe Pasquale",
+  title = "A Low Complexity Packet Scheduler with Bandwidth Fairness and Bounded Delay",
+  booktitle= "{ACM} {SIGCOMM}",
+  year =  2003,
+  month = aug,
+}
+
+@inproceedings{srr01,
+title="{SRR}: An 0(1) Time Complexity Packet Scheduler for Flows in Multi-Service Packet Networks",
+author="Chuanxiong Guo",
+booktitle= "{ACM} {SIGCOMM}",
+year= 2001, month= aug
+}
+
+
+@inproceedings{harrick,
+    author = "Pawan Goyal and Harrick M. Vin and Haichen Cheng",
+    title = "Start-Time Fair Queuing: {A} Scheduling Algorithm for Integrated Services Packet
+    Switching Networks",
+    booktitle = "{IEEE/ACM} Transactions on Networking",
+    volume ="5",
+    year = "1997",
+}
+@article{ stiliadis98efficient,
+    author = "Dimitrios Stiliadis and Anujan Varma",
+    title = "Efficient fair queueing algorithms for packet-switched networks",
+    journal = "IEEE\slash ACM Transactions on Networking",
+    volume = "6",
+    number = "2",
+    pages = "175--185",
+    year = "1998",
+    url = "citeseer.nj.nec.com/stiliadis98efficient.html" }
+
+@article{ stiliadis98rate,
+    author = "Dimitrios Stiliadis and Anujan Varma",
+    title = "Rate-proportional servers: a design methodology for fair queueing algorithms",
+    journal = "IEEE\slash ACM Transactions on Networking",
+    volume = "6",
+    number = "2",
+    pages = "164--174",
+    year = "1998",
+}
+
+@inproceedings{ stoica98core,
+    author = "Ion Stoica and Scott Shenker and Hui Zhang",
+    title = " Core-Stateless Fair Queueing: Achieving Approximately Fair Bandwidth Allocations in
+ 	High Speed Networks",
+    booktitle = "{SIGCOMM}",
+    pages = "118-130",
+    year = "1998",
+}
+
+@inproceedings{nagle,
+	author="J. Nagle",
+	title="On packet siwtches with infinite storage",
+	booktitle="IEEE Transactions on Communications",
+	pages= "35(4):435-438",
+	year = "1987",
+	month = apr,
+}
+@article{ pasquale,
+    author = "Norival R. Figueira and Joseph Pasquale",
+    title = "An upper bound on delay for the {VirtualClock} service discipline",
+    journal = "IEEE\slash ACM Transactions on Networking",
+    volume = "3",
+    number = "4",
+    pages = "399--408",
+    year = "1995",
+}
+
+@article{satish,
+ author = {Debanjan Saha and Sarit Mukherjee and Satish K. Tripathi},
+ title = {Carry-over round robin: a simple cell scheduling mechanism for ATM networks},
+ journal = {IEEE/ACM Transactions on Networking (TON)},
+ volume = {6},
+ number = {6},
+ year = {1998},
+ issn = {1063-6692},
+ pages = {779--796},
+ doi = {http://doi.acm.org/10.1145/300386.300405},
+ publisher = {ACM Press},
+ }
+
+
+@inproceedings{bennett96wf,
+    title = "{WF} 2 Q: Worst-Case Fair Weighted Fair Queueing",
+    author = "Jon C. R. Bennett and Hui Zhang",
+    booktitle = "{INFOCOM} (1)",
+    pages = "120-128",
+    year = "1996",
+}
+
+@article{ lixia,
+	author = "L. Zhang",
+	title = "VirtualClock: a new traffic control algorithm for packet switching networks",
+	journal = "ACM Transactions on Computer Systems",
+	volume = "9",
+	pages = "101--124",
+	year = "1991",
+	month = may
+}
+
+@inproceedings{ golestani,
+	author="S. Golestani",
+	title = " A self-clocked fair queueing scheme for braodband applications",
+	booktitle = "{INFOCOM}",
+	pages = "636-646",
+	year = "1993",
+	month=  jun
+}
+
+
+@inproceedings{ shreedhar95efficient, author = "M. Shreedhar and George Varghese",
+    title = "Efficient Fair Queueing Using Deficit Round Robin",
+    booktitle = "{ACM SIGCOMM}",
+    pages = "231-242",
+    year = "1995",
+    url = "citeseer.nj.nec.com/shreedhar95efficient.html"
+}
+
+@inproceedings{dks,
+ author = {A. Demers and S. Keshav and S. Shenker},
+ title = {Analysis and simulation of a fair queueing algorithm},
+ booktitle = {Symposium proceedings on Communications architectures \& protocols},
+ year = {1989},
+ isbn = {0-89791-332-9},
+ pages = {1--12},
+ location = {Austin, Texas, United States},
+ doi = {http://doi.acm.org/10.1145/75246.75248},
+ publisher = {ACM Press},
+ }
+
+@article{diffserv,
+title="An Architecture for Differentiated Services",
+author="S. Blake and M. Carlson and E. Davies and Z. Wang and W. Weiss",
+year = 1998,
+month=dec,
+}
+
+
+
+@article{snoop,
+	author = "Hari Balakrishnan and Srinivasan Seshan and Randy H. Katz",
+	title = "Improving Reliable Transport and Handoff Performance
+		  in Cellular Wireless Networks",
+	journal = "{ACM} Wireless Networks",
+	year = 1995, month = dec,
+        volume = 1, number = 4,
+        pages = "469--481",
+}
+
+@article{bhagwat96,
+  author = "Pravin Bhagwat and Charles Perkins and Satish K. Tripathi",
+  title = "Network Layer Mobility: an Architecture and Survey",
+  journal = "{IEEE} Personal Communications",
+  volume = 3, number = 3,
+  year = 1996, month = jun,
+  pages = "54--64",
+}
+
+@article{birrell,
+  author = "Andrew D. Birrell and Bruce Jay Nelson",
+  title = "Implementing remote procedure calls",
+  journal = "{ACM} Transactions on Computer Systems",
+  volume = 2, number = 1,
+  year = 1984, month = feb,
+  pages = "39--59",
+}
+
+@incollection{cardelli,
+  author = "Luca Cardelli and Andrew D. Gordon",
+  title = "Mobile Ambients",
+  editor = "Maurice Nivat",
+  booktitle = "Foundations of Software Science and Computational Structures",
+  publisher = "Springer-Verlag",
+  series = "Lecture Notes in Computer Science",
+  pages = "140--155",
+  volume = 1378,
+  year = 1998,
+}
+
+@article{campbell02,
+  author  = "Andrew T. Campbell and Javier Gomez and Sanghyo Kim and Chieh-Yih Wan and Zoltan R. Turanyi and Andras G. Valk{\'o}",
+  title = "Comparison of {IP} Micromobility Protocols",
+  journal = "{IEEE} Wireless Communications",
+  year = 2002, month = feb,
+  volume = 9, number = 1,
+  pages = "2--12",
+}
+
+@article{cerf,
+  author = "Vinton G. Cerf and Edward Cain",
+  title = "The {DoD} {I}nternet Architecture Model",
+  journal = "Computer Networks",
+  volume = 7,
+  year = 1983, month = oct,
+  pages = "307--318",
+}
+
+@article{deering90,
+  author = "Stephen E. Deering and David R. Cheriton",
+  title = "Multicast routing in datagram internetworks and extended {LAN}s",
+  journal = "{ACM} Transactions on Computer Systems",
+  volume = 8,
+  number = 2,
+  year = 1990, month = may,
+  pages = "85--110",
+}
+
+@article{diffie,
+  author = "Whitfield Diffie and Martin E. Hellman",
+  title = "New Directions in Cryptography",
+  journal = "{IEEE} Transactions on Information Theory",
+  volume = "IT-11",
+  year = 1976, month = nov,
+  pages = "644-654",
+}
+
+@article{end2end,
+  author = "Jerome H. Saltzer and David P. Reed and David D. Clark",
+  title = "End-to-End Arguments in System Design",
+  journal = "{ACM} Transactions on Computer Systems",
+  volume = 2,
+  number = 4,
+  year = 1984, month = nov,
+  pages = "277-288",
+}
+
+@article{caceres95,
+	author = "C\'{a}ceres, R\'{a}mon and Liviu Iftode",
+	title = "Improving the Performance of Reliable Transport Protocols
+		  in Mobile Computing Environments",
+	journal = "{IEEE} Journal on Selected Areas in Communications",
+	volume = 13,
+	number = 5,
+	year = 1995,
+	month = jun,
+        pages = "850--857",
+}
+
+
+@article{rover,
+  author = "Anthony D. Joseph and Joshua A. Tauber and M. Frans Kaashoek",
+  title = "Mobile Computing with the {Rover} Toolkit",
+  journal = "{IEEE} Transactions on Computers",
+  volume = 46,
+  number = 3,
+  year = 1997,
+  month = mar,
+  pages = "337-352",
+}
+
+
+@article{dnsperf,
+  author = "Jaeyeon Jung and Emil Sit and Hari Balakrishnan and Robert T. Morris",
+  title = "{DNS} Performance and the Effectiveness of Caching",
+  journal = "{IEEE}/{ACM} Transactions on Networking",
+  volume = 10, number = 5,
+  year = 2002, month = oct,
+}
+
+@article{kaashoek93,
+  author = "M. Frans Kaashoek and Robbert van Renesse and Hans van Staveren and Andrew S. Tanenbaum",
+  title = "{FLIP}: An Internetwork Protocol for Supporting Distributed Systems",
+  journal = "{ACM} Transactions on Computer Systems",
+  volume = 11,
+  number = 1,
+  year = 1993, month = feb,
+  pages = "77--106",
+}
+
+@article{lamport,
+   author = "Leslie Lamport",
+   title = "Password Authentication with Insecure Communication",
+   journal = "Communications of the {ACM}",
+   volume = 24, number = 11,
+   year = 1981, month = nov,
+   pages = "770--772",
+}
+
+@article{maniatis,
+   author = "Petros Maniatis and Mema Roussopoulos and Edward Swierk and Kevin Lai and Guido Appenzeller and Xinhua Zhao and Mary Baker",
+   title = "The Mobile People Architecture",
+   journal = "{ACM} Mobile Computing and Communications Review (MC2R)",
+   volume = 3, number = 3,
+   year = 1999, month = jul,
+   pages = "36--42",
+}
+
+@article{pollard,
+  author = "John M. Pollard",
+  title = "{M}onte {C}arlo methods for index computation (mod p)",
+  journal = "Mathematics of Computation",
+  volume = 32, number = 143,
+  pages = "918--924",
+  year = 1978, month = jul,
+}
+
+@article{reynolds,
+  author = "John C. Reynolds",
+  title = "The Discoveries of Continuations",
+  journal = "LISP and Symbolic Computation: An International Journal",
+  volume = 6,
+  pages = "233--247",
+  year = 1993,
+}
+
+@article{scheifler,
+  author = "Robert Scheifler and Jim Gettys",
+  title = "The {X} window system",
+  journal = "{ACM} Transactions on Graphics",
+  volume = 5, number = 2,
+  year = 1986, month = apr,
+  pages = "79--109",
+}
+
+@article{tilak01,
+  title = "A Concurrent Migration Extension to an End-to-End Host Mobility Architecture",
+  author = "Sameer Tilak and Nael B. Abu-Ghazaleh",
+  journal = "Mobile Computing and Communications Review",
+  volume = 5, number = 3,
+  year = 2001, month = jul,
+  pages = "26--31",
+}
+
+@article{vanOorschot,
+  author = "Paul C. van Oorschot and Michael J. Wiener",
+  title = "Parallel collision search with cryptanalytic applications",
+  journal = "Journal of Cryptography",
+  volume = 12,
+  page = "1--28",
+  year = 1999,
+}
+
+@article{zhao,
+  author = "Xinhua Zhao and Claude Castelluccia and Mary Baker",
+  title = "Flexible Network Support for Mobile Hosts",
+  journal = "{ACM} Mobile Networks and Application Journal",
+  volume = 6, number = 2,
+  year = 2001, month = apr,
+  pages = "137--149",
+}
+
+@article{zimmerman,
+  author = "Hans Zimmerman",
+  title = "{OSI} Reference Model --- The {ISO} Model of Architecture for Open System Intereconnection",
+  journal = "{IEEE} Transactions on Communications",
+  volume = "{COM}-28", number = 4,
+  year = 1980, month = apr,
+  pages = "425--432",
+}
+
+%
+% Books
+%
+
+@book{keshav,
+  author = "Srinivasan Keshav",
+  title = "An Engineering Approach to Computer Networking",
+  year = 1997,
+  publisher = "Addison-Wesley",
+  address = "Reading, Massachusetts",
+}
+
+@book{locus,
+  author = "Gerald J. Popek and Bruce J. Walker",
+  title = "The {LOCUS} Distributed System Architecture",
+  series = "Computer Systems Series",
+  address = "Cambridge, Massachusetts",
+  publisher = "{MIT} Press",
+  year = 1985,
+}
+
+@book{6821,
+  author = "Franklyn Turbak and David K. Gifford and Brian Reistad",
+  title = "Applied Semantics of Programing Languages",
+  note = "In preparation.  Course notes for 6.821, MIT's graduate programming language course.",
+  year = 2001,
+}
+
+@book{appel,
+  author = "Andrew W. Appel",
+  title = "Compiling with Continuations",
+  publisher = "Cambridge University Press",
+  year = 1992,
+}
+
+@book{bsd,
+  title = "The Design and Implementation of the {4.4BSD} Operating System",
+  author = "Marshall K. McKusick and Keith Bostic and Michael J. Karels and John S. Quarterman",
+  publisher = "Addison Wesley",
+  address = "Reading, Massachusetts",
+  year = 1996,
+  month = apr
+}
+
+@book{douglis-book,
+  author = "Dejan Miloji\u{c}i\'{c} and Frederick Douglis and Richard Wheeler",
+  title = "Mobility: Processes, Computers, and Agents",
+  publisher = "Addison Wesley",
+  address = "Reading, Massachusetts",
+  year = 1999,
+}
+
+@book{ousterhout,
+  author = "John Ousterhout",
+  title = "Tcl and the Tk Toolkit",
+  publisher = "Addison Wesley",
+  address = "Reading, Massachusetts",
+  year = 1994,
+}
+
+@book{schneier,
+  author = "Bruce Schneier",
+  title = "Applied Cryptography: Protocols, Algorithms, and Source Code in C",
+  publisher = "John Wiley \& Sons",
+  address = "New York, New York",
+  year = 1996,
+}
+
+@book{stevens,
+  author = "W. Richard Stevens",
+  title = "{TCP/IP} Illustrated, Volume 1: The Protocols",
+  publisher = "Addison Wesley",
+  address = "Reading,  Massachusetts",
+  year = 1994,
+}
+
+@book{tanenbaum,
+  author = "Andrew S. Tanenbaum",
+  title = "Computer networks",
+  publisher = "Prentice-Hall",
+  address = "Englewood Cliffs, New Jersey",
+  year = 1981,
+}
+
+%
+% Conference Papers
+%
+
+@inproceedings{yao95,
+  author = "Frances Yao and Alan J. Demers and Scott Shenker",
+  title = "A Scheduling Model for Reduced {CPU} Energy",
+  booktitle = "Proc.\ 36th Annual {IEEE} Symposium on the Foundations of Computer Science",
+  year = 1995, month = oct,
+  pages = "374--382",
+}
+
+@inproceedings{jeremy,
+  author = "Jeremy Elson and Lewis Girod and Deborah Estrin",
+  title = "Fine-Grained Network Time Synchronization using Reference Broadcasts",
+  crossref = "osdi02",
+}
+
+@inproceedigns{price01,
+  author = "Christine E. Price and Krishna M. Sivalingam and Jyh-Cheng Chen and Prathima Agarwal",
+  title = "Power-Aware Scheduling Algoritms for Wireless Networks",
+  booktitle = "Proc.\ International Conference on Intelligent Computing and {VLSI}",
+  year = 2001, month = feb,
+}
+
+@inproceedings{chen98,
+  author = "Jyn-Cheng Chen and Krishna M. Sivalingam and Prathima Agrawal and Shalinee Kishore",
+  title ="A Comparison of {MAC} Protocols for Wireless Local Networks Based on Battery Power Consumption",
+  crossref = "infocom98",
+  pages = "150--157",
+}
+
+@inproceedings{quan01,
+  author = "Gang Quan and Xiaobo Hu",
+  title = "Energy Efficient Fixed-Priority Scheduling for Real-Time Systems on Variable Voltage Processors",
+  booktitle = "Proc.\ Design Automation Conference",
+  year = 2001, month = jun,
+  pages = "828--833",
+}
+
+
+@article{span,
+  author = "Benjie Chen and Kyle Jamieson and Hari Balakrishnan and Robert Morris",
+  title = "Span: An Energy-Efficient Coordination Algorithm for Topology Maintenance in Ad Hoc Wireless Networks",
+  journal = "{ACM} Wireless Networks Journal",
+  volume = 8, number = 5,
+  year  = 2002, month = sep,
+  pages = "481--494",
+}
+
+@inproceedings{elgamal02,
+  author = "Abbas {El Gamal} and Chandra Nair and Balaji Prabhakar and Elif Uysal-Biyikoglu and Sina Zahedi",
+  title = "Energy-efficient Scheduling of Packet Transmissions over Wireless Networks",
+  crossref = "infocom02",
+  pages = "1773--1782",
+}
+
+@inproceedings{uysal02b,
+  author = "Elif Uysal-Biyikoglu and Abbas {El Gamal}",
+  title = "Energy-efficient Packet Transmission Over a Multi-access Channel",
+  booktitle = "Proc.\ {IEEE} International Symposium on Information Theory",
+  year = 2002, month = jul,
+  pages = "153",
+}
+
+@inproceedings{irani03,
+  author = "Sandy Irani and Sandeep Shukla and Rajesh Gupta",
+  title = "Algorithms for Power Savings",
+  booktitle = "Proc.\ {ACM-SIAM} Symposium on Discrete Algorithms",
+  year = 2003, month = jan,
+  pages = "37--46",
+}
+
+@inproceedings{feeney01,
+  author = "Laura Marie Feeney and Martin Nilsson",
+  title = "Investigating the Energy Consumption of a Wireless Network Interface in an Ad Hoc Networking Environment",
+  crossref = "infocom01",
+  pages = "1548--1557",
+}
+
+@inproceedings{caida00,
+  author = "Sean McCreary and Kimberly C. Claffy",
+  title = "Trends in Wide Area {IP} Traffic Patterns: A View from Ames {Internet} Exchange",
+  booktitle = "Proc.\ ITC Specialist Seminar on IP Traffic Modeling, Measurement and Management",
+  year = 2000, month = sep,
+}
+
+
+@inproceedings{mosberger96,
+   title = "Making Paths Explicit in the {Scout} Operating System",
+   author = "David Mosberger and Larry L. Peterson",
+   crossref = "osdi96",
+   pages = "153--167",
+}
+
+@inproceedings{roussopoulos,
+   author = "Mema Roussopoulos and Petros Maniatis and Edward Swierk and Kevin Lai and Guido Appenzeller and Mary Baker",
+   title = "Person-level Routing in the Mobile People Architecture",
+   crossref = "usits99",
+   pages = "",
+}
+
+@inproceedings{schulzrinne,
+   author = "Henning Schulzrinne",
+   title = "Personal Mobility for Multimedia Services in the {Internet}",
+   crossref = "idms96",
+   pages = "143--161",
+}
+
+@inproceedings{ford,
+   author = "Bryan Ford and Mike Hibler and Jay Lepreau and Roland McGrath and Patrick Tullman",
+   title = "Interface and Execution Models in the {Fluke} Kernel",
+   crossref = "osdi99",
+   pages = "101--115",
+}
+
+@inproceedings{draves,
+   author = "Richard P. Draves and Brian N. Bershad and Richard F. Rashid and Randall W. Dean",
+   title = "Using Continuations to Implement Thread Management and Communication in Operating Systems",
+   crossref = "sosp91",
+   pages = "122--136",
+}
+
+
+@inproceedings{chord,
+   author = "Ion Stoica and Robert T. Morris and  David Karger and M. Frans Kaashoek and Hari Balakrishnan",
+   title = "Chord: A Scalable Peer-to-Peer Lookup Service for {I}nternet Applications",
+   crossref = "sigcomm01",
+   pages = "149--160",
+}
+
+@inproceedings{sultan,
+   author = "Florin Sultan and Kiran Srinivasan and Deepa Iyer and Liviu Iftode",
+   title = "Migratory {TCP}: Highly Available {Internet} Services Using Connection Migration",
+   crossref = "icdcs02",
+}
+
+@inproceedings{banga99,
+   author = "Gaurav Banga and Peter Druschel and Jeffrey C. Mogul",
+   title = "Resource containers: A new facility for resource management in server systems",
+   crossref = "osdi99",
+   pages = "45--58",
+}
+
+@inproceedings{Kistler92,
+   title = "Disconnected Operation in the {Coda} Filesystem",
+   author = "James J. Kistler and M. Satyanarayanan",
+   crossref = "sosp91",
+   pages = "213--225",
+}
+
+@inproceedings{sfs,
+   title = "Separating key management from file system security",
+   author = "David Mazi{\`e}res and Michael Kaminsky and M. Frans Kaashoek and Emmett Witchel",
+  crossref = "sosp99",
+}
+
+@inproceedings{balazinska,
+  title = "{INS/Twine}: A Scalable Peer-to-Peer Architecture for Intentional Resource Discovery",
+  author = "Magdalena Balazinska and Hari Balakrishnan and David Karger",
+  crossref = "pervasive02",
+  pages = "",
+}
+
+
+@inproceedings{cm,
+  author = "Hari Balakrishnan and Hariharan Rahul and Srinivasan Seshan",
+  title = "An Integrated Congestion Management Architecture for {I}nternet Hosts",
+  crossref = "sigcomm99",
+  pages = "175--187",
+}
+
+@inproceedings{coda,
+  author = "Lily Mummert and Maria Ebling and M. Satyanarayanan",
+  title = "Exploiting Weak Connectivity for Mobile File Access",
+  crossref = "sosp95",
+  pages = "143-155",
+}
+
+
+@inproceedings{freezeTCP,
+  author = "Tom Groff and James Moronski and D. S. Phatak and Vipul Gupta",
+  title = "Freeze-{TCP}: A true end-to-end {TCP} enhancement mechanism for mobile environments",
+  crossref = "infocom00",
+}
+
+@inproceedings{funato,
+  author = "Daichi Funato and Kinuko Yasuda and Hideyuki Tokuda",
+  title = "{TCP-R}: {TCP} Mobility Support for Continuous Operation",
+  crossref = "icnp97",
+  pages = "229--236",
+}
+
+@inproceedings{gmf85,
+  author = "Shafi Goldwasser and Silvio Micali and Charles Rackoff",
+  title = "The Knowledge Complexity of Interactive Proof Systems",
+  crossref = "stoc85",
+  pages = "291--304",
+}
+
+@inproceedings{gritter01,
+  author = "Mark Gritter and David Cheriton",
+  title = "An Architecture for Content Routing Support in the {Internet}",
+  crossref = "usits01",
+  pages = "37--48",
+}
+
+
+@inproceedings{gupta,
+  author = "Sumit Gupta and A. L. Narasimha Reddy",
+  title = "A Client Oriented, {IP} Level Redirection Mechanism",
+  crossref = "infocom99",
+  pages = "1461--1469",
+}
+
+@inproceedings{helmy,
+  author = "Ahmed Helmy",
+  title = "A multicast-based protocol for {IP} mobility support",
+  crossref = "ngc00",
+  pages = "49--58",
+}
+
+@inproceedings{ioannidis,
+  author = "John Ioannidis and Dan Duchamp and Gerald Q. {Maguire, Jr.}",
+  title = "{IP}-Based Protocols for Mobile Internetworking",
+  crossref = "sigcomm91",
+  pages = "235--245",
+}
+
+@inproceedings{ins,
+  author = "William Adjie-Winoto and Elliot Schwartz and Hari Balakrishnan and Jeremy Lilley",
+  title = "The Design and Implementation of an Intentional Naming System",
+  crossref = "sosp99",
+  pages = "186--201",
+}
+
+
+@inproceedings{inouye,
+  author = "Jon Inouye and Jim Binkley and Jonathan Walpole",
+  title = "Dynamic Network Reconfiguration Support for Mobile Computers",
+  crossref = "mobicom97",
+  pages = "13--22",
+}
+
+
+@inproceedings{jacobson88,
+  author = "Van Jacobson",
+  title = "Congestion Avoidance and Control",
+  crossref = "sigcomm88",
+  pages = "314--329",
+}
+
+@inproceedings{kermarrec,
+  author = "Anne-Marie Kermarrec and Paul Couderc and Michel Ban\^{a}tre",
+  title = "Introducing Contextual Objects in an adaptive framework for wide-area global computing",
+  crossref = "euro98",
+}
+
+@inproceedings{lampson83,
+  author = "Butler Lampson",
+  title = "{Hints for Computer Systems Design}",
+  crossref = "sosp83",
+  pages = "33--48",
+}
+
+@inproceedings{landfeldt,
+  author = "Bj{\"o}rn Landfeldt and Tomas Larsson and Yuri Ismailov and Aruna Seneviratne",
+  title = "{SLM}, A Framework for Session Layer Mobility Management",
+  crossref = "icccn99",
+  pages = "452--456",
+}
+
+@inproceedings{litzkow88,
+  author = "Michael Litzkow and Miron Livny and Matt Mutka",
+  title = "Condor --- {A} Hunter of Idle Workstations",
+  crossref ="icdcs88",
+  pages = "104--111",
+}
+
+@inproceedings{maltz,
+  author = "David Maltz and Pravin Bhagwat",
+  title = "{MSOCKS}: An Architecture for Transport Layer Mobility",
+  crossref = "infocom98",
+  pages = "1037--1045",
+}
+
+@inproceedings{mobileip:ipv6,
+  author = "Charles E. Perkins and David B. Johnson",
+  title = "Mobility Support in {IPv6}",
+  crossref = "mobicom96",
+  pages = "27--37",
+}
+
+@inproceedings{mobility4x4,
+  author = "Stuart Cheshire and Mary Baker",
+  title = "Internet Mobility 4x4",
+  crossref = "sigcomm96",
+  pages = "318--329",
+}
+
+@inproceedings{ng01,
+  author = "T. S. Eugene Ng and Ion Stoica and Hui Zhang",
+  title = "A Waypoint Service Approach to Connect Heterogeneous {Internet} Address Spaces",
+  crossref = "usenix01",
+  pages = "319--332",
+}
+
+
+@inproceedings{okoshi,
+  author = "Tadashi Okoshi and Masahiro Mochizuki and Yoshito Tobe and Hideyuki Tokuda",
+  title = "{MobileSocket}: Toward Continuous Operation for {Java} Applications",
+  crossref = "icccn99",
+  pages = "50--57",
+}
+
+@inproceedings{osman02,
+  author = "Steven Osman and Dinesh Subhraveti and Gong Su and Jason Nieh",
+  title = "The Design and Implementation of {Zap}: A System for Migrating Computing Environments",
+  crossref = "osdi02",
+  pages = "361--376",
+}
+
+@inproceedings{pai98,
+ title = "Locality-aware Request Distribution in Cluster-based Network Servers",
+ author = "Vivek S. Pai and Mohit Aron and Gaurav Banga and Michael Svendsen and Peter Druschel and Willy Zwaenepoel and Erich Nahum",
+ crossref = "asplos1998",
+  pages = "205--216",
+}
+
+@inproceedings{dns,
+  author = "Paul V. Mockapetris and Kevin J. Dunlap",
+  title = "Development of the Domain Name System",
+  crossref = "sigcomm88",
+  pages = "123--133",
+}
+
+@inproceedings{haller94,
+  author = "Neil M. Haller",
+  title = "The {S/KEY} one-time password system",
+  booktitle = "Proceedings of the Symposium on Network and Distributed System Security",
+  year = 1994,
+  pages = "151--157",
+}
+
+@inproceedings{kawadia03,
+  author = "Vikas Kawadia and P. R. Kumar",
+  title = "Power Control and Clustering in Ad Hoc Networks",
+  crossref = "infocom03",
+}
+
+@inproceedings{lepreau,
+  author = "Brian White and Jay Lepreau and Leigh Stoller and Robert Ricci and Shashi Guruprasad and Mac Newbold and Mike Hibler and Chad Barb and Abhijeet Joglekar",
+  title = "An Integrated Experimental Environment for Distributed Systems and Networks",
+  crossref = "osdi02",
+  pages = "255--270",
+}
+
+@inproceedings{mysore97,
+  author = "Jayanth Mysore and Vaduvur Bharghavan",
+  title = "A New Multicasting-based Architecture for {Internet} Host Mobility",
+  crossref = "mobicom97",
+  pages = "161--172",
+}
+
+
+@inproceedings{odyssey,
+  author = "Brian Noble and M. Satyanarayanan and Dushyanth Narayanan and James Eric Tilton and Jason Flinn and Kevin R. Walker",
+  title = "Agile Application-Aware Adaptation for Mobility",
+  crossref = "sosp97",
+  pages = "276--287",
+}
+
+@inproceedings{prabhakar01,
+  author = "Balaji Prabhakar and Elif Uysal-Biyikoglu and Abbas {El Gamal}",
+  title = "Energy-efficient Transmission over a Wireless Link via Lazy Packet Scheduling",
+  crossref = "infocom01",
+}
+
+@inproceedings{jeremey,
+  author = "Jeremy Elson and Lewis Girod and Deborah Estrin",
+  title = "Network Time Synchronization using Reference Broadcast",
+  crossref = "osdi02",
+}
+
+@inproceedings{qu,
+  author = "Xun Qu and Jeffrey Xu Yu and Richard P. Brent",
+  title = "A Mobile {TCP} Socket",
+  crossref = "iasted97",
+}
+
+@inproceedings{savage01,
+   author = "Stefan Savage and Neil Cardwell and Tom Anderson",
+   title = "The Case for Informed Transport Protocols",
+   crossref = "hotos7",
+   pages = "58--63",
+}
+
+@inproceedings{ramanathan,
+   author = "Ram Ramanathan and Regina Hain",
+   title = "Topology Control of Multihop Wireless Networks Using Transmit Power Adjustement",
+   crossref = "infocom00",
+   pages = "404--413",
+}
+
+@inproceedings{ron,
+  author = "David G. Andersen and Hari Balakrishnan and M. Frans Kaashoek and Robert T. Morris",
+  title = "Resilient Overlay Networks",
+  crossref = "sosp01",
+  pages = "131--145",
+}
+
+@inproceedings{salz02,
+  author = "Jon Salz and Alex C. Snoeren and Hari Balakrishnan",
+  title = "\textsc{tesla}: A Transparent, Extensible Session-Layer Framework for End-to-End Network Services",
+  crossref = "usits03",
+  note = "To appear",
+}
+
+@inproceedings{satya96,
+  author = "M. Satyanarayanan",
+  title = "Fundamental Challenges in Mobile Computing",
+  crossref = "podc96",
+  pages = "1--7",
+}
+
+@inproceedings{shih,
+  author = "Eugene Shih and Paramvir Bahl and Michael J. Sinclair",
+  title = "Wake on Wireless: An Event Driven Energy Saving Strategy for Battery Operated Devices",
+  crossref = "mobicom02",
+  pages = "160--171",
+}
+@inproceedings{snoeren99,
+  author = "Alex C. Snoeren",
+  title = "Adaptive Inverse Multiplexing for Wide-Area Wireless Networks",
+  crossref = "globecom99",
+  pages = "1665--1672",
+  volume = 2,
+}
+
+@inproceedings{snoeren00,
+  author = "Alex C. Snoeren and Hari Balakrishnan",
+  title = "An End-to-End Approach to Host Mobility",
+  crossref = "mobicom00",
+  pages = "155--166",
+}
+
+@inproceedings{snoeren01,
+  author = "Alex C. Snoeren and David G. Andersen and Hari Balakrishnan",
+  title = "Fine-Grained Failover using Connection Migration",
+  crossref = "usits01",
+  pages = "221--232",
+}
+
+@inproceedings{spand,
+  author = "Srinivasan Seshan and Mark Stemm and Randy H. Katz",
+  title = "{SPAND}: Shared Passive Network Performance Discovery",
+  crossref = "usits97",
+}
+
+@inproceedings{tang,
+  author = "Diane Tang and Mary Baker",
+  title = "Analysis of a Local-Area Wireless Network",
+  crossref = "mobicom00",
+  pages = "1--10",
+}
+
+@inproceedings{teraoka,
+  author =  "Fumio Teraoka and Yasuhiko Yokore and Mario Tokoro",
+  title = "A Network Architecture Providing Host Migration Transparency",
+  crossref = "sigcomm91",
+  pages = "209--220",
+}
+
+@inproceedings{theimer,
+  author = "Marvin Theimer and Keith A. Lantz and David R. Cheriton",
+  title = "Preemptable Remote Execution Facilities for the {V}-System",
+  crossref = "sosp85",
+  pages = "2--12",
+}
+
+@inproceedings{vahdat,
+  author = "Amin Vahdat and Michael Dahlin and Tom Anderson and Amit Aggarwal",
+  title = "Active Names: Flexible Location and Transport of Wide-Area Resources",
+  crossref = "usits99",
+}
+
+@inproceedings{weiser94,
+  author = "Mark Weiser and Brent B. Welch and Alan J. Demers and Scott Shenker",
+  title = "Scheduling for Reduced CPU Energy",
+  crossref = "osdi94",
+  pages = "13--23",
+}
+
+@inproceedings{ylonen,
+  author = "Tatu Ylonen",
+  title = "{SSH} --- Secure Login Connections over the {Internet}",
+  crossref = "usenixsecurity96",
+  pages = "37--42",
+}
+
+@inproceedings{zandy,
+  author = "Victor C. Zandy and Barton P. Miller",
+  title = "Reliable Network Connections",
+  crossref = "mobicom02",
+  pages = "95--106",
+}
+
+
+@inproceedings{zhang,
+  author = "Yongguang Zhang and Son Dao",
+  title = "A ``Persistent Connection'' Model for Mobile and Distributed Systems",
+  crossref = "icccn95",
+  pages = "300--307",
+}
+
+@inproceedings{zenel,
+   author = "Bruce Zenel and Dan Duchamp",
+   title = "A General Purpose Proxy Filtering Mechanism Applied to the Mobile Environment",
+   crossref = "mobicom97",
+   pages = "248--259",
+}
+
+%
+% Misc.
+%
+
+@misc{chipcon,
+  author = "{Chipcon AS}",
+  title = "SmartRF CC1000 Product Notice High Data Rate (rev 1.0)",
+  year = 2001, month = dec,
+}
+
+@misc{crossbow,
+  author = "{Crossbow Technology, Inc.}",
+  title = "{MICA2 Mote (MPR400CB)}",
+  year = 2003,
+}
+
+
+@misc{juniper,
+author = "{Juniper Networks}",
+title = "{T-Series, M-Series Core Routers}",
+howpublished="{\url{http://www.juniper.net/products}}",
+}
+
+@misc{ttcp,
+  author = "Mike Muuss",
+  title = "The Story of the {TTCP} Program",
+  howpublished = {\url{http://http://ftp.arl.mil/~mike/ttcp.html}},
+}
+
+@misc{syncookie,
+  author = "Dan J. Bernstein",
+  title = "{SYN} cookies",
+  year = 1997,
+  howpublished = {\url{http://cr.yp.to/syncookies.html}},
+}
+
+
+@misc{apache,
+  author = "{Apache HTTP Server Version 1.3 Documentation}",
+  title = "Descriptors and {Apache}",
+  howpublished = {\url{http://httpd.apache.org/docs/misc/descriptors.html}},
+}
+
+@misc{shelat,
+  author = "Abhi Shelat",
+  title = "Personal communication",
+  year = 2000, month = dec,
+}
+
+@misc{edgesuite,
+  author = "{Akamai Technologies, Inc.}",
+  title = "Turbo-Charging Dynamic Web Sites with {Akamai} {EdgeSuite}",
+  year = 2001, month = dec,
+  howpublished = {\url{http://www.akamai.com/en/resources/pdf/Turbocharging_WP.pdf}},
+}
+
+@misc{ciscodd,
+  author = "Kevin Delgadillo",
+  title = "Cisco {DistributedDirector}",
+  year = 1999, month = jun,
+  howpublished = {\url{http://www.cisco.com/warp/public/cc/pd/cxsr/dd/tech/dd_wp.pdf}},
+}
+
+@misc{columbitech,
+  author = "{Columbitech, Inc.}",
+  title = "Columbitech {WVPN} Technical Description",
+  year = 2002,
+  howpublished = {\url{http://www.columbitech.com/documents/ColumbitechWVPNTechnicalDescription.pdf}},
+}
+
+@misc{netmotion,
+  author = "{NetMotion Wireless, Inc.}",
+  title = "A Standards-Based Breakthrough for Wireless Connectivity",
+  year = 2001, month = aug,
+  howpublished = {\url{http://www.netmotionwireless.com/assets/netmotion_standrds.pdf}},
+}
+
+@Misc{www-upnp,
+  key =	 {upnp},
+  title =	 {Universal Plug and Play},
+  howpublished = {\url{http://www.upnp.org/}},
+}
+
+@Misc{www-jini,
+  key =	 "Jini",
+  title =	 {Jini Connection Technology},
+  howpublished = {\url{http://www.sun.com/jini/}},
+}
+
+@unpublished{oneworld,
+  author = "Robert Grimm and Janet Davis and Eric Lemar and Adam Macbeth and Steven Swanson and Tom Anderson and Brian Bershad and Gaetano Borriello and Steven Gribble and David Wetherall",
+  title = "Programming for Pervasive Computing Environments",
+  institution = "University of Washington",
+  year = 2002,
+  note = "{\url{http://www.cs.nyu.edu/rgrimm/papers/migration02.pdf}}",
+}
+
+@unpublished{oneworld:migration,
+  author = "Robert Grimm and Janet Davis and Eric Lemar and Brian Bershad",
+  title = "Migration for Pervasive Applications",
+  year = 2002,
+  note = "{\url{http://www.cs.nyu.edu/rgrimm/papers/one.world.pdf}}",
+}
+
+@misc{triad00,
+  author = "David R. Cheriton and Mark Gritter",
+  title = "{TRIAD}: A Scalable Deployable {NAT}-based {Internet} Architecture",
+  howpublished = "\url{http://dsg.stanford.edu/papers/triad/triad.html}",
+  month = jan,
+  year = 2000,
+}
+
+@misc{karn,
+  author = "Phil Karn",
+  title = "Qualcomm White Paper on Mobility and {IP} addressing",
+  year = 1997, month = feb,
+  howpublished = "\url{http://people.qualcomm.com/karn/papers/mobility.html}",
+}
+
+@misc{lenstra,
+  author = "Arjen K. Lenstra and Eric R. Verheul",
+  title = "Selecting Cryptographic Key Sizes",
+  year = 1999, month = nov,
+  howpublished = "\url{http://www.cryptosavvy.com}",
+}
+
+%
+% PROCEEDINGS
+%
+
+@proceedings{asplos1998,
+  booktitle = "Proc. 8th Symposium on Architectural Support for Programming Languages and Operating Systems",
+  year = 1998, month = oct,
+  address = "San Jose, California",
+}
+
+@proceedings{euro98,
+  booktitle = "Proc.\ {ACM} {SIGOPS} European Workshop",
+  month = sep, year = 1998,
+  address = "Sintra, Portugal",
+}
+
+@proceedings{globecom99,
+  booktitle = "Proc.\ {IEEE} Conference on Global Communications",
+  month = dec, year = 1999,
+  address = "Rio de Janiero, Brazil",
+}
+
+@proceedings{hotos7,
+  booktitle = "Proc.\ 7th Workshop on Hot Topics in Operating Systems",
+  month = mar, year = 1999,
+  address = "Rio Rico, Arizona",
+}
+
+@proceedings{hotos8,
+  booktitle = "Proc.\ 8th Workshop on Hot Topics in Operating Systems",
+  month = may, year = 2001,
+  address = "Elmau, Germany",
+}
+
+@proceedings{iasted97,
+  booktitle = "Proc.\ {IASTED} International Conference on Software Engineering",
+  month = Nov, year = 1997,
+  address= "San Francisco, California",
+}
+
+@proceedings{icccn95,
+  booktitle = "Proc.\ {IEEE} International Conference on Computer Communications and Networks",
+  month = sep, year = 1995,
+  address = "Las Vegas, Nevada",
+}
+
+@proceedings{icccn99,
+  booktitle = "Proc.\ {IEEE} International Conference on Computer Communications and Networks",
+  month = oct, year = 1999,
+  address = "Natick, Massachusetts",
+}
+
+@proceedings{icdcs88,
+  booktitle = "Proc.\ 8th International Conference on Distributed Computing Systems",
+  month = jun, year = 1988,
+  address = "San Jose, California",
+}
+
+@proceedings{icdcs02,
+  booktitle = "Proc.\ 22nd International Conference on Distributed Computing Systems",
+  month = jul, year = 2002,
+  address = "Vienna, Austria",
+}
+
+@proceedings{icnp97,
+  booktitle = "Proc.\ {IEEE} International Conference on Network Protocols",
+  month = oct, year = 1997,
+  address = "Atlanta, Georgia",
+}
+
+@proceedings{idms96,
+  booktitle = "Proc.\ European Workshop on Interactive Distributed Multimedia Systems and Services",
+  month = mar, year = 1996,
+  address = "Berlin, Germany",
+}
+
+@proceedings{infocom98,
+  booktitle = "Proc. {IEEE} Infocom",
+  month = mar,  year = 1998,
+  address = "San Francisco, California",
+}
+
+@proceedings{infocom99,
+  booktitle = "Proc. {IEEE} Infocom",
+  year = 1999, month = mar,
+  address = "New York, New York",
+}
+
+@proceedings{infocom00,
+  booktitle = "Proc. {IEEE} Infocom",
+  year = 2000, month = mar,
+}
+%address = "Tel Aviv, Israel",
+
+@proceedings{infocom01,
+  booktitle = "Proc. {IEEE} Infocom",
+  year = 2001, month = apr,
+}
+%address = "Anchorage, Alaska",
+
+@proceedings{infocom02,
+  booktitle = "Proc. {IEEE} Infocom",
+  year = 2002, month = jun,
+}
+%address = "New York, New York",
+
+@proceedings{infocom03,
+  booktitle = "Proc. {IEEE} Infocom",
+  year = 2003, month = apr,
+}
+
+@proceedings{mobicom95,
+  booktitle = "Proc. {ACM} Mobicom",
+  year = 1995, month = nov,
+  address = "Berkeley, California",
+}
+
+@proceedings{mobicom96,
+  booktitle = "Proc.\ 2nd Annual {ACM}/{IEEE} International Conference on Mobile Computing and Networking",
+  year = 1996, month = nov,
+  address = "White Plains, New York",
+}
+
+@proceedings{mobicom97,
+  booktitle = "Proc.\ 3rd Annual {ACM}/{IEEE} International Conference on Mobile Computing and Networking",
+  year = 1997, month = sep,
+  address = "Budapest, Hungary",
+}
+
+@proceedings{mobicom00,
+  booktitle = "Proc.\ 6th Annual {ACM}/{IEEE} International Conference on Mobile Computing and Networking",
+  year = 2000, month = aug,
+  address = "Boston, Massachusetts",
+}
+
+@proceedings{mobicom01,
+  booktitle = "Proc.\ 7th Annual {ACM}/{IEEE} International Conference on Mobile Computing and Networking",
+  year = 2001, month = jul,
+  address = "Rome, Italy"
+}
+
+@proceedings{mobicom02,
+  booktitle = "Proc.\ 8th Annual {ACM}/{IEEE} International Conference on Mobile Computing and Networking",
+  year = 2002, month = sep,
+  address = "Atlanta, Georgia",
+}
+
+@proceedings{ngc00,
+  booktitle = "Proc.\ 2nd International Workshop on Networked Group Communication",
+  year = 2000, month = nov,
+  address = "Palo Alto, California",
+}
+
+@proceedings{osdi94,
+  booktitle ="Proc.\ 1st {USENIX} Symposium on Operating Systems Design and Implementation",
+  year = 1994, month = nov,
+}
+
+@proceedings{osdi96,
+  booktitle ="Proc.\ 2nd {USENIX} Symposium on Operating Systems Design and Implementation",
+  year = 1996, month = oct,
+  address = "Seattle, Washington",
+}
+
+@proceedings{osdi99,
+  booktitle ="Proc.\ 3rd {USENIX} Symposium on Operating Systems Design and Implementation",
+  year = 1999, month = feb,
+  address = "New Orleans, Louisiana",
+}
+
+@proceedings{osdi02,
+  booktitle ="Proc.\ 5th {USENIX} Symposium on Operating Systems Design and Implementation",
+  year = 2002, month = dec,
+  address = "Boston, Massachusetts",
+}
+
+@proceedings{pervasive02,
+  booktitle = "Proc.\ International Conference on Pervasive Computing",
+  year = 2002, month = aug,
+  address = "Zurich, Switzerland",
+}
+
+@proceedings{podc96,
+  booktitle = "Proc.\ 15th {ACM} Symposium on Principles of Distributed Computing",
+  year = 1996, month = may,
+  address = "Philadelphia, Pennsylvania",
+}
+
+@proceedings{sigcomm88,
+  booktitle = "Proc.\ {ACM} Conference on Applications, Technologies, Architectures, and Protocols for Computer Communications (SIGCOMM)",
+  year = 1988, month = aug,
+  address = "Stanford, California",
+}
+
+@proceedings{sigcomm91,
+  booktitle = "Proc.\ {ACM} Conference on Applications, Technologies, Architectures, and Protocols for Computer Communications (SIGCOMM)",
+  year = 1991, month = sep,
+  address = "Zurich, Switzerland",
+}
+
+@proceedings{sigcomm96,
+  booktitle = "Proc.\ {ACM} Conference on Applications, Technologies, Architectures, and Protocols for Computer Communications (SIGCOMM)",
+  year = 1996, month = aug,
+  address = "Stanford, California",
+}
+
+@proceedings{sigcomm99,
+  booktitle = "Proc.\ {ACM} Conference on Applications, Technologies, Architectures, and Protocols for Computer Communications (SIGCOMM)",
+  year = 1999, month = aug,
+  address = "Cambridge, Massachusetts",
+}
+
+@proceedings{sigcomm01,
+  booktitle = "Proc.\ {ACM} Conference on Applications, Technologies, Architectures, and Protocols for Computer Communications (SIGCOMM)",
+  year = 2001, month = aug,
+  address = "San Diego, California",
+}
+
+@proceedings{sosp83,
+  booktitle = "Proc. {ACM} Symposium on Operating Systems Principles",
+  year = 1983, month = oct,
+  address = "Bretton Woods, New Hampshire",
+}
+
+@proceedings{sosp85,
+  booktitle = "Proc. {ACM} Symposium on Operating Systems Principles",
+  year = 1985, month = dec,
+  address = "Orcas Island, Washington",
+}
+
+@proceedings{sosp91,
+  booktitle = "Proc.\ 13th {ACM} Symposium on Operating Systems Principles",
+  year = 1991, month = oct,
+  address = "Pacific Grove, California",
+}
+
+@proceedings{sosp95,
+  booktitle = "Proc.\ 15th {ACM} Symposium on Operating Systems Principles",
+  year = 1995, month = dec,
+  address = "Copper Mountain, Colorado",
+}
+
+@proceedings{sosp97,
+  booktitle = "Proc.\ 16th {ACM} Symposium on Operating Systems Principles",
+  year = 1997, month = oct,
+  address = "Saint Malo, France",
+}
+
+@proceedings{sosp99,
+  booktitle = "Proc.\ 17th {ACM} Symposium on Operating Systems Principles",
+  year = 1999, month = dec,
+  address = "Kiawah Island, South Carolina",
+}
+
+@proceedings{sosp01,
+  booktitle = "Proc.\ 18th {ACM} Symposium on Operating Systems Principles",
+  year = 2001, month = oct,
+  address = "Lake Luise, Canada",
+}
+
+@proceedings{stoc85,
+  booktitle = "Proc.\ 17th Annual {ACM} Symposium on the Theory of Computing",
+  year = 1985, month = may,
+  address = "Providence, Rhode Island",
+}
+
+@proceedings{usits97,
+  booktitle = "Proc.\ 1st {USENIX} Symposium on Internet Technologies and Systems",
+  year = 1997, month = dec,
+  address = "Monterey, California",
+}
+
+@proceedings{usits99,
+  booktitle = "Proc.\ 2nd {USENIX} Symposium on Internet Technologies and Systems",
+  year = 1999, month = oct,
+  address = "Boulder, Colorado",
+}
+
+@proceedings{usits01,
+  booktitle = "Proc.\ 3rd {USENIX} Symposium on Internet Technologies and Systems",
+  year = 2001, month = mar,
+  address = "San Francisco, California",
+}
+
+@proceedings{usits03,
+  booktitle = "Proc.\ 4th {USENIX} Symposium on Internet Technologies and Systems",
+  year = 2003, month = mar,
+  address = "Seattle, Washington",
+}
+
+@proceedings{usenix01,
+  booktitle = "Proc.\ {USENIX} Technical Conference",
+  year = 2001, month = jun,
+  address = "Boston, Massachusetts",
+}
+
+@proceedings{usenixsecurity96,
+  booktitle = "Proc.\ 6th {USENIX} Security Symposium",
+  year = 1996, month = jul,
+  address = "San Jose, California",
+}
+
+% DOS RELATED PAPERS
+
+@inproceedings{michigan2,
+  author = "H. Wang and D. Zhang and K. Shin",
+  title = "SYN-Dog: Sniffing Syn flooding Sources",
+  booktitle =  "IEEE ICDCS",
+  address="Vienna, Austria",
+  year = "2002"
+}
+@inproceedings{michigan1,
+  author = "H. Wang and D. Zhang and K. Shin",
+  title = "Detecting syn flooding attacks",
+  booktitle = "IEEE INFOCOM",
+  year = "2002"
+}
+
+@inproceedings{MULTOPS,
+   author = "Thomer M. Gill and Massimiliano Poletto",
+   title = "{MULTOPS}: a data-structure for bandwidth attack detection",
+   booktitle = "USENIX Security Symposium",
+   year = "2001"
+}
+
+@inproceedings{savage,
+   author = "Stefan Savage and David Wetherall and A. Karlin and T.
+Anderson",
+   title = "Practical Network Support for {IP} Traceback",
+   booktitle = "ACM SIGCOMM",
+   year = "2000"
+}
+
+@inproceedings{stefanpaper,
+   author = "David Moore and Geoffery Voelker and Stefan Savage",
+   title = "Inferring Internet Denial of Service Activity",
+   booktitle = "{USENIX} Security Symposium",
+   year = "2001"
+}
+
+@article{vernAssymetric,
+   author = "Vern Paxson",
+   title = "End-to-End Routing Behavior in the Internet",
+   journal = "{IEEE/ACM} Transactions on Networking",
+   volume = 5, number = 5,
+   year = 1997, month = oct,
+   pages = "601-615"
+}
+
+@article{ pushback,
+  author = "R. Mahajan and S. Bellovin and S. Floyd and Vern Paxson and S.
+Scott",
+  title = "Controlling high bandwidth aggregates in the network",
+  journal = "ACM SIGCOMM CCR",
+  volume= 32, number = 3,
+ year = 2002, month = jul,
+}
+
+
+@inproceedings{estan,
+  author="Christian Estan and George Varghese",
+  title = "New directions in Traffic Measurement and Accounting",
+  booktitle="{ACM} {SIGCOMM}",
+  year=2002, month=aug
+}
+
+@misc{shenk,
+  author="E. Shenk",
+  title="Another new thought on dealing with syn flooding",
+  howpublished="\url{http://www.wcug.wwu.edu/lists/netdev/199609/msg00171.html}",
+  year=1996,month=sep,
+}
+
+@misc{gartner,
+  author = "J. Pescatore and M. Easley and R. Stiennon",
+  title = "Network security platforms will transform security markets",
+  year = 2002, month = dec,
+  howpublished="\url{http://www.techrepublic.com/article.jhtml?id=r00220021223jdt01.htm\&src=bc}",
+}
+
+@book{probabilitybook,
+  author = "Richard J. Larsen and Morris L. Marx",
+  title = "An Introduction to Mathematical Statistics and Its
+Applications",
+  year = 2001,
+  publisher = "Prentice Hall",
+  address = "Upper Saddle River, NJ 07458",
+}
+
+@inproceedings{bellovin,
+    author = "John Ioannidis and Steven M. Bellovin",
+    title = "Implementing Pushback: Router-Based Defense Against {DDoS}
+Attacks",
+    booktitle="Proceedings of Network and Distributed System Security Symposium",
+    month = "February",
+    year = 2002,
+}
+
+@inproceedings{snoeren,
+author="A. C. Snoren and C. Partridge and L. A. Sanchez and C. E.
+Jones and F. Tchakountio and S. T. Kent and W. T. Strayer",
+title="Hash-based IP traceback",
+booktitle="ACM SIGCOMM",
+year=2001,
+}
+
+@inproceedings{bellovinTrace,
+author="S. Bellovin",
+title="ICMP Traceback Messages",
+booktitle="Internet Draft, \url{http://www.research.att.com/~smb/papers/draft-bellovin-itrace-00.txt}",
+year=2000, month=mar
+}
+
+@inproceedings{lmp,
+author = "J. Lang",
+title = "Link Management Protocol {(LMP)}",
+booktitle = "Internet Draft, draft-ietf-ccamp-lmp-10.txt",
+month = OCT,
+year = 2003
+}
+
+@inproceedings{song,
+author="D. Song and A. Perrig",
+title="Advanced and Authenticated Marking Schemes for IP Traceback",
+booktitle="{IEEE} {INFOCOM}",
+year=2001,month=apr
+}
+
+%HOTNETS 04
+@inproceedings{sprint-imc,
+author="Gianluca Iannaccone and Chen-nee Chuah and Richard Mortier and Supratik Bhattacharyya and Christophe Diot",
+title = "Analysis of link failures in an IP backbone",
+booktitle="{ACM SIGCOMM} Internet Measurement Workshop",
+year=2002,
+month=aug
+}
+@inproceedings{sprint-ieee,
+author= "G. Iannaccone and C. N. Chuah and S. Bhattacharrya and C. Diot",
+title = "Feasibility of IP Restoration in a Tier-1 Backbone",
+booktitle= "{IEEE} Network",
+volume =  18,
+number = 2,
+pages = "13-19",
+month = mar,
+year = 2004
+}
+@inproceedings{labovitz,
+author="Craig Labovitz and Abha Ahuja and Farnam Jahanian",
+title="Experimental Study of Internet Stability and Backbone Failures",
+booktitle="The Twenty-Ninth Annual International Symposium on Fault-Tolerant Computing",
+year=1999,
+month=jun,
+pages = "278-285",
+address = "Madison, Wisconsin, USA"
+}
+@inproceedings{ospfmonitor,
+title = "{OSPF} Monitoring: Architecture, Design and Deployment Experience",
+author= "Aman Shaikh and Albert Greenberg",
+booktitle= "NSDI",
+year=2004,
+month=mar
+}
+
+@techreport{rfc_snmp,
+author="J. Case and M. Fedor and M. Schoffstall and J. Davin",
+title="A Simple Network Management Protocol ({SNMP})",
+type="{RFC 1157}",
+institution = "{IETF}",
+year= 1990,
+month = may
+}
+
+@techreport{rfc_ospf,
+author="J. Moy",
+title="OSPF Version 2",
+type="{RFC 2328}",
+institution = "{IETF}",
+year= 1998,
+month = apr
+}
+
+@techreport{rfc_ecmp,
+author="C. Hopps",
+title = "Analysis of an Equal-Cost Multi-Path Algorithm",
+type = "{RFC 2992}",
+institution = "{IETF}",
+year= 2000,
+month = nov
+}
+
+@techreport{rfc_gre,
+author="S. Hanks and  T. Li and D. Farinacci and P. Traina",
+title="Generic routing encapsulation over IPv4 networks",
+type="{RFC 1702}",
+institution="{IETF}",
+year= 1994,
+month=oct
+}
+
+
+@inproceedings{smarts_incharge,
+author="S. Yemini and S. Kliger and E. Mozes and Y. Yemini and D. Ohsie",
+title="High speed and Robust Event Correlation",
+booktitle="IEEE Communication Magazine",
+vol = 34,
+month = may,
+year = 1996,
+pages= "82--90"
+}
+
+@inproceedings{sprint-reject,
+author="Yashar Ganjali and Supratik Bhattacharyya and Christophe Diot",
+title="Limiting the Impact of Failures on Network Performance",
+booktitle="Sprint ATL Research Report Nr. RR04-ATL-020666. Sprint ATL",
+year=2004
+}
+@inproceedings{george-cristi,
+author="Cristian Estan and George Varghese",
+title = "New directions in Traffic Measurement and Accounting",
+booktitle="Proceedings of {ACM SIGCOMM}",
+year=2002
+}
+@inproceedings{darkstar_paper,
+title="Combining Routing and Traffic Data for Detection of IP Forwarding Anomalies",
+author="Matthew Roughan and Tim Griffin and Z. Morley Mao and Albert Greenberg and Brian Freeman",
+booktitle="{ACM SIGCOMM} NeTs",
+month= aug,
+year=2004
+}
+
+
+@inproceedings{rexford-feldmann-netdb-paper,
+author="Anja Feldmann and Jennifer Rexford",
+title="IP network configuration for intradomain traffic engineering",
+booktitle="IEEE Network Magazine",
+month= sep,
+year =2001,
+pages="46-57"
+}
+@misc{smarts,
+author="{SMARTS Inc}",
+title="\url{http://www.smarts.com}"
+}
+@inproceedings{mattspaper,
+title = "Class-of-Service Mapping for QoS: A statistical signature-based approach to IP traffic  classification",
+author=" Matthew Roughan and Subhabrata Sen and Oliver Spatscheck and Nick Duffield",
+booktitle="To appear in Proceedings of ACM SIGCOMM Internet Measurement Conference (IMC
+'04)",
+address = "Taormina, Sicily, Italy",
+mon = oct,
+year = 2004
+}
+
+@misc{disk-prediction,
+author="Seagate Technologies",
+title="SMART : Self Monitoring And Reporting Technology",
+note="\url{http://www.seagate.com/support/kb/disc/smart.html}"
+}
+
+
+% Statistical Techniques.
+@inproceedings{belief_networks,
+author="M. Steinder and A.S Sethi",
+title="End-to-end Service Failure Diagnosis Using Belief Networks",
+booktitle="Network Operation and Management Symp.",
+month=apr,
+year = 2002,
+address="Florence, Italy"
+}
+
+@inproceedings{composite_events,
+author="G. Liu and A. K. Mok and E. J. Yang" ,
+title="Composite events for network event correlation",
+booktitle="Integrated Network Management {VI}",
+year=1999,
+month=may,
+address="Boston, MA"
+}
+
+@inproceedings{ace,
+author="P.Wu and R. Bhatnagar and L. Epshtein and M. Bhandaru and Z. Shi",
+title="Alarm correlation engine ({ACE})",
+booktitle="Network Operation and Management Symp.",
+year=1998,
+pages="733--742"
+}
+
+
+@article{alarm_correlation,
+author="G. Jakobson and M. D. Weissman",
+title="Alarm correlation",
+journal="IEEE Network",
+year=1993,
+month=nov,
+volume = 7, number = 6,
+pages = "52--59"
+}
+
+@inproceedings{object_oriented_ec,
+author="Y. A. Nygate",
+title="Event correlation using rule and object based techniques",
+booktitle="Integrated Network Management",
+pages="278--289"
+}
+
+%spurious symptoms.
+@inproceedings{nonlinear1,
+author="R. H. Deng and A. A. Lazar and W.Wang",
+title="A probabilistic approach to fault diagnosis in linear lightwave networks",
+booktitle="Integrated Network Management {III}",
+pages="697-708",
+month=apr,
+year=1993
+}
+
+@inproceedings{yemini,
+author="S. A. Yemini and S. Kliger and E. Mozes and Y. Yemini and D. Ohsie",
+title="High speed and robust event correlation",
+booktitle="IEEE Communications",
+volume=34,
+number=5,
+pages= "82--90",
+year=1996
+}
+
+@inproceedings{nonlinear3,
+author="P. Hong and P. Sen",
+title="Incorporating non-deterministic reasoning in managing heterogeneous
+network",
+year=1991,
+month=apr,
+booktitle="Integrated Network Management {II}",
+pages="481-492"
+}
+
+%np complete
+@article{npcomplete,
+author="Irene Katzela and Mischa Schwartz",
+title="Schemes for Fault Identification in Communication Networks",
+journal="IEEE Transactions on Networking"
+}
+
+
+@inproceedings{chen_learning,
+author="Mike Chen and Alice Zheng and Jim Lloyd and Michael I. Jordan and Eric Brewer",
+title="A Statistical Learning Approach to Failure Diagnosis",
+booktitle="Int. Conf. on Autonomic Computing",
+address="New York, NY",
+month=may,
+year=2004
+}
+
+@inproceedings{chen_nsdi,
+title="Path-based Failure and Evolution Management",
+author="Mike Chen and Anthony Accardi and Jim Lloyd and  Emre Kiciman and Armando Fox and Dave Patterson and Eric Brewer", booktitle="In USENIX/ACM Symposium on Networked Systems Design and Implementation (NSDI '04)",
+address="San Francisco, CA",
+month = mar,
+year=2004
+}
+
+@misc{tivoli,
+title="\url{http://www.tivoli.com}",
+}
+
+@inproceedings{lightwave,
+author="C. S. Chao and  D. L. Yang and A. C. Liu",
+title="An automated fault diagnosis system using hierarchical reasoning and
+alarm correlation",
+booktitle="Journal of Network and Systems Management",
+volume=9, number= 2,
+year=2001,
+pages="183-202"
+}
+
+@article{veryinitial,
+author= "L.  N.  Cassel and  C.  Partridge  and J  Westcott",
+title="Network Management chitectures and Protocols  Problems and Approaches",
+journal="IEEE Journal  on Selected Areas in Communications",
+volume=7, number=7,
+month=sep,
+pages="1104-1114",
+year=1989
+}
+
+@article{hood_ji,
+author="C. S. Hood and C. Ji",
+title="Proactive Network Fault Detection",
+journal="IEEE Trans on Reliability",
+volume=46, number=3, year=1997,
+month=sep
+}
+
+@misc{hpopenview,
+author="{HP Technologies, Open View}",
+note="\url{http://www.openview.hp.com}"
+}
+
+@inproceedings{promise,
+  title = "Automated Whole-System Diagnosis of Distributed Services Using Model-Based Reasoning",
+  author = "George Forman and Mudita Jain and Masoud Mansouri-Samani and Joseph Martinka and Alex C. Snoeren",
+  booktitle = "9th IFIP/IEEE Workshop on Distributed Systems: Operations and Management",
+  month = oct, year = 1998,
+}
+
+@inproceedings{gruschke,
+  author = "Boris Gruschke",
+  title = "Integrated Event Management: Event Correlation using Dependency Graphs",
+  booktitle = "9th IFIP/IEEE Workshop on Distributed Systems: Operations and Management",
+  month = oct, year = 1998
+}
+
+@inproceedings{netfact,
+  author = "K. Houck and S. Calo and A. Finkel",
+  title = "Towards a Practical Alarm Correlation System",
+  booktitle = "4th {IEEE/IFIP} Symp. on Int. Net. Mgmnt.",
+  year = 1995,
+}
+
+@inproceedings{wietgrefe,
+  author = "H. Wietgrefe and K. Tochs and others",
+  title = "Using Neural Networks for Alarm Correlation in Cellular Phone Networks",
+  booktitle = "Proc.\ International Workshop on Applications of Neural Networks in Telecommunciations",
+  year = 1997,
+}
+
+@inproceedings{brugbosi,
+  author = "S. Brugbosi and G. Bruno and others",
+  title = "An Expert System for Real-Time Fault Diagnosis of the {Italian} Telecommunications Network",
+  booktitle = "3rd Symp. on Integrated Network Management",
+  year = 1993,
+  pages = "617--628",
+}
+
+@misc{gensym,
+title="GenSym Inc.",
+note="\url{http://www.gensym.com}"
+}
+
+@book{Doverspike-paper,
+author="R. Bhandari",
+title="Survivable Networks: Algorithms for Diverse Routing",
+publisher="Kluwer Academic Publishers, Boston, ISBN 0-7923-8381-8",
+month= nov,
+year=1998
+}
+
+
+@misc{GMPLS-yada-yada-yada,
+author="Eric Mannie",
+title="Generalized Multi-Protocol Label Switching Architecture",
+note="{IETF} draft-ietf-ccamp-gmpls-architecture-07.txt"
+}
+
+@inproceedings{sebos,
+author = "Panagiotis Sebos and Jennifer Yates and Dan Rubenstein and Albert Greenberg",
+title="Effectiveness of Shared Risk Link Group Auto-Discovery in Optical Networks",
+booktitle="Optical Fiber Comm. Conf.",
+year=2002,
+month=mar
+}
+
+@article{fivenine,
+author = "D. R. Kuhn",
+title="Sources of failure in the public switched telephone networks",
+journal="IEEE Computer",
+volume = 30,
+number=4,
+pages="31--36",
+month=apr,
+year=1997
+}
+
+
+%%%%%%%%%RESSEARCH EXAME STUFFF %%%%%%%%%%%%%%%%%
+%%%% TRAFFIC ENGINEERING %%%%%
+
+%MPLS Traffic Engineering
+
+@journal{awduche02templs,
+title="Internet traffic engineering using multi-protocol label switching (MPLS)",
+author="Daniel O. Awaduche and Bijan Jabbari",
+journal="Computer Networks",
+volume = 40,
+year=2002,
+pages= "111-129"
+}
+
+
+% IGP Traffic Engineering
+@article{fortz,
+author= "Bernard Fortz and  Jennifer Rexford and Mikkel Thorup",
+title="Traffic engineering with traditional IP routing protocols",
+booktitle="IEEE Communication Magazine",
+month=oct,
+year=2002
+}
+
+% Exploring Multiple paths in OSPF
+@article{curtiz98ospfomp,
+author="Curtis Villamizar",
+title="OSPF Optimized Multi-Path OSPF-OMP",
+month=oct,
+year=1999,
+howpublished="{\url{http://www.ietf.org/proceedings/98dec/slides/ospf-moy-omp-98dec.pdf}}"
+}
+
+% Reactive Traffic Engineering
+@article{kandula05texcp,
+author="Srikanth Kandula and Dina Katabi and Bruce Davie and Anna Charny",
+title = "TeXCP: Responsive Yet Stable Traffic Engineering",
+booktitle="{ACM SIGCOMM}",
+month=aug,
+year=2005
+}
+
+@inproceedings{elwalid01mate,
+author="A. Elwalid and C. Jin and S. H. Low and I. Widjaja",
+title="MATE: MPLS Adaptive Traffic Engineering",
+booktitle="{INFOCOM}",
+year=2001
+}
+
+% Splitting traffic across multiple links.
+@inproceedings{iyer03deflection,
+author="Sundar Iyer and Supratik Battacharya and Nina Taft and Cristophe Diot",
+title="An approach to alleviate link overload as observed on an IP backbone",
+booktitle="{INFOCOM}",
+year=2003
+}
+
+% New ideas in traffic engineering
+
+@inproceedings{zhangshen04predictable,
+author="R. Zhang-Shen and N. McKeown",
+title= "Designing a predictable Internet Backbone Network",
+booktitle="{HOTNETS}",
+year=2004
+}
+
+@inproceedings{kodialam04robustrouting,
+author="M. Kodialam and T.V. Lakshman and S. Sengupta",
+title="Efficient and Robust routing of highly variable traffic",
+booktitle="{HOTNETS}",
+year=2004
+}
+
+
+%%%% DOS Prevention using capabilities %%%%
+
+@inproceedings{anderson04dos,
+author="Tom Anderson and Timothy Roscoe and David Wetherall",
+title="Preventing Internet Denial-of-Service with Capabilities",
+booktitle="{HOTNETS}",
+month=nov,
+year=2003
+}
+
+@inproceedings{yaar04siff,
+author="Abraham Yaar and Adrian Perrig and Dawn Song",
+title=  "SIFF: A Stateless Internet Flow Filter to Mitigate DDoS Flooding
+Attacks",
+booktitle="IEEE Symposium on Security and Privacy",
+year=2004
+}
+
+% DoS attack alleviation using pushing filters
+
+@article{mahajan02pushback,
+  author = "R. Mahajan and S. Bellovin and S. Floyd and Vern Paxson and Scott Shenker",
+  title = "Controlling high bandwidth aggregates in the network",
+  journal = "ACM SIGCOMM CCR",
+  volume= 32, number = 3,
+ year = 2002, month = jul
+}
+
+% DoS prevention by blocking such as UUNET %%%%
+
+@inproceedings{stone00centertrack,
+author={Robert Stone},
+title= {CenterTrack : An IP Overlay Network for Tracking DoS Floods},
+booktitle={Proceedings of Usenix Security Symposium},
+year=2000,
+month=oct
+}
+
+@inproceedings{cossack,
+author="Christos Papadopoulos and Robert Lindell and John Mehringer and Alefiya Hussain and Ramesh Govindan",
+title= "{COSSACK}: Coordinated Suppression of Simultaneous Attacks",
+booktitle="DISCEX III",
+month=apr,
+year=2003
+}
+
+% Spoofed attacks
+@inproceedings{hopcount,
+author = "Cheng Jin and Haining Wang and Kang G. Shin",
+title = "Hop-Count Filtering: An Effective Defense Against Spoofed DDoS Traffic",
+booktitle = "ACM Conference on Computer and Communications Security (CCS)",
+year = 2003 , month = oct,
+institution = "Washington, DC"
+}
+
+
+%DosTaxonomy
+
+@article{dosTaxonomy,
+author="Jelene Mirkovic and Peter Reiher",
+title="A Taxonomy of DDoS Attack and DDoS Defense Mechanisms",
+journal="{ACM SIGCOMM} Computer Communications Review",
+volume = 34,
+number=2,
+year = 2004,
+month=apr
+}
+
+@article{vernDoS,
+author = "{V. Paxson}",
+title="An analysis of using reflectors for distributed denial-of-service attacks",
+journal="{ACM SIGCOMM} Computer Communications Review (CCR)",
+volume=31,
+number=3,
+month=jul,
+year=2001
+}
+
+@inproceedings{kompella05nsdi,
+author="Ramana Kompella and Jennifer Yates and Albert Greenberg and Alex C.
+Snoeren",
+title="{IP} fault localization via risk modeling",
+booktitle=NSDI,
+year=2005,
+month=may
+}
+
+@techreport{ospf-te,
+  author = "D. Katz and K. Kompella and D. Yeung",
+  title = "Traffic Engineering extensions to {OSPF} version 2",
+  type = "{RFC~3630}",
+  year = 2003 , month = sep,
+}
+institution = IETF,
+
+@techreport{isis-te,
+  author = "H. Smit and T. Li",
+  title = "Intermediate System to Intermediate System {(IS-IS)} Extensions for
+			Traffic Engineering {(TE)}",
+  type = "{RFC~3784}",
+  year = 2004 , month = jun,
+}
+  %institution = IETF,
+
+@inproceedings{kandula05shrink,
+  author = "Srikanth Kandula and Dina Katabi and Jean Philippe Vasseur",
+  title = "Shrink: A Tool for Failure Diagnosis in {IP} Networks",
+  booktitle = "Proc. ACM SIGCOMM MineNet Workshop",
+  month = AUG,
+  year = 2005
+}
+
+@misc{donelan-post,
+  title = "{Update: CSX train derailment, thread on NANOG mailing list}, \url{http://www.merit.edu/mail.archives/nanog/2001-07/msg00367.html}",
+  month = JUL,
+  year = 2001
+
+}
+
+@inproceedings{GLI,
+author = "G. Li and D. Wang and R. Doverspike and C. Kalmanek and J. Yates",
+title="Economic Analysis of {IP/Optical} Network Architectures",
+booktitle ="Proc. Optical Fiber Communication Conference",
+month=mar,
+year=2004
+}
+
+@inproceedings{badabing,
+author="Joel Sommers and Paul Barford and Nick Duffield and Amos Ron",
+title = "Improving accuracy in End-to-end packet loss measurement",
+booktitle="{ACM SIGCOMM}",
+month = aug,
+year=2005
+}
+
+@article{fang04ldp,
+author="Luyuan Fang and Alia Atlas and Fabio Chiussi and Kireeti Kompella and
+George Swallow",
+title="{LDP} failure detection and recovery",
+journal="{IEEE} Communications",
+volume = 42, number=10,
+year=2004, month=oct, pages="117--123"
+}
+
+@misc{avici,
+author ="{AVICI Systems Inc.}",
+note = "\url{http://www.avici.com}"
+}
+
+@misc{wipm,
+author ="{Anonymized for review}"
+}
+
+@inproceedings{zing,
+author = "J. Mahdavi and V. Paxson and A. Adams and M. Mathis",
+title="Creating a scalable architecture for {Internet} measurement",
+booktitle ="INET'98",
+month = jul,
+year = 1998,
+location = {Geneva, Switzerland}
+}
+
+@article{saltzer84endtoend,
+    author = "Jerome H. Saltzer and David P. Reed and David D. Clark",
+    title = "End-To-End Arguments in System Design",
+    journal = "{ACM} Transactions on Computer Systems",
+    volume = "2",
+    number = "4",
+    pages = "277-288",
+    year = "1984",
+    month = nov
+}
+
+% FROM ALBERT
+
+%%%% This was auto-generated using /home/mroughan/bin/bibextract.pl
+@Book{mallat01,
+  author =	 {St\'{e}phane Mallat},
+  title = 	 {A Wavelet Tour of Signal Processing},
+  publisher = 	 {Academic Press, San Diego},
+  year = 	 2001,
+  edition =	 {2nd}
+}
+
+@InProceedings{brutag00:_detection,
+  author = 	 {Jake D. Brutag},
+  title = 	 {Aberrant Behavior Detection and Control in
+                  Time Series for Network monitoring},
+  booktitle = 	 {Proc. 14th Systems Administration Conference (LISA 2000)},
+  year =	 2000,
+  address =	 {New Orleans, LA, USA},
+  month =	 {December},
+  publisher =	 {USENIX}
+}
+
+@InProceedings{krishnamurthy03:_sketch,
+  author = 	 {Balachander Krishnamurthy and Subhabrata Sen and
+                  Yin Zhang and Yan Chen},
+  title = 	 {Sketch-based Change Detection: Methods, Evaluation, and
+Applications},
+  booktitle = 	 {ACM SIGCOMM Internet Measurement Conference},
+  year =	 2003,
+  address =	 {Miami, Florida, USA},
+  month =	 {October}
+}
+
+@Article{hood97:_proactive,
+  author = 	 {C. Hood and C. Ji},
+  title = 	 {Proactive Network Fault Detection},
+  journal = 	 {IEEE Trans. Reliability},
+  year = 	 1997,
+  volume =	 46,
+  number =	 3,
+  pages =	 {333--341}
+}
+
+@Article{thottan98:_proactive,
+  author = 	 {Marina Thottan and Chuanyi Ji},
+  title = 	 {Proactive Anomaly Detection Using Distributed Intelligent Agents},
+  journal = 	 {IEEE Network},
+  year = 	 1998,
+  month =	 {Sept/Oct}
+}
+
+@Article{ward98:_detection,
+  author = 	 {Amy Ward and Peter Glynn and Kathy Richardson},
+  title = 	 {Internet service performance failure detection},
+  journal = 	 {ACM SIGMETRICS Performance Evaluation Review archive},
+  year = 	 1998,
+  volume =	 26,
+  number =	 3,
+  pages =	 {38--43},
+  month =	 {December},
+  annote =	 {Available at
+\url{http://portal.acm.org/citation.cfm?id=306225.306237&dl=GUIDE&dl=ACM&idx=J618&part=periodical&WantType=periodical&title=ACM%20SIGMETRICS%20Performance%20Evaluation%20Review}}
+}
+
+@article{katzela95schemes,
+    author = "Katzela and Schwartz",
+    title = "Schemes for Fault Identification in Communication Networks",
+    journal = "IEEE/ACM Transactions on Networking",
+    volume = "3",
+    year = "1995",
+    url = "citeseer.nj.nec.com/katzela95schemes.html"
+}
+
+@InProceedings{grossglauser01:_falcon,
+  author = 	 {M. Grossglauser and N. Koudas and Y. Park and A. Variot},
+  title = 	 {FALCON: Fault Management via Alarm Warehousing and Mining},
+  booktitle = 	 {NRDM 2001 workshop},
+  year =	 2001,
+  address =	 {Santa Barbara, CA},
+  month =	 {May}
+}
+
+@InProceedings{roughan04:_ip_forwar,
+  author = 	 {Matthew Roughan and Tim Griffin and Morley Mao and Albert
+Greenberg and
+		  Brian Freeman},
+  title = 	 {{IP} Forwarding Anomalies and Improving their
+		   Detection Using Multiple Data Sources},
+  booktitle =	 {ACM SIGCOMM Workshop on Network Troubleshooting},
+  pages =	 {307--312},
+  year =	 2004,
+  address =	 {Portland, OR},
+  month =	 {September}
+}
+
+@InProceedings{teixeira05:_traff_matrix_reload,
+  author = 	 {Renata Teixeira and Nick Duffield and Jennifer Rexford and Matthew
+Roughan},
+  title = 	 {Traffic Matrix Reloaded: Impact of Routing Changes Renata
+Teixeira},
+  booktitle =	 {to appear in the Workshop on Passive and Active Measurements
+(PAM)},
+  year =	 2005
+}
+
+@InProceedings{lakhina04:_pca,
+  author = 	 {Anukool Lakhina and Konstantina Papagiannaki and
+                  Mark Crovella, Christophe Diot and Eric D. Kolaczyk and Nina
+Taft},
+  title = 	 {Structural Analysis of Network Traffic Flows},
+  booktitle = 	 {ACM SIGMETRICS / Performance},
+  year =	 2004
+}
+
+@InProceedings{lakhina04:_network_wide,
+  author = 	 {Anukool Lakhina and Mark Crovella and Christophe Diot},
+  title = 	 {Characterization of Network-Wide Anomalies in Traffic Flows},
+  booktitle = 	 {ACM SIGCOMM Internet Measurement Conference},
+  year =	 2004,
+  address =	 {Taormina, Sicily, Italy},
+  month =	 {October}
+}
+
+@InProceedings{nucci04:_weights,
+  author = 	 {A. Nucci and R. Cruz and N. Taft and C. Diot},
+  title = 	 {Design of {IGP} Link Weights for Estimation of Traffic Matrices},
+  booktitle = 	 {IEEE Infocom},
+  year =	 2004,
+  address =	 {Hong Kong},
+  month =	 {March}
+}
+
+@InProceedings{sprint02:_comparison,
+  author = 	 {A. Medina and N. Taft and K. Salamatian and S. Bhattacharyya and
+C. Diot},
+  title = 	 {Traffic Matrix Estimation: Existing Techniques and New
+Directions},
+  booktitle = 	 {ACM SIGCOMM},
+  year =	 2002,
+  address =	 {Pittsburg, USA},
+  month =	 {August }
+}
+
+@Article{CDWY00,
+  author = 	 {J. Cao and D. Davis and S. Vander Wiel and B. Yu},
+  title = 	 {Time-varying network tomography},
+  journal = 	 {J. Amer. Statist. Assoc},
+  year = 	 2000,
+  volume =	 95,
+  number =	 452,
+  pages =	 {1063--1075}
+}
+
+@Article{feldmann00:_netscope,
+  author = 	 {Anja Feldmann and Albert Greenberg and Carsten Lund and
+                  Nick Reingold and Jennifer Rexford},
+  title = 	 {NetScope: Traffic engineering for {IP} networks},
+  journal = 	 {IEEE Network Magazine},
+  year = 	 2000,
+  pages =	 {11--19},
+  month =	 {March/April}
+}
+
+@Article{TW98,
+  author = 	 {C. Tebaldi and M. West},
+  title = 	 {Bayesian inference on network traffic using link count data},
+  journal = 	 {J. American Statistical Assoc.},
+  year = 	 1998,
+  volume =	 93,
+  number =	 442,
+  pages =	 {557--576}
+}
+
+@Article{Var95,
+  author = 	 {Y. Vardi},
+  title = 	 {Network Tomography: estimating source-destination traffic
+                  intensities from link data},
+  journal = 	 {J. American Statistical Assoc.},
+  year = 	 1996,
+  volume =	 91,
+  pages =	 {365--377}
+}
+
+@InProceedings{shaikh02:_ospf,
+  author = 	 {Aman Shaikh and Chris Isett and Albert Greenberg and
+                  Matthew Roughan and Joel Gottlieb},
+  title = 	 {A Case Study of {OSPF} Behavior in a Large Enterprise Network},
+  booktitle = 	 {ACM SIGCOMM Internet Measurement Workshop},
+  year =	 2002,
+  address =	 {Marseille, France}
+}
+@book{arima,
+    author = "G. E. P. Box and G. M. Jenkins",
+    title = "Time Series Analysis, Forecasting and Control",
+    publisher = "Holden-Day",
+    year = 1976
+}
+@book{arima94,
+    author = "G. E. P. Box and G. M. Jenkins and G. C. Reinsel",
+    title = "Time Series Analysis, Forecasting and Control",
+    publisher = "Prentice-Hall",
+    address = "Englewood Cliffs",
+    year = "1994"
+}
+@ARTICLE{pca,
+	author = "H. Hotelling",
+	TITLE = "Analysis of a complex of statistical variables into principal
+components",
+	JOURNAL = "J. Educ. Psy.",
+	PAGES = {417-441},
+	YEAR = {1933}	
+}
+@inproceedings{LakhinaCrovellaDiot:sigcomm2004,
+  author	= {Anukool Lakhina and Mark Crovella and Christophe Diot},
+  title		= {Diagnosing Network-Wide Traffic Anomalies},
+  booktitle	= {Proc. ACM SIGCOMM 2004},
+  month		= {August},
+  year		= {2004},
+  location	= {Portland, OR}
+}
+
+@inproceedings{Taft:sigmetrics2004,
+  author	= {Augustin Soule and Antonio Nucci and Rene Cruz and Emilio
+Leonardi and Nina Taft},
+  title		= {How to Identify and Estimate the Largest Traffic Matrix Elements
+in a Dynamic Environment},
+  booktitle	= {ACM SIGMETRICS 2004},
+  month		= {June},
+  year		= {2004},
+  location	= {New York, NY}
+}
+
+@misc{dunia97multidimensional,
+  author = "R. Dunia and S. Qin",
+  title = "Multi-dimensional Fault Diagnosis Using a Subspace Approach",
+  text = "R. Dunia and S. J. Qin. Multi-dimensional Fault Diagnosis Using a
+Subspace
+    Approach. In American Control Conference, 1997.",
+  year = "1997"
+}
+
+@article{dunia98subspace,
+   author = "R. Dunia and S. J. Qin",
+   title = "A Subspace Approach to Multidimensional Fault Identification and
+Reconstruction",
+   journal = "American Institute of Chemical Engineers (AIChE) Journal",
+   pages = "1813-1831",
+   year = "1998"
+}
+
+@article{subspace_jackson79,
+	author 	= "J. E. Jackson and G. S. Mudholkar",
+	title 	=  "Control Procedures for Residuals Associated With Principal
+Component Analysis",
+	journal = "Technometrics 21(3)",
+	pages 	= "341-349",
+	year 	= {1979}
+}
+
+@article{feldmann00deriving,
+    author = "Anja Feldmann and Albert G. Greenberg and Carsten Lund and Nick
+Reingold and Jennifer Rexford and Fred True",
+    title = "Deriving traffic demands for operational {IP} networks: methodology
+and experience",
+    journal = "IEEE/ACM Transactions on Networking",
+    year = "2001"
+}
+
+@misc{donoho04a,
+   author = "David L. Donoho",
+   title = "For Most Large Underdetermined Systems of Equations, the Minimal
+L1-norm Solution is Also the Sparsest Solution",
+   month = "September",
+   year = "2004",
+   note =
+"\url{http://www-stat.stanford.edu/~donoho/Reports/2004/l1l0EquivCorrected.pdf}"
+}
+
+@misc{donoho04b,
+   author = "David L. Donoho",
+   title = "For Most Large Underdetermined Systems of Equations, the Minimal
+L1-norm Near-Solution
+	   Approximates the Sparsest Near-Solution",
+   month = "August",
+   year = "2004",
+   note =
+"\url{http://www-stat.stanford.edu/~donoho/Reports/2004/l1l0approx.pdf}"
+}
+
+@article{karlovitz70irls,
+   author = "L. A. Karlovitz",
+   title = "Construction of Nearest Points in the $\ell^p$, $p$ Even and
+$\ell^1$ Norms",
+   journal = "Journal of Approximation Theory",
+   volume = 3,
+   pages = "123--127",
+   year = "1970"
+}
+
+@misc{DET04,
+   author = "David L. Donoho and Michael Elad and Vladimir Temlyakov",
+   title = "Stable Recovery of Sparse Overcomplete Representations in the
+Presence of Noise",
+   month = "February",
+   year = "2004",
+   note =
+"\url{http://www-stat.stanford.edu/~donoho/Reports/2004/StableSparse-Donoho-etal.pdf}"
+}
+
+
+@inproceedings{pati93omp,
+  author = "Y. C. Pati and R. Rezaiifar and P. S. Krishnaprasad",
+  title = "Orthogonal Matching Pursuit: Recursive Function Approximation with
+Applications to Wavelet Decomposition",
+  booktitle = "Proc. 27th Annual Asilomar Conference on Signals, Systems, and
+Computers",
+  year = "1993",
+}
+
+
+@inproceedings{tomogravitySigmetrics03,
+  author = "Yin Zhang and Matthew Roughan and Nick Duffield and Albert
+Greenberg",
+  title = "Fast Accurate Computation of Large-Scale IP Traffic Matrices from
+Link Loads",
+  booktitle = "ACM SIGMETRICS 2003",
+  month = "June",
+  year = "2003",
+  location = "San Diego, California"
+}
+
+@inproceedings{tmSigcomm03,
+ author = {Yin Zhang and Matthew Roughan and Carsten Lund and David Donoho},
+ title = {An information-theoretic approach to traffic matrix estimation},
+ booktitle = {ACM SIGCOMM},
+ month = {August},
+ year = {2003},
+ location = {Karlsruhe, Germany}
+}
+
+
+@inproceedings{imc04-TMcomparison,
+  author = "Anders Gunnar and Mikael Johansson and Thomas Telkamp",
+  title = "Traffic Matrix Estimation on a Large IP Backbone: A Comparison on
+Real Data",
+  booktitle = "ACM Internet Measurement Conference",
+  month = "October",
+  year = "2004",
+  location = "Taormina, Sicily, Italy"
+}
+
+@misc{smoothingModels,
+  author = "{SAS 9 online document}",
+  title = "Equations for the Smoothing Models",
+  note =
+"\url{http://v9doc.sas.com/cgi-bin/sasdoc/cgigdoc?file=../hpfug.hlp/hpfdet_sect7.htm}",
+  month = "Jan",
+  day = "24",
+  year = "2004"
+}
+@inproceedings{imw02-barford,
+  author = "Paul Barford and Jeffery Kline and David Plonka and Amos Ron",
+  title = "A signal analysis of network traffic anomalies",
+  booktitle = "Proc. ACM Internet Measurement Workshop",
+  month = "November",
+  year = "2002",
+  location = "Marseille, France"
+}
+
+@article{Kalman60,
+    Author = {Rudolph Emil Kalman},
+    Title = {A New Approach to Linear Filtering and Prediction Problems},
+    Journal = {Transactions of the ASME--Journal of Basic Engineering},
+    Volume = {82},
+    Number = {Series D},
+    Pages = {35--45},
+    Year = {1960}
+}
+
+@misc{matlab:SIT,
+  author = "Lennart Ljung",
+  title = "System Identification Toolbox User's Guide (Version 6)",
+  note =
+"\url{http://www.mathworks.com/access/helpdesk/help/pdf_doc/ident/ident.pdf}"
+}
+
+@misc{Nau03:forecast,
+  author = "Robert F. Nau",
+  title = "{F}uqua {S}chool of {B}usiness---{F}orecasting (Course Outline and
+Lecture Notes)",
+  journal = "Duke University",
+  year = "2003",
+  note = "\url{http://www.duke.edu/~rnau/411out03.html}"
+}
+
+@book{BD02,
+    author = "Peter J. Brockwell and Richard A. Davis",
+    title = "Introduction to Time Series and Forecasting",
+    edition = "2nd",
+    publisher = "Springer-Varlang",
+    year = 2002
+}
+
+@article{Daub88,
+    Author = "Ingrid Daubechies",
+    Title = "Orthonormal Bases of Compactly Supported Wavelets",
+    Journal = "Communications on Pure and Applied Mathematics",
+    Volume = {41},
+    Pages = {909--996},
+    Year = {1988}
+}
+
+@book{Daub92:wavelet,
+    Author = "Ingrid Daubechies",
+    Title = "Ten Lectures on Wavelets",
+    Volume = "41 of {CBMS-NSF Regional Conference Series in Applied
+Mathematics}",
+    publisher = "SIAM",
+    location = "Philadelphia, PA",
+    Year = {1992}
+}
+@misc{amara:wavelet,
+  author = "Amara Graps",
+  title = "Amara's Wavelet Page",
+  year = "2004",
+  note = "\url{http://www.amara.com/current/wavelet.html}",
+}
+
+
+@inproceedings{ david01resilient,
+    author = "David G. Andersen and Hari Balakrishnan and M. Frans Kaashoek and Robert Morris",
+    title = "Resilient Overlay Networks",
+    booktitle = "Symposium on Operating Systems Principles, {SOSP}",
+    pages = "131-145",
+    year = "2001"
+}
+
+@article{ paxson99endtoend,
+    author = "Vern Paxson",
+    title = "End-to-end {Internet} packet dynamics",
+    journal = "IEEE\slash ACM Transactions on Networking",
+    volume = "7",
+    number = "3",
+    pages = "277--292",
+    year = "1999"
+}
+
+@inproceedings{hung,
+	author = "Hung X. Nguyen and Patrick Thiran",
+	title = {Active Measurement for Multiple Link Failures
+	Diagnosis in {IP} Networks},
+	booktitle = "PAM",
+	year = "2004",
+	address = "Juan Les Pins, France",
+	month = "April",
+}
+
+
+@inproceedings{steinder,
+	author = "M. Steinder and A. Sethi",
+	title = "{Increasing Robustness of Fault localization through Analysis
+		of Lost, Spurious and Positive Symptoms}",
+	booktitle = "{IEEE Infocom}",
+	year = "2002"
+}
+
+
+%%%%%%%
+@inproceedings{KP97,
+	author = {"S. Katker and M. Paterok"},
+	title = "Fault isolation and event correlation for integrated fault management",
+	booktitle = "{Integrated Network Management V}",
+	pages = "583--596",
+	year = 1997
+}
+
+
+@article{steinder04survey,
+	author = {M. Steinder and A.S. Sethi},
+	title = "{A Survey of Fault Localization Techniques in Computer Networks}",
+	journal = "{Science of Computer Programming, Special Edition on Topics in System Administration}",
+	volume = 53,
+	number = 2,
+	month = nov,
+	year = 2004,
+	pages = "165--194"
+}
+
+@book{pearl,
+	author=  "J. Pearl",
+	title = "{Probabilistic Reasoning in Intelligent Systems: Networks of
+Plausible Inference}",
+	year= 1988,
+  	publisher = "Morgan Kaufmann Publishers",
+  	address = "San Mateo, CA"
+}
+	
+@article{steinder04ton,
+	author = "M. Steinder and A.S. Sethi",
+	title = "Non-deterministic fault localization in communication systems
+using belief networks",
+	journal = "{IEEE/ACM Transactions on Networking}",
+	volume = 12,
+	number = 5,
+	year = 2004,
+	month = oct,
+	pages = "809--822"
+}
+
+@inproceedings{mahajan02bgpmisconfigs,
+	title= "{Understanding BGP misconfigurations}",
+	author = "{R. Mahajan, D. Wetherall, and T. Anderson}",
+	booktitle = {Proceedings of the ACM SIGCOMM Conference},
+	year=  2002,
+	month = aug
+}
+
+@inproceedings{sigcomm02:rocketfuel,
+	title= "{Measuring ISP Topologies with Rocketfuel}",
+	author = "{Neil Spring, Ratul Mahajan, and David Wetherall}",
+	booktitle = {Proceedings of the ACM SIGCOMM Conference},
+	year=  2002,
+	month = aug
+}
+@inproceedings{kompella07infocom,
+author = "Ramana Kompella and Jennifer Yates and Albert Greenberg and Alex C.
+Snoeren",
+title  = "Detection and localization of network black holes",
+booktitle = "{IEEE Infocom}",
+year=2007,
+month = may,
+location = "{Anchorage, Alaska}"
+}
+
+@TechReport{isisrfc,
+  author =  "R. Callon",
+  title =   "{Use of OSI IS-IS for routing in TCP/IP and dual environments}",
+  type = "{RFC~1195}",
+  institution = IETF,
+  year = 1990, month = dec,
+}
+
+
+@article{voq,
+ author = {Nick McKeown},
+ title = {The iSLIP scheduling algorithm for input-queued switches},
+ journal = {IEEE/ACM Trans. Netw.},
+ volume = {7},
+ number = {2},
+ year = {1999},
+ pages = {188--201},
+ }
+
+
+@book{varghese05book,
+  author = "George Varghese",
+  title = "Network Algorithmics",
+  year = 2005,
+  publisher = "Morgan-Kaufmann"
+}
+
+@book{mpls_book,
+ author = {Bruce Davie and Yakov Rekhter},
+ title = {MPLS: technology and applications},
+ year = {2000},
+ isbn = {1-55860-656-4},
+ publisher = {Morgan Kaufmann Publishers Inc.},
+ address = {San Francisco, CA, USA},
+ }
+
+@inproceedings{nickm03optics,
+ author = {Isaac Keslassy and Shang-Tse Chuang and Kyoungsik Yu and David Miller and Mark Horowitz and Olav Solgaard and Nick McKeown},
+ title = {Scaling internet routers using optics},
+ booktitle = {SIGCOMM '03},
+ year = {2003},
+ pages = {189--200},
+ location = {Karlsruhe, Germany},
+ }
+
+@article{multistageSwitches,
+ author = {Sundar Iyer and Nick W. McKeown},
+ title = {Analysis of the parallel packet switch architecture},
+ journal = {IEEE/ACM Trans. Netw.},
+ volume = {11},
+ number = {2},
+ year = {2003},
+ pages = {314--324},
+ publisher = {IEEE Press},
+ address = {Piscataway, NJ, USA},
+ }
+@inproceedings{chen04sigcomm,
+author="Y. Chen and D. Bindel and H. Song and R. H. Katz",
+title = "{An algebraic approach to practical and scalable overlay network
+monitoring}",
+booktitle = "{ACM SIGCOMM}",
+year=2004
+}
+@inproceedings{duffield03imc,
+author="Nick Duffied",
+title = "{Simple network performance tomography}",
+booktitle = "{USENIX/ACM Internet Measurement Conference}",
+year=2003
+}
+
+% Flow Monitoring
+
+@inproceedings{arama:flexsample,
+author="A. Ramachandran and S. Seetharaman and N. Feamster and V. Vazirani",
+title = "{Building a Better Mousetrap}",
+booktitle = "{Georgia Tech CSS Technical Report GIT-CSS-07-01}",
+year=2007
+}
+
+@inproceedings{csamp:nsdi08,
+author="V. Sekar and M. K. Reiter and W. Willinger and H. Zhang and R. R. Kompella and D. G. Andersen",
+title = "{cSAMP: A System for Network-Wide Flow Monitoring}",
+booktitle = "{NSDI}",
+year=2007
+}
+
+@misc{cisco:netflow,
+author = "{Cisco Networks}",
+title = "{Cisco Netflow}",
+howpublished="{\url{http://www.cisco.com/en/US/products/ps6601/products_ios_protocol_group_home.html}}",
+}
+
+@misc{sflow,
+author = "{InMon}",
+title = "{InMon sflow}",
+howpublished="{\url{http://www.inmon.com/probes.htm}}",
+}
+
+@inproceedings{newdirs:sigcomm02,
+author="Cristian Estan and George Varghese",
+title = "{New Directions in Traffic Measurement and Accounting}",
+booktitle = "{SIGCOMM}",
+year=2002
+}
+
+@inproceedings{bfhash:sigcomm05,
+author="Haoyu Song and Sarang Dharmapurikar and Jonathan Turner and John Lockwood",
+title = "{Fast Hash Table Lookup Using Extended Bloom Filter: An Aid to Network Processing}",
+booktitle = "{SIGCOMM}",
+year=2005
+}
+
+@inproceedings{spam:sigcomm06,
+author="A. Ramachandran and N. Feamster",
+title = "{Understanding the network-level behavior of spammers}",
+booktitle = "{SIGCOMM}",
+year=2006
+}
+
+@inproceedings{kumar:infocom04,
+  author = "A. Kumar and J. Xu and J. Wang and O. Spatscheck and L. Li",
+  title = "Space-code Bloom filter for efficient per-flow traffic measurement",
+  booktitle = "INFOCOM",
+  year = "2004",
+  url = "citeseer.ist.psu.edu/kumar04spacecode.html"
+}
+
+@mastersthesis{sharma:msthesis,
+  author = "Manish Raj Sharma",
+  title = "Scalable Coordination Techniques for Distributed Network Monitoring",
+  school = "Boston University",
+  year = 2004
+}
+
+@inproceedings{trafficDispersionGraphs:imc07,
+  author = "Marios Iliofotou and Prashanth Pappu and Michalis Faloutsos and Michael Mitzenmacher and Sumeet Singh and George Varghesse",
+  title = "Network Monitoring using Traffic Dispersion Graphs (TDGs)",
+  booktitle = "IMC",
+  year = "2007"
+}
+
+@inproceedings{estan:betterNetFlow,
+  author = "Cristian Estan and Ken Keys and David Moore and George Varghese",
+  title = "Building a Better NetFlow",
+  booktitle = "SIGCOMM",
+  year = "2004"
+}
+
+@inproceedings{akumar:sketch,
+  author = "Abhishek Kumar and Jun (Jim) Xu",
+  title = "Sketch Guided Sampling - Using On-Line Estimates of Flow Size for Adaptive Data Collection",
+  booktitle = "{IEEE} INFOCOM",
+  year = "2006"
+}
+
+@inproceedings{akumar:dataStreaming,
+  author = "Abhishek Kumar and Minho Sung and Jun (Jim) Xu and Jia Wang",
+  title = "Data Streaming Algorithms for Efficient and Accurate Estimation of Flow Size Distribution",
+  booktitle = "SIGMETRICS",
+  year = "2004"
+}
+
+@inproceedings{barford:harpoon,
+  author = "Joel Sommers and Hyungsuk Kim and Paul Barford",
+  title = "Harpoon: a flow-level traffic generator for router and network tests",
+  booktitle = "SIGMETRICS",
+  year = "2004"
+}
+
+@inproceedings{molina:hashFns,
+  author = "M. Molina and S. Niccolini and N.G. Duffield",
+  title = "A Comparitive Experimental Study of Hash Functions Applied to Packet Sampling",
+  booktitle = "Technical Report, AT\&T"
+}
+
+@article{fan:summaryCache,
+    author = "Li Fan and Pei Cao and Jussara Almeida and Andrei Z. Broder",
+    title = "Summary cache: a scalable wide-area {Web} cache sharing protocol",
+    journal = "IEEE\slash ACM Transactions on Networking",
+    volume = "8",
+    number = "3",
+    pages = "281--293",
+    year = "2000",
+    url = "citeseer.ist.psu.edu/fan98summary.html" 
+}
+
+@misc{caida:trace,
+title="{CAIDA Anonymized 2008 Internet Trace (equinix-chicago collection)}",
+howpublished = "{\url{http://www.caida.org/data/passive/passive_2008_dataset.xml}}",
+}
+
+@misc{nlanr:trace,
+title = "{NLANR Abilene-I Internet dataset}",
+note = "\url{http://pma.nlanr.net/Traces/long/ipls1.html}"
+}
+
+% 736 warmup project: Filesystem
+
+@misc{redhat:pagecache,
+title = "{PageCache settings.}",
+note = "\url{http://kbase.redhat.com/faq/FAQ_79_3899.shtm}"
+}
+
+@misc{lwn:swappiness,
+title = "{Linux Virtual Memory Swappiness.}",
+note = "\url{http://lwn.net/Articles/83588}",
+author = "Jonathan Corbet",
+year = "2004",
+month = may
+}
+
+@misc{hdparm,
+title = "{Linux hdparm man page.}",
+note = "\url{http://linux.die.net/man/8/hdparm}"
+}
+
+@misc{cpufrequtils,
+title = "{CPU frequency utilities (cpufreq-utils).}",
+note = "\url{http://www.kernel.org/pub/linux/utils/kernel/cpufreq/cpufreq-set.html}"
+}
+
+@misc{linuxvmmgmt,
+title = "{Linux Virtual Memory Management.}",
+note = "\url{http://gentoo-wiki.com/FAQ_Linux_Memory_Management}"
+}
+
+@inproceedings{planetlab:gettimeofday,
+  author = "Neil Spring and Larry Peterson and Andy Bavier and Vivek Pai",
+  title = "Using PlanetLab for Network Research: Myths, Realities, and Best Practices.",
+  booktitle = "ACM SIGOPS Operating Systems Review"
+}
+
+% Persistent Memory
+
+@inproceedings{wu:eNVy:asplos94,
+  author = "Michael Wu and Willy Zwaenepoel",
+  title = "eNVy: A Non-Volatile, Main Memory Storage System",
+  booktitle = "ASPLOS-VI",
+  year = "1994"
+}
+
+@inproceedings{google:chubby:osdi06,
+  author = "Mike Burrows",
+  title = "The Chubby lock service for loosely-coupled distributed systems",
+  booktitle = "OSDI",
+  year = "2006"
+}
+
+@inproceedings{nitin:ssd:usenix08,
+  author = "Nitin Agrawal and Vijayan Prabhakaran and Ted Wobber and John Davis and Mark Manasse and Rina Panigrahy",
+  title = "Design Tradeoffs for SSD Performance",
+  booktitle = "USENIX",
+  year = "2008"
+}
+
+@inproceedings{swift:proposal,
+  author = "Michael Swift",
+  title = "Project summary",
+  booktitle = "Grant proposal",
+  year = "2008"
+}
+
+@inproceedings{gal:algorithms,
+  author = "Eran Gal and Sivan Toledo",
+  title = "Algorithms and Data Structures for Flash Memories",
+  booktitle = "ACM Computing Surveys",
+  year = "2005"
+}
+
+@misc{intel:ftl,
+  author = "Intel",
+  title = "Understanding the Flash Translation Layer (FTL) specification",
+  note = "Application Note AP-684",
+  year = "1998",
+  month = dec,
+}
+
+@inproceedings{satya:lrvm,
+  author = "M. Satyanarayanan and Henry Mashburn and Puneet Kumar and David Steere and James Kistler",
+  title = "Lightweight Recoverable Virtual Memory",
+  booktitle = "ACM Transactions on Computer Systems",
+  year = "1994"
+}
+
+@inproceedings{lowell:riovista:sosp97,
+  author = "David Lowell and Peter Chen",
+  title = "Free Transactions with Rio Vista",
+  booktitle = "SOSP",
+  year = "1997"
+}
+
+@inproceedings{vijayan:txflash:osdi08,
+  author = "Vijayan Prabhakaran and Thomas Rodeheffer and Lidong Zhou",
+  title = "Transactional Flash",
+  booktitle = "OSDI",
+  year = "2008"
+}
+
+@inproceedings{cheriton:lvm,
+  author = "David Cheriton and Kenneth Duda",
+  title = "Logged Virtual Memory",
+  booktitle = "SOSP",
+  year = "1995"
+}
+
+@inproceedings{corey:osdi08,
+  author = "Silas Boyd-Wickizer et. al",
+  title = "Corey: An Operating System for many cores",
+  booktitle = "OSDI",
+  year = "2008"
+}
+
+@inproceedings{diffengine:osdi08,
+  author = "Diwaker Gupta and Sangmin Lee and Michael Vrable and Stefan Savage and Alex C. Snoeren and George Varghese and Geoffrey M. Voelker and Amin Vahdat",
+  title = "Difference Engine: Harnessing Memory Redundancy in Virtual Machines",
+  booktitle = "OSDI",
+  year = "2008"
+}
+
+@inproceedings{threadmgmt:anderson,
+  author = "Tom Anderson and Edward Lazowska and Henry Levy",
+  title = "The Performance Implications of Thread Management Alternatives for Shared-Memory Multiprocessors",
+  booktitle = "IEEE Transactions on Computers",
+  volume = "38",
+  number = "12",
+  month = dec,
+  year = "1989"
+
+}
+
+@misc{url:ssdreview,
+author = "{SSD-Reviews.com}",
+title = "{Solid State Device review.}",
+note = "\url{http://ssd-reviews.com}"
+}
+
+%\url{http://www.informationweek.com/news/storage/portable/showArticle.jhtml?articleID=212701499&subSection=All+Stories}"
+@misc{url:sandisk,
+author = "{InformationWeek}",
+title = "{Sandisk Flash Devices.}",
+note = "\url{http://tinyurl.com/dhebrr}"
+}
+
+@misc{url:micron:pciessd,
+author = "{tgdaily}",
+title = "{Micron PCIe SSD.}",
+note = "\url{http://www.tgdaily.com/content/view/40359/135}"
+}
+
+@misc{url:samsung:ssd,
+author = "{Tom's Hardware Guide}",
+title = "{Samsung FlashSSD}",
+note = "\url{http://www.tomshardware.com/news/Samsung-256GB-SSD,6628.html}"
+}
+
+@misc{benchmarks:tpc,
+title = "{TPC benchmarks.}",
+note = "\url{http://www.tpc.org/default.asp}"
+}
+
+@misc{benchmarks:lmbench,
+title = "{lmbench - Tools for Performance Analysis.}",
+note = "\url{http://www.bitmover.com/lmbench}"
+}
+
+@misc{benchmarks:postmark,
+title = "{PostMark Filesystem Benchmark.}",
+note = "\url{http://www.netapp.com/tech_library/3022.html}"
+}
+
+@misc{imagemagick,
+title = "{ImageMagick.}",
+note = "\url{http://www.imagemagick.org}"
+}
+
+@misc{fftw,
+title = "{FFTW Library.}",
+note = "\url{http://www.fftw.org}"
+}
+
+@inproceedings{conquest:usenix02,
+  author = "An-I Andy Wang and Geoffrey H. Kuenning and Peter Reiher and Gerald J. Popek",
+  title = "Conquest: Better Performance Through a Disk/Persistent-RAM Hybrid File System",
+  booktitle = "USENIX",
+  year = "2002"
+}
+
+@inproceedings{optimization:bruce,
+  author = "Bruce Jacob",
+  title = "Optimization of Mass Storage Hierarchies",
+  booktitle = "Tech Report CSE-TR-228-95",
+  year = "1994"
+}
+
+@inproceedings{swapcomp:cervera,
+  author = "R. Cervera and T. Cortes and Y. Becerra",
+  title = "Improving Application Performance through Swap Compression",
+  booktitle = "FREENIX",
+  year = "1999"
+}
+
+@inproceedings{swapcomp:cortes,
+  author = "T. Cortes and Y. Becerra and R. Cervera",
+  title = "Swap Compression: Resurrecting Old Ideas",
+  booktitle = "SPE",
+  year = "2000"
+}
+
+@inproceedings{swapcompflash:park,
+  author = "Sangduck Park and Hyunjin Lim and Hoseok Chang and Wonyong Sung",
+  title = "Compressed Swapping for NAND Flash Memory Based Embedded Systems",
+  booktitle = "SAMOS",
+  year = "2005"
+}
+
+@inproceedings{fass:jung,
+  author = "Dawoon Jung and Jin-Soo Kim and Seon-Yeong Park and Jeong-Uk Park and Joonwon Lee",
+  title = "FASS: A Flash-Aware Swap System",
+  booktitle = "IWSSPS",
+  year = "2005"
+}
+
+@inproceedings{cflru:park,
+  author = "{Seon-yeong} Park and Dawoon Jung and {Jeong-uk} Kang and {Jin-soo} Kim and Joonwoon Lee",
+  title = "{CFLRU}: A Replacement Algorithm for Flash Memory",
+  booktitle = "CASES",
+  year = "2006"
+}
+
+@inproceedings{newflashswap:ko,
+  author = "Sohyang Ko and Seonsoo Jun and Yeonseung Ryu and Ohhoon Kwon and Kern Koh",
+  title = "A New Linux Swap System for Flash Memory Storage Devices",
+  booktitle = "ICCSA",
+  year = "2008"
+}
+
+@inproceedings{traces:kaplan,
+  author = "Scott F. Kaplan",
+  title = "Collecting Whole-System Reference Traces Multiprogrammed and Multithreaded Workloads",
+  booktitle = "WOSP",
+  year = "2004"
+}
+
+@inproceedings{blklayer:riska,
+  author = "Alma Riska and James Larkby Lahet and Erik Reidel",
+  title = "Evaluating Block-level Optimization through the IO Path",
+  booktitle = "USENIX",
+  year = "2007"
+}
+
+@inproceedings{rangewrites:anand,
+  author = "Ashok Anand and Sayandeep Sen and Andrew Krioukov and Florentia Popovici and Aditya Akella and Andrea Arpaci-Dusseau and Remzi Arpaci-Dusseau and Suman Banerjee",
+  title = "Avoiding File System Micromanagement with Range Writes",
+  booktitle = "OSDI",
+  year = "2008"
+}
+
+@misc{blktrace,
+title = "{Linux BlkTrace}",
+note = "\url{http://git.kernel.org/?p=linux/kernel/git/axboe/blktrace.git;a=blob;f=README}"
+}
+
+@book{book:ulk,
+  author = "Daniel P. Bovet and Marco Cesati",
+  title = "{Understanding the {Linux} Kernel, Third Edition}",
+  year = "2005",
+  publisher = "O'Reilly Media, Inc.",
+}
+
+@inproceedings{book:uvmm,
+  author = "Mel Gorman",
+  title = "Understanding the Linux Virtual Memory Manager",
+  booktitle = "First Edition",
+  year = "2004"
+}
+
+@inproceedings{bplru:kim,
+  author = "Hyojun Kim and Seongjun Ahn",
+  title = "BPLRU: A Buffer Management Scheme for Improving Random Writes in Flash Storage",
+  booktitle = "USENIX FAST",
+  year = "2008"
+}
+
+@article{lfs:rosenblum,
+  author = "Mendel Rosenblum and John K. Ousterhout",
+  title = "The design and implementation of a log-structured file system",
+  journal = "ACM Transactions on Computer Systems",
+  volume = "10",
+  number = "1",
+  year = "1992"
+}
+
+@inproceedings{hybrid:bisson,
+  author = "Timothy Bisson",
+  title = "Reducing Hybrid Disk Write Latency with Flash-Backed IO Requests",
+  booktitle = "MASCOTS",
+  year = "2007"
+}
+
+@inproceedings{flashdb:nath,
+  author = "Suman Nath and Aman Kansal",
+  title = "FlashDB: Dynamic Self-Tuning Database for NAND Flash",
+  booktitle = "IPSN",
+  year = "2007"
+}
+
+@inproceedings{onlineflash:nath,
+  author = "Suman Nath and Phillip B. Gibbons",
+  title = "Online Maintenance of Very Large Random Samples on Flash Storage",
+  booktitle = "VLDB",
+  year = "2008"
+}
+
+@inproceedings{fiveminuterule:graefe,
+  author = "Goetz Graefe",
+  title = "The five-minute rule twenty years later, and how flash changes the rule",
+  booktitle = "SIGMOD Intl. Workshop on Data Management on New Hardware",
+  year = "2007"
+}
+
+@ARTICLE{flashpublic:jimgray,
+  author = "Jim Gray and Bob Fitzgerald",
+  title = "Flash Disk Opportunity for Server-Applications",
+  journal = "ACM Queue",
+  volume = "6",
+  number = "4",
+  year = "2008",
+  month = jul,
+}
+
+@misc{mft:dumitru,
+title = "{MFT: Understanding Flash SSD Performance}",
+author = "Douglas Dumitru",
+note = "\url{http://www.easyco.com/zx1291162824061754824/mft/understanding/index.htm}"
+}
+
+
+
+@inproceedings{diskdriver:riska,
+  author = "Alma Riska and Erik Riedel",
+  title = "Disk Driver Workload Characterization",
+  booktitle = "USENIX",
+  year = "2006"
+}
+
+@inproceedings{swapremote:liang,
+  author = "Shuang Liang and Ranjit Noronha and Dhabaleswar K. Panda",
+  title = "Swapping to Remote Memory over InfiniBand: An Approach using High Performance Network Block Device",
+  booktitle = "CLUSTER",
+  year = "2005"
+}
+
+@inproceedings{anemone:hines,
+  author = "Michael R. Hines and Jian Wang and Mark Lewandowski and Karthik Gopalan",
+  title = "Fast Transparent Cluster-Wide Paging",
+  booktitle = "USENIX",
+  year = "2006"
+}
+
+@inproceedings{remotememory:markatos,
+  author = "Evangelos P. Markatos and George Dramitinos",
+  title = "Implementation of a Reliable Remote Memory Pager",
+  booktitle = "USENIX",
+  year = "1996"
+}
+
+@inproceedings{anticipatory:iyer,
+  author = "Sitaram Iyer and Peter Druschel",
+  title = "Anticipatory Scheduling: A disk scheduling framework to overcome deceptive idleness in synchronous {IO}",
+  booktitle = "SOSP",
+  year = "2001"
+}
+
+@inproceedings{traxtents:schindler,
+  author = "Jiri Schindler and John Linwood Griffin and Christpher R. Lumb and Gregory R. Ganger",
+  title = "Track-aligned Extents: Matching Access Patterns to Disk Drive Characteristics",
+  booktitle = "USENIX FAST",
+  year = "2002"
+}
+
+@inproceedings{vmaccess:hatfield,
+  author = "D. J. Hatfield",
+  title = "Experiments on Page Size, Program Access Patterns, and Virtual Memory Performance",
+  booktitle = "IBM Journal of Research and Development",
+  year = "1972"
+}
+
+@inproceedings{encrypt:provos,
+  author = "Niels Provos",
+  title = "Encrypting Virtual Memory",
+  booktitle = "USENIX Security Symposium",
+  year = "2000"
+}
+
+@inproceedings{memx:hines,
+  author = "Michael R. Hines and Kartik Gopalan",
+  title = "MemX: Supporting Large Memory Workloads in Xen Virtual Machines",
+  booktitle = "Third Workshop on Virtualization technology in Distributed Computing",
+  year = "2007"
+}
+
+@inproceedings{blueprint:sun,
+  author = "Om Narasimhan",
+  title = "Optimizing Systems to use Flash Memory as a Hard Drive replacement",
+  booktitle = "Sun BluePrints Online",
+  year = "2008"
+}
+
+@inproceedings{shriver:prefetching,
+  author = "Elizabeth Shriver and Christopher Small and Keith A. Smith",
+  title = "Why does File System Prefetching Work?",
+  booktitle = "USENIX",
+  year = "1999"
+}
+
+@article{dijkstra:the:cacm:1968,
+  author = "Edsger W. Dijkstra",
+  title = "The Structure of the THE-Multiprogramming System",
+  journal = "Communications of the ACM ",
+  volume = "11",
+  number = "5",
+  month = may,
+  year = "1968"
+}
+
+@article{levy:vms-memmgmt,
+  author = "Henry M Levy and Peter H Lipman",
+  title = "Virtual memory management in the {VAX/VMS} operating system",
+  journal = "Computer",
+  volume = "15",
+  number = "3",
+  pages = "35--41",
+  year = "1982"
+}
+
+@book{book:windows,
+  author = "Mark E. Russinovich and David A. Solomon",
+  title = "{Microsoft Windows Internals, Fourth Edition}",
+  publisher = "Microsoft Press",
+  year = "2005"
+}
+
+@book{book:solaris,
+  author = "Richard McDougall and Jim Mauro",
+  title = "{Solaris Internals: Solaris 10 and OpenSolaris Kernel Architecture, Second Edition}",
+  publisher = "Prentice Hall PTR",
+  year = "2006"
+}
+
+%note="\url{http://www.eetimes.com/news/semi/showArticle.jhtml?articleID=212700554}",
+@misc{eetimes:dramprices,
+author="{EE Times}",
+note="\url{http://tinyurl.com/c9nevk}",
+month = jan,
+ year = "2009",
+}
+
+@misc{url:dansdata,
+author = "{Dan's Data}",
+title="{Using flash-swap in Windows Vista}",
+note="\url{http://dansdata.com/flashswap.htm}"
+}
+
+
+@article{nilfs:paper,
+  author = "Ryusuke Konishi and Yoshiji Amagai and Koji Sato and Hisashi Hifumi and Seiji Kihara and Satoshi Moriai",
+  title = "The Linux Implementation of a log-structured file system",
+  journal = "ACM SIGOPS Operating Systems Review",
+  volume = "40",
+  number = "3",
+  month = jul,
+  year = "2006"
+}
+
+@misc{msoft:cort559,
+  author = "David Walp",
+  title = "System Integrated Flash Storage",
+  booktitle = "Microsoft WinHec presentation",
+  year = "2008"
+}
+
+%\url{http://research.microsoft.com/en-us/um/people/gray/talks/flash_is_good.ppt}",
+@misc{gray:flash-talk,
+  author = "Jim Gray",
+  title = "Tape is Dead, Disk is Tape, Flash is Disk, RAM locality is King",
+  note="\url{http://tinyurl.com/d2enxp}",
+  year="2006",
+  month = dec,
+}
+
+@article{sun-article:cacm,
+  author = "Adam Leventhal",
+  title = "Flash Storage Today",
+  journal = "Communications of the ACM",
+  volume = "51",
+  number = "7",
+  month = july,
+  year = "2008"
+}
+
+@inproceedings{dftl:asplos09,
+  author = "Gupta,, Aayush and Kim,, Youngjae and Urgaonkar,, Bhuvan",
+  title = "DFTL: a flash translation layer employing demand-based selective caching of page-level address mappings",
+  booktitle = "ASPLOS",
+  year = "2009"
+}
+
+@inproceedings{dnarayan:eurosys09,
+  author = {Narayanan,, Dushyanth and Thereska,, Eno and Donnelly,, Austin and Elnikety,, Sameh and Rowstron,, Antony},
+  title = {Migrating server storage to SSDs: Analysis of tradeoffs},
+  booktitle = {EuroSys},
+  year = "2009"
+}
+
+@misc{frazelle-echo-chambers,
+  title="{Containers, Security, and Echo Chambers}",
+  author="Jessie Frazelle",
+  month=may,
+  year={2018},
+  howpublished="\url{https://blog.jessfraz.com/post/containers-security-and-echo-chambers/}",
+}
+
+@misc{bottomley-nabla,
+  title="{Measuring the Horizontal Attack Profile of Nabla Containers}",
+  author="James Bottomley",
+  month=jul,
+  year={2018},
+  howpublished="\url{https://blog.hansenpartnership.com/measuring-the-horizontal-attack-profile-of-nabla-containers/}",
+}
+
+@inproceedings {williams-goodbye,
+author = "{Dan Williams and Ricardo Koller and Brandon Lum}",
+title = "{Say Goodbye to Virtualization for a Safer Cloud}",
+booktitle = {10th {USENIX} Workshop on Hot Topics in Cloud Computing (HotCloud 18)},
+year = {2018},
+address = {Boston, MA},
+url = {https://www.usenix.org/conference/hotcloud18/presentation/williams},
+publisher = {{USENIX} Association},
+month = jul,
+}
+
+
+@Article{LightVM,
+  title = "{My VM is Lighter (and Safer) than your Container}",
+  author = "Filipe Manco and Costin Lupu and Florian Schmidt and Jose Mendes and Simon Kuenzer and Sumit Sati and Kenichi Yasukata and Costin Raiciu and Felipe Huici",
+  journal = "Proceedings of the 26th Symposium on Operating Systems Principles",
+  isbn = "978-1-4503-5085-3",
+  year = "2017",
+  howpublished="\url{http://dl.acm.org/citation.cfm?doid=3132747.3132763}",
+}
+
+@misc{kata-doc,
+  title="{Kata Design Document Github}",
+  year={2018},
+  month = may,
+  key="kata",
+  howpublished="\url{https://github.com/kata-containers/documentation}",
+}
+
+@Article{go-net,
+  author    = "Harshal Sheth and Aashish Welling",
+  title     = "{An Implementation and Analysis of a Kernel Network Stack in Go with the {CSP} Style}",
+  journal   = {CoRR},
+  volume    = {abs/1603.05636},
+  year      = {2016},
+  url       = {http://arxiv.org/abs/1603.05636},
+  archivePrefix = {arXiv},
+  eprint    = {1603.05636},
+  timestamp = {Mon, 13 Aug 2018 16:46:59 +0200},
+  biburl    = {https://dblp.org/rec/bib/journals/corr/ShethW16},
+  bibsource = {dblp computer science bibliography, https://dblp.org}
+}
+
+@Article{libos,
+  title = "{Rethinking the Library OS from the Top Down}",
+  author = "Don E. Porter and Silas Boyd-Wickizer and Jon Howell and Reuben Olinsky and Galen C. Hunt",
+  journal = "16th International Conference on Architectural Support for Programming Languages and Operating Systems",
+  year = "2011",
+}
+
+
+@Article{mirage,
+  title = "{Unikernels: Library Operating Systems for the Cloud}",
+  author = "Anil Madhavapeddy and Richard Mortier and Charalamps Rotsos and David Scott and Balraj Singh",
+  journal = "Proceedings of the eighteenth international conference on Architectural support for programming languages and operating systems",
+  year = "2013",
+  howpublished="\url{http://anil.recoil.org/papers/2013-asplos-mirage.pdf}",
+}
+
+@misc{kata-gvisor,
+  title="{Kata Containers and gVisor: a Quantitative Comparison}",
+  author="Xu Wang",
+  month = nov,
+  year={2018},
+  howpublished="\url{https://www.openstack.org/summit/berlin-2018/summit-schedule/events/22097/kata-containers-and-gvisor-a-quantitative-comparison}",
+}
+
+@Article{VM-vs-Cont,
+  title = "{An Updated Performance Comparison of Virtual Machines and Linux Containers}",
+  author = "Wes Felter and Alexandre Ferreira and Ram Rajamony and Juan Rubio",
+  journal = "2015 IEEE International Symposium on Performance Analysis of Systems and Software (ISPASS)",
+  isbn = "978-1-4799-1957-4",
+  year = "2015",
+}
+
+@InProceedings{Micro-Analysis,
+  title    = "{Performance Evaluation of Microservices Architectures Using Containers}",
+  author   = "Amaral, Marcelo and Polo, Jorda and Carrera, David and Mohomed, Iqbal and Unuvar, Merve and Steinder, Malgorzata",
+  booktitle = "2015 IEEE 14th International Symposium on Network Computing and Applications",
+  address = {Boston, MA},
+  pages = {27-34},
+  year = {2015},
+}
+
+@Article{cloud-cont,
+  title = "{A Performance Comparison of Container-based Technologies for the Cloud}",
+  author = "Zhanibek Kozhirbayev and Richard O. Sinnott",
+  journal = "Future Generation Computer Systems",
+  volume = "68",
+  year = "2017",
+  howpublished="\url{http://www.sciencedirect.com/science/article/pii/S0167739X16303041}",
+}
+
+@InProceedings{Wang+Serverless,
+  title    = "{Peeking Behind the Curtains of Serverless Platforms}",
+  author   = "Liang Wang and Mengyuan Li and Yinqian Zhang and Thomas Ristenpart and Michael Swift",
+  booktitle = {2018 {USENIX} Annual Technical Conference ({USENIX} {ATC} 18)},
+  year = {2018},
+  isbn = {978-1-931971-44-7},
+  address = {Boston, MA},
+  pages = {132--145},
+  publisher = {{USENIX} Association},
+}
