@@ -4,4 +4,7 @@
 
 \fig{width=\columnwidth}{query}{\textmd{Stages of Query processing)}}{fig:query}
 
-Query optimization is part query processing in many relational database management systems. It determines the most efficient way to execute a particular query by evaluating the various query plans for it. Once the query is submitted to the database server, it is then passed to the parser and then passed to the query optimizer.
+Query optimization is part query processing in many relational database management systems. It determines the most efficient way to execute a particular query by evaluating the various query plans for it. Once the query is submitted to the database server, it is then passed to the parser and then passed to the query optimizer as shown in Figure~\ref{fig:query}.
+
+There are many ways to implement a particular query depending on the schema and the complexity of the query. Different databases use different query optimizer which might result in different execution time for the same query when executed on different platforms. The fundamental task of a query optimizer is to select an algorithm from among the many available options that provides the answer with a minimum of disk I/O and CPU time.
+

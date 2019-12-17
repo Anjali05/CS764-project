@@ -1,0 +1,7 @@
+\begin{thebibliography}{1}
+
+\bibitem{ref:sqlite1}
+The sqlite query optimizer overview.
+\newblock \url{https://www.sqlite.org/draft/optoverview.html}.
+
+\end{thebibliography}

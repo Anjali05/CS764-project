@@ -4,12 +4,19 @@
 \subsection{TPCH}
 \fig{width=\columnwidth}{tpch}{\textmd{TPCH schema}}{fig:tpch}
 
-The TPC Benchmark™H (TPC-H) is a decision support benchmark. It consists of a suite of business oriented ad-hoc queries and concurrent data modifications. The queries and the 
-data populating the database have been chosen to have broad industry-wide relevance while maintaining a sufficient degree of ease of implementation. It  evaluates the performance of various decision support systems by the execution of sets of queries against a standard database under controlled conditions.
+TPCH is a decision support benchmark that consists of mixed queries. These queries are 
+
+The TPC Benchmark (TPC-H) is a decision support benchmark. It consists of a suite of business oriented ad-hoc queries and concurrent data modifications. The queries and the data populating the database have been chosen to have broad industry-wide relevance while maintaining a sufficient degree of ease of implementation. It  evaluates the performance of various decision support systems by the execution of sets of queries against a standard database under controlled conditions.
+
+The purpose of this benchmark is to reduce the diversity of operations found in an information analysis application, while retaining the application's essential performance characteristics, namely: the level of system utilization and the complexity  of  operations.  A  large  number  of  queries  of  various  types  and  complexities  needs  to  be  executed  to completely  manage  a  business  analysis  environment.
+
+The  components  of  the  TPC-H  database  are  defined  to  consist  of  eight  separate  and  individual  tables  (the  Base Tables). The relationships between columns of these tables are illustrated in Figure~\ref{fig:tpch}.
+
 
 
 
 \subsection{SSB}
+\fig{width=\columnwidth}{ssb}{\textmd{SSB schema}}{fig:ssb}
 
 The Star Schema Benchmark (SSB) was designed to test star schema optimization to address the issues outlined in TPC-H with the goal of measuring performance of database  products  and  to  test  a  new  materialization  strategy. The  SSB  is  a  simple  benchmark  that  consists  of  four  query flights,  four  dimensions,  and  a  simple  roll-up  hierarchy . The SSB is significantly based on the TPC-H benchmark with improvements  that  implements  a  traditional  pure  star-schema and allows column and table compression.
 

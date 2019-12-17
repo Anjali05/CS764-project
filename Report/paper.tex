@@ -45,7 +45,7 @@
   keywordstyle=\color{blue},       % keyword style
   language=C,                 % the language of the code
   morekeywords={*,...},            % if you want to add more keywords to the set
-  numbers=right,                    % where to put the line-numbers; possible values are (none, left, right)
+  numbers=none,                    % where to put the line-numbers; possible values are (none, left, right)
   numbersep=5pt,                   % how far the line-numbers are from the code
   numberstyle=\tiny\color{black}, % the style that is used for the line-numbers
   rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
@@ -70,7 +70,7 @@
 \newcommand{\codesm}[1]{\texttt{\small #1}}
 \newcommand{\implication}{\vspace{0.1in} \noindent \emph{Implication:~}}
 \newcommand{\fig}[4]{%
-  \begin{figure}[t]%
+  \begin{figure}[ht]%
     %\frame{\includegraphics[#1]{#2}}
     \includegraphics[#1]{#2}
     \caption{{#3}}\label{#4}
@@ -102,7 +102,10 @@
 \input{intro}
 \input{databases}
 \input{benchmarks}
-%\input{surface}
+\input{results}
+\input{future}
+\input{conclusion}
+
 
 
 
