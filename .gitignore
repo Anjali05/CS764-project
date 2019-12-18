@@ -1,8 +1,8 @@
-.db
 .idea/
 .DS_Store
 cmake-build-debug/
-*/.*db
+*.db
+Report/paper.pdf
 ssb/sqlite/ssb-100.db
 /Users/Sakshi/Documents/UWAcads/Sem1/projects/cs764/CS764-project/tpch/sqlite/TPC-H.db
 
