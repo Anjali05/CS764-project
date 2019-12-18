@@ -4,13 +4,13 @@
 \subsection{Method}
 We run all our experiments on Cloudlab [5] xl170 machine, with a ten-core Intel E5-2640v4 running at 2.4 GHz, 64GB ECC Memory (4x 16 GB DDR4-2400 DIMMs), Intel DC S3520 480 GB 6G SATA SSD and 10Gbps NIC. We run on Ubuntu 18.04 (4.15.0-55-generic). We performed all the experiments on PostgreSQL version 10.10 and SQLite3 version 3.22.0. The buffer pool for each system is set to 2MB.. PostgreSQL is configured to run with zero parallelism to get a baseline comparison between the two systems since SQLite runs in a single thread. We also make sure that each query runs on a single core. To achieve zero paralleism following configurations are set in PostgreSQL:
 
-\texttt{max\_parallel\_workers:} Maximum number of background processes that the system can support.
+\texttt{max\_worker\_processes:} Maximum number of background processes that the system can support.
 We have set this parameter to 1.
 
 \texttt{max\_parallel\_workers\_per\_gather:} Maximum number of workers that can be started by a single Gather or Gather Merge node. Gather node has one child plan which requires some number of background workers to execute the rest of the portion in parallel. We set this parameter to 0.
 
 We first measure the execution times for both the benchmarks and then compare the query plans generated for few queries from TPCH to understand the difference in execution time.
-We compare results of TPC-H benchmark on PostgreSQL from previous setting with results obtained by turning parallelism on. In the new setting, \texttt{max\_parallel\_workers} is set to 1 and \texttt{max\_parallel\_workers\_per\_gather} is set to 0.
+We compare results of TPC-H benchmark on PostgreSQL from previous setting with results obtained by turning parallelism on. In the new setting, \texttt{max\_worker\_processes} is set to 30 and \texttt{max\_parallel\_workers\_per\_gather} is set to 20.
 
 \subsection{Execution Time}
 \label{sec:time}
