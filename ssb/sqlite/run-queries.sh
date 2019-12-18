@@ -9,7 +9,7 @@ for i in `seq -f "%02g" 1 13`; do
         query_file="${i}.sql"
         query=`cat "queries/${query_file}"`
         explain_query="EXPLAIN ${query}"
-        $SQLITE_EXEC $SQLITE_DB_NAME <<EOF
+        $SQLITE_EXEC $SQLITE_DB_PATH <<EOF
 .timer on
 $query
 EOF

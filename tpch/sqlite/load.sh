@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
+source config.sh
 
-TABLES=$@
-db="TPC-H.db"
+TABLES="customer lineitem nation orders	part partsupp region supplier"
+db="$SQLITE_DB_PATH"
 
 if [ -z "$TABLES" ]; then
 	echo "Error! No table specified." >&2
-	echo "Usage: $0 [TABLE_NAME] [TABLE_NAME]..." >&2
 	exit 1
 fi
 
@@ -17,7 +17,7 @@ sqlite3 "$db" < sqlite-ddl.sql
 RET_CODE=0
 for table in $TABLES; do
 	echo "Importing table '$table'..." >&2
-	data_file="tpch-dbgen/$table.tbl"
+	data_file="$SSB_TABLE_FILES_DIR/$table.tbl"
 	if [ ! -e "$data_file" ]; then
 		echo "'$data_file' does’nt exist. Skipping..." >&2
 		RET_CODE=1
