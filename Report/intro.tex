@@ -2,14 +2,14 @@
 \section{Introduction}
 \label{sec:intro}
 
-\fig{width=\columnwidth}{query}{\textmd{Stages of Query processing)}}{fig:query}
+\fig{width=\columnwidth}{query}{\textmd{Stages of Query processing}}{fig:query}
 
 Query optimization is part query processing in many relational database management systems. It determines the most efficient way to execute a particular query by evaluating the various query plans for it. Once the query is submitted to the database server, it is then passed to the parser and then passed to the query optimizer as shown in Figure~\ref{fig:query}.
 
 There are many ways to implement a particular query depending on the schema and the complexity of the query. Different databases use different query optimizer which might result in different execution time for the same query when executed on different platforms. The fundamental task of a query optimizer is to select an algorithm from among the many available options that provides the answer with a minimum of disk I/O and CPU time.
 
-Query optimizer frees the programmer from the task of selecting a particular query plan and allows th e programmer to focum on high-level application issues. For simple query the choice of plan is mostly obvious but as schema and queries become important, the optimizer plays an inmportant role in simplifying the work of application development for the programmer.
+Query optimizer~\cite{ref:sqlite3} frees the programmer from the task of selecting a particular query plan and allows th e programmer to focum on high-level application issues. For simple query the choice of plan is mostly obvious but as schema and queries become important, the optimizer plays an inmportant role in simplifying the work of application development for the programmer.
 
-The rest of the papper is organised as follows: Section~\ref{sec:db} gives an overview of the architecture for PostgreSQL and SQLite, Section~\ref{sec:bench} defines the benchmarks in detail, in Section~\ref{sec:results} we discuss the results. Finally, we discuss future work and concluded in Section~\ref{sec:future} and Section~\ref{sec:conclusion} respectively. 
+The rest of the paper is organised as follows: Section~\ref{sec:db} gives an overview of the architecture for PostgreSQL and SQLite, Section~\ref{sec:bench} defines the benchmarks in detail, in Section~\ref{sec:results} we discuss the results. Finally, we discuss future work and conclude in Section~\ref{sec:future} and Section~\ref{sec:conclusion} respectively. 
 
 
