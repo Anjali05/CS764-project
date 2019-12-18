@@ -34,14 +34,20 @@ Supplier & 648K \\ \hline
 \label{tab:ssb_tab}
 \end{table}
 
-We run all our experiments on Cloudlab [5] xl170 machine, with a ten-core Intel E5-2640v4 running at 2.4 GHz, 64GB ECC Memory (4x 16 GB DDR4-2400 DIMMs), Intel DC S3520 480 GB 6G SATA SSD and 10Gbps NIC. We run on Ubuntu 18.04 (4.15.0-55-generic). We performed all the experiments on PostgreSQL version 10.10 and SQLite3 version 3.22.0. The buffer pool for each system is set to 2MB.. PostgreSQL is configured to run with zero parallelism to get a baseline comparison between the two systems since SQLite runs in a single thread. We also make sure that each query runs on a single core. To achieve zero paralleism following configurations are set in PostgreSQL:
+We run all our experiments on Cloudlab [5] xl170 machine, with a ten-core Intel E5-2640v4 running at 2.4 GHz, 64GB ECC Memory (4x 16 GB DDR4-2400 DIMMs), Intel DC S3520 480 GB 6G SATA SSD and 10Gbps NIC. We run on Ubuntu 18.04 (4.15.0-55-generic). We performed all the experiments on PostgreSQL version 10.10 and SQLite3 version 3.22.0. The buffer pool for each system is set to 2MB. The table size for each benchmarks are shown in Tables~\ref{tab:tbch_tab} and ~\ref{tab:ssb_tab}.
+
+PostgreSQL is configured to run with zero parallelism to get a baseline comparison between the two systems since SQLite runs in a single thread. We also make sure that each query runs on a single core. To achieve zero paralleism the following configurations are set in PostgreSQL:
 
 \texttt{max\_worker\_processes:} Maximum number of background processes that the system can support.
 We have set this parameter to 1.
 
-\texttt{max\_parallelma\_workers\_per\_gather:} Maximum number of workers that can be started by a single Gather or Gather Merge node. Gather node has one child plan which requires some number of background workers to execute the rest of the portion in parallel. We set this parameter to 0.
+\texttt{max\_parallel\_workers\_per\_gather:} Maximum number of workers that can be started by a single Gather or Gather Merge node. Gather node has one child plan which requires some number of background workers to execute the rest of the portion in parallel. We set this parameter to 0.
 
-We first measure the execution times for both the benchmarks and then compare the query plans generated for few queries from TPCH to understand the difference in execution time. We compare results of TPC-H benchmark on PostgreSQL from previous setting with results obtained by turning parallelism on. In the new setting, \texttt{max\_worker\_processes} is set to 30 and \texttt{max\_parallel\_workers\_per\_gather} is set to 20. The table size for each benchmarks are shown in Tables~\ref{tab:tbch_tab} and ~\ref{tab:ssb_tab}.
+We first measure the execution times for both the benchmarks and then compare the query plans generated for few queries from TPC-H to understand the difference in execution time. 
+
+We also compare the results of TPC-H benchmark on PostgreSQL from previous setting with results obtained by turning parallelism on. In the new setting, \texttt{max\_worker\_processes} is set to 30 and \texttt{max\_parallel\_workers\_per\_gather} is set to 20. 
+
+We have changed the SSB and TPC-H suite to work on SQLite and have also automated the whole benchmarking process for both databases.
 
 \subsection{Execution Time}
 \label{sec:time}
@@ -50,7 +56,7 @@ We first measure the execution times for both the benchmarks and then compare th
 \fig{width=\columnwidth}{ssb_result}{\textmd{SSB result}}{fig:ssb_result}
 \fig{width=\columnwidth}{TPC-H_Postgres_Parallel_vs_Non-Parallel_Query_Execution}{\textmd{TPC-H result}}{fig:tpch_pg_parallel_non_parallel}
 
-The total execution time for TPCH is shown in Figure~\ref{fig:tpch_result}. We observe that even though PostgreSQL is a much more complex system than the light-weight SQLite, it is not always faster. SQLite is competitive in some cases. The same behaviour is observed for SSB in Figure~\ref{fig:ssb_result}. These results give us an overall picture of the execution time of one system in comparison with the other.
+The total execution time for TPC-H is shown in Figure~\ref{fig:tpch_result}. We observe that even though PostgreSQL is a much more complex system than the light-weight SQLite, it is not always faster. SQLite is competitive in some cases. The same behaviour is observed for SSB in Figure~\ref{fig:ssb_result}. These results give us an overall picture of the execution time of one system in comparison with the other.
 
 Figure \ref{fig:tpch_pg_parallel_non_parallel} compares the results of PostgreSQL with \\ max\_parallel\_workers\_per\_gather set to 0 versus \\ max\_parallel\_workers\_per\_gather = 20. The results show that the run times of almost all the queries decrease significantly upon changing this parameter. It was noted that the queries for which run times didn't change (Q2, Q13, Q18, Q21) were the ones that didn't use Gather node in their plans at all. This further strengthens our asssumption that parallelism affects PostgreSQL queries significantly and this parameter should be set to 0 for analysis with SQLite.
 
@@ -82,9 +88,9 @@ Figure \ref{fig:tpch_pg_parallel_non_parallel} compares the results of PostgreSQ
         \label{fig:sqlite-16}
 \end{figure*}
 
-We now look at query 16 represented in Listing~\ref{q16} from the TPCH benchmark suite. In this query is the Parts/Supplier Relationship Query that returns how many suppliers can supply parts with given attributes. This query has almost same time for both, PostgreSQL and SQLite.
+We now look at query 16 represented in Listing~\ref{q16} from the TPC-H benchmark suite. This is called the Parts/Supplier Relationship Query that returns how many suppliers can supply parts with given attributes. This query has almost same time for both, PostgreSQL and SQLite.
 
-Figure~\ref{fig:tpch-postgres-16} shows the query plan generated for this query in PostgreSQL, we observe that it does a full scan of all the tables followed by some hash joins, sort, aggregate and then sort again. If we look at the query plan for SQLite in Figure~\ref{fig:sqlite-16}, we observe that it also does a scan of all the tables and execute a similar query plan. Since the query plans generated by both are significantly similar and this query does not contain the big table, LINEITEM, therefore the scans take similar time even though SQLite does an index scan. All this add up to almost same time for this particular query in both the databases.\\
+Figure~\ref{fig:tpch-postgres-16} shows the query plan generated for this query in PostgreSQL, we observe that it does a full scan of all the tables followed by some hash joins, sort, aggregate and then sort again. If we look at the query plan for SQLite in Figure~\ref{fig:sqlite-16}, we observe that it also does a scan of all the tables and execute a similar query plan. Since the query plans generated by both are significantly similar and this query does not contain the big table, LINEITEM, therefore the scans take similar time even though SQLite does an index scan. All this adds up to almost same time for this particular query in both the databases.\\
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[breaklines=true, numbers=none, label=q16, caption=Query 16]
@@ -134,7 +140,7 @@ order by supplier_cnt desc, p_brand, p_type, p_size;;
         \label{fig:sqlite-9}
 \end{figure*}
 %\fig{width=\columnwidth}{tpch-sqllite-9}{\textmd{TPCH result}}{fig:tpch-sqllite-9}
-Query 9 shown in Listing~\ref{q9} called Product Type Profit Measure Query which determines how much profit is made on a given line of parts, broken out by supplier nation and year. This query takes longer execution time SQLite.
+Query 9 shown in Listing~\ref{q9} called the Product Type Profit Measure Query determines how much profit is made on a given line of parts, broken out by supplier nation and year. This query takes longer execution time SQLite.
 
 Figure~\ref{fig:tpch-postgres-9} shows the query plan for PostgreSQL where we observe that it does full scan of all the tables followed by hash join and aggregate at the end. In SQLite shown in Figure~\ref{fig:sqlite-9}, we see many index scans. We also see that this query has LINEITEM which is a big table and hence, selectivity for this particular query is very high. Therefore, index scan in this scan becomes expensive over full scan which is seen by the lower execution time for PostgreSQL.
 
