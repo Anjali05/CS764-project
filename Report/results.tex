@@ -2,7 +2,11 @@
 \label{sec:bench}
 
 \subsection{Method}
-We run all our experiments on Cloudlab [5] xl170 machine, with a ten-core Intel E5-2640v4 running at 2.4 GHz, 64GB ECC Memory (4x 16 GB DDR4-2400 DIMMs), Intel DC S3520 480 GB 6G SATA SSD and 10Gbps NIC. We run on Ubuntu 18.04 (4.15.0-55-generic). We performed all the experiments on Postgresql version 10.10 and SQLite3 version 3.22.0. Postgres was configured to run with a  single thread by changing \texttt{max\_parallel\_workers} = 1, \texttt{max\_worker\_processes} = 1 and \texttt{max\_parallel\\\_workers\_per\_gather} = 0. The buffer pool for each system was set to 20MB.
+We run all our experiments on Cloudlab [5] xl170 machine, with a ten-core Intel E5-2640v4 running at 2.4 GHz, 64GB ECC Memory (4x 16 GB DDR4-2400 DIMMs), Intel DC S3520 480 GB 6G SATA SSD and 10Gbps NIC. We run on Ubuntu 18.04 (4.15.0-55-generic). We performed all the experiments on Postgresql version 10.10 and SQLite3 version 3.22.0. Postgres was configured to run with a  single thread by changing the following Postgres configurations:
+\texttt{max\_parallel\_workers}: Sets the maximum number of background processes that the system can support. We have set this parameter to one so that only one part of query gets processed at a time.
+\texttt{max\_worker\_processes} = 1
+\texttt{max\_parallel\\\_workers\_per\_gather} = 0.\\
+The buffer pool for each system was set to 20MB.
 
 We first measure the execution times for both the benchmarks and then compare the query plans generated for few queries from TPCH to understand the difference in execution time. 
 
