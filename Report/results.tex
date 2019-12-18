@@ -18,7 +18,7 @@ We compare results of TPC-H benchmark on PostgreSQL from previous setting with r
 \fig{width=\columnwidth}{TPC-H_Postgres_Parallel_vs_Non-Parallel_Query_Execution}{\textmd{TPC-H result}}{fig:tpch_pg_parallel_non_parallel}
 
 The total execution time for TPCH is shown in Figure~\ref{fig:tpch_result}. We observe that even though PostgreSQL is a much more complex system than the light-weight SQLite, it is not always faster. SQLite is competitive in some cases. The same behaviour is observed for SSB in Figure~\ref{fig:ssb_result}. These results give us an overall picture of the execution time of one system in comparison with the other.\\
-Figure \ref{fig:tpch_pg_parallel_non_parallel} compares the results of PostgreSQL with  {max\_parallel\\\_workers\_per\_gather} set to 0 versus {max\_parallel\\\_workers\_per\_gather} = 20. The results show that the run times of almost all the queries decrease significantly upon changing this parameter. It was noted that the queries for which run times didn't change (Q2, Q13, Q18, Q21) were the ones that didn't use Gather node in their plans at all. <How to conclude this?>
+Figure \ref{fig:tpch_pg_parallel_non_parallel} compares the results of PostgreSQL with  {max\_parallel\\\_workers\_per\_gather} set to 0 versus {max\_parallel\\\_workers\_per\_gather} = 20. The results show that the run times of almost all the queries decrease significantly upon changing this parameter. It was noted that the queries for which run times didn't change (Q2, Q13, Q18, Q21) were the ones that didn't use Gather node in their plans at all. <This further strengthens our asssumption that parallelism affect postgres queries significantly and this parameter should be set to 0 for analysis with sqlite? >
 
 
 
