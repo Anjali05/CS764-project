@@ -2,11 +2,15 @@
 \label{sec:db}
 
 \subsection{Postgresql}
-PostgreSQL is a relational database management system following a client-server architecture. At the server side the PostgreSQL's processes and shared memory work together and build an instance, which handles the access to the data. Client programs connect to the instance and request read and write operations.
+\fig{width=\columnwidth}{postgres}{\textmd{PostgreSQL Architecture}}{fig:postgres}
+
+PostgreSQL~\cite{ref:pg1} is a relational database management system following a client-server architecture. At the server side an instance is created comprising of PostgreSQL's processes and shared memory which handles the access to the data. Client programs connect to the instance sending read and write operations. The overview of the architecture is shown in Figure~\ref{fig:postgres}.
+
+An instance consists of multiple processes,  postmaster process, multiple postgres processes (one for each connection), WAL writer process, background writer process, checkpointer process and other optional processes like autovacuum launcher process, logger process , archiver process, stats collector process, WAL sender process (when streaming replication is active), WAL receiver process (when streaming replication is active) and background worker processes (in case a query gets parallelized). The client program sends the request to the instance. The instance itself does not directly write to disk instead it buffers the requested data in shared buffer. The flushing to disk is done at a later stage.
 
 \subsection{SQLite}
 
-\fig{width=\columnwidth}{sqlite}{\textmd{SQLite Architecture)}}{fig:sqlite}
+\fig{width=\columnwidth}{sqlite}{\textmd{SQLite Architecture}}{fig:sqlite}
 
 SQLite is an embedded file based relational database management system which can be linked statically or dynamically with the application program. It does not have a client-server database engine which makes the SQLite applications require less configuration. SQLite is called zero-conf because it does not require service management or access control based on password and GRANT.
 
