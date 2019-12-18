@@ -7,10 +7,10 @@ We run all our experiments on Cloudlab [5] xl170 machine, with a ten-core Intel 
 \texttt{max\_parallel\_workers:} Maximum number of background processes that the system can support.
 We have set this parameter to 1.
 
-\texttt{max\_parallel\\\_workers\_per\_gather:} Maximum number of workers that can be started by a single Gather or Gather Merge node. Gather node has one child plan which requires some number of background workers to execute the rest of the portion in parallel. We set this parameter to 0.
+\texttt{max\_parallel\_workers\_per\_gather:} Maximum number of workers that can be started by a single Gather or Gather Merge node. Gather node has one child plan which requires some number of background workers to execute the rest of the portion in parallel. We set this parameter to 0.
 
-We first measure the execution times for both the benchmarks and then compare the query plans generated for few queries from TPCH to understand the difference in execution time.\\
-We compare results of TPC-H benchmark on PostgreSQL from previous setting with results obtained by turning parallelism on. In the new setting, \texttt{max\_parallel\_workers} is set to 1 and \texttt{max\_parallel\\\_workers\_per\_gather} is set to 0.
+We first measure the execution times for both the benchmarks and then compare the query plans generated for few queries from TPCH to understand the difference in execution time.
+We compare results of TPC-H benchmark on PostgreSQL from previous setting with results obtained by turning parallelism on. In the new setting, \texttt{max\_parallel\_workers} is set to 1 and \texttt{max\_parallel\_workers\_per\_gather} is set to 0.
 
 \subsection{Execution Time}
 \label{sec:time}
@@ -19,8 +19,9 @@ We compare results of TPC-H benchmark on PostgreSQL from previous setting with r
 \fig{width=\columnwidth}{ssb_result}{\textmd{SSB result}}{fig:ssb_result}
 \fig{width=\columnwidth}{TPC-H_Postgres_Parallel_vs_Non-Parallel_Query_Execution}{\textmd{TPC-H result}}{fig:tpch_pg_parallel_non_parallel}
 
-The total execution time for TPCH is shown in Figure~\ref{fig:tpch_result}. We observe that even though PostgreSQL is a much more complex system than the light-weight SQLite, it is not always faster. SQLite is competitive in some cases. The same behaviour is observed for SSB in Figure~\ref{fig:ssb_result}. These results give us an overall picture of the execution time of one system in comparison with the other.\\
-Figure \ref{fig:tpch_pg_parallel_non_parallel} compares the results of PostgreSQL with  {max\_parallel\\\_workers\_per\_gather} set to 0 versus {max\_parallel\\\_workers\_per\_gather} = 20. The results show that the run times of almost all the queries decrease significantly upon changing this parameter. It was noted that the queries for which run times didn't change (Q2, Q13, Q18, Q21) were the ones that didn't use Gather node in their plans at all. <This further strengthens our asssumption that parallelism affect postgres queries significantly and this parameter should be set to 0 for analysis with sqlite? >
+The total execution time for TPCH is shown in Figure~\ref{fig:tpch_result}. We observe that even though PostgreSQL is a much more complex system than the light-weight SQLite, it is not always faster. SQLite is competitive in some cases. The same behaviour is observed for SSB in Figure~\ref{fig:ssb_result}. These results give us an overall picture of the execution time of one system in comparison with the other.
+
+Figure \ref{fig:tpch_pg_parallel_non_parallel} compares the results of PostgreSQL with  {max\_parallel\_workers\_per\_gather} set to 0 versus {max\_parallel\_workers\_per\_gather} = 20. The results show that the run times of almost all the queries decrease significantly upon changing this parameter. It was noted that the queries for which run times didn't change (Q2, Q13, Q18, Q21) were the ones that didn't use Gather node in their plans at all. <This further strengthens our asssumption that parallelism affect postgres queries significantly and this parameter should be set to 0 for analysis with sqlite? >
 
 
 
