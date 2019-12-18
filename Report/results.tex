@@ -18,6 +18,8 @@ We compare results of TPC-H benchmark on PostgreSQL from previous setting with r
 \fig{width=\columnwidth}{TPC-H_Postgres_Parallel_vs_Non-Parallel_Query_Execution}{\textmd{TPC-H result}}{fig:tpch_pg_parallel_non_parallel}
 
 The total execution time for TPCH is shown in Figure~\ref{fig:tpch_result}. We observe that even though PostgreSQL is a much more complex system than the light-weight SQLite, it is not always faster. SQLite is competitive in some cases. The same behaviour is observed for SSB in Figure~\ref{fig:ssb_result}. These results give us an overall picture of the execution time of one system in comparison with the other.\\
+Figure \ref{fig:tpch_pg_parallel_non_parallel} compares the results of PostgreSQL with  {max\_parallel\\\_workers\_per\_gather} set to 0 versus {max\_parallel\\\_workers\_per\_gather} = 20. The results show that the run times of almost all the queries decrease significantly upon changing this parameter. It was noted that the queries for which run times didn't change (Q2, Q13, Q18, Q21) were the ones that didn't use Gather node in their plans at all. <How to conclude this?>
+
 
 
 \subsection{Query Plan Comparison}
@@ -106,7 +108,7 @@ p_size;;
 %\fig{width=\columnwidth}{tpch-sqllite-9}{\textmd{TPCH result}}{fig:tpch-sqllite-9}
 Query 9 shown in Listing~\ref{q9} called Product Type Profit Measure Query which determines how much profit is made on a given line of parts, broken out by supplier nation and year. This query takes longer execution time SQLite.
 
-Figure~\ref{fig:tpch-postgres-9} shows the query plan for PostgreSQL where we observe that it does full scan of all the tables followed by hash join and aggregate at the end. In SQLite shown in Figure~\ref{fig:sqlite-9}, we see many index scans. We also see that this query has LINEITEM which is a big table and hence, selectively for this particular query is very high. Therefore, index scan in this scan becomes expensive over full scan which is seen by the lower execution time for PostgreSQL.
+Figure~\ref{fig:tpch-postgres-9} shows the query plan for PostgreSQL where we observe that it does full scan of all the tables followed by hash join and aggregate at the end. In SQLite shown in Figure~\ref{fig:sqlite-9}, we see many index scans. We also see that this query has LINEITEM which is a big table and hence, selectivity for this particular query is very high. Therefore, index scan in this scan becomes expensive over full scan which is seen by the lower execution time for PostgreSQL.
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[breaklines=true, numbers=none, label=q9, caption=Query 9]
@@ -161,7 +163,7 @@ o_year desc;
 %\fig{width=\columnwidth}{tpch-sqllite-4}{\textmd{TPCH result}}{fig:tpch-sqllite-4}
 Query 4 shown in Listing~\ref{q4} is called Order Priority Checking Query which finds how well the order priority system is working and gives an assessment of customer satisfaction. This query runs faster in SQLite.
 
-The query plan for PostgreSQL is shown in Figure~\ref{fig:pgsql-4} and SQLite is shown in Figure~\ref{fig:sqlite-4}. This query has an inner query which is called a correlated subquery~\cite{ref:sqlite1} which depends on the outer query. The selectively of this query is less that 5\%. In case of PostgreSQL we observe  that it does a full scan of all the tables whereas SQLite uses an index scan. In queries where selectively is low, index scan is faster, therefore, we see that SQLite performs better than PostgreSQL.
+The query plan for PostgreSQL is shown in Figure~\ref{fig:pgsql-4} and SQLite is shown in Figure~\ref{fig:sqlite-4}. This query has an inner query which is called a correlated subquery~\cite{ref:sqlite1} which depends on the outer query. The selectivity of this query is around 3\%. In case of PostgreSQL we observe that it does a full scan of all the tables whereas SQLite uses an index scan. In queries where selectivity is low, index scan is faster, therefore, we see that SQLite performs better than PostgreSQL. Since the table in question is Lineitem table which occupies 750 MB on disk out of 1GB of the entire TPC-H database, the effects seem more significant in this query than the others.
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[breaklines=true, numbers=none, label=q4, caption=Query 4]
