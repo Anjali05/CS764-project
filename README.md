@@ -14,3 +14,10 @@
 Note: Data in the existing table files may not adhere to Postgres formatting due to stray ‘|’ at the end of rows. Use `"for i in `ls *.tbl`; do sed 's/|$//' $i > ${i/tbl/csv}; echo $i; done;”` to format the data.  
 
 * Run queries using `./run-queries.sh`
+
+
+### Follow the steps for running benchmarks on SQLite   
+* Change the path SSB_TABLE_FILES_DIR in ssb/sqlite/config.sh and TPCH_TABLE_FILES_DIR in ssb/sqlite/config.sh  to point to local SSB and TPC-H directories respectively db location.  
+* Change SQLITE_DB_PATH path in ssb/sqlite/config.sh and  tpch/sqlite/config.sh to point to desired location of sqlite db creation.  
+* run `./load.sh`. This will generate the .db files for sqlite.  
+* run queries `./run-queries.sh`
