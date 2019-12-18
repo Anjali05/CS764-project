@@ -1,5 +1,5 @@
 =============Steps setting up DB and running benchmarks=============
-### Follow the steps below for generating db for SSB and TBC-H:###
+### Follow the steps below for generating db for SSB and TBC-H:
 * Clone https://github.com/electrum/ssb-dbgen for SSB and https://github.com/electrum/tpch-dbgen for TPCH.
 * run `make clean` from inside the cloned repositories.
 * run `make all`.
