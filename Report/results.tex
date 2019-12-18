@@ -1,28 +1,30 @@
 \section{Results}
-\label{sec:bench}
+\label{sec:results}
 
 \subsection{Method}
-We run all our experiments on Cloudlab [5] xl170 machine, with a ten-core Intel E5-2640v4 running at 2.4 GHz, 64GB ECC Memory (4x 16 GB DDR4-2400 DIMMs), Intel DC S3520 480 GB 6G SATA SSD and 10Gbps NIC. We run on Ubuntu 18.04 (4.15.0-55-generic). We performed all the experiments on Postgresql version 10.10 and SQLite3 version 3.22.0. Postgres was configured to run with a  single thread by changing \texttt{max\_parallel\_workers} = 1, \texttt{max\_worker\_processes} = 1 and \texttt{max\_parallel\\\_workers\_per\_gather} = 0. The buffer pool for each system was set to 20MB.
-
-We first measure the execution times for both the benchmarks and then compare the query plans generated for few queries from TPCH to understand the difference in execution time. 
-
+We run all our experiments on Cloudlab [5] xl170 machine, with a ten-core Intel E5-2640v4 running at 2.4 GHz, 64GB ECC Memory (4x 16 GB DDR4-2400 DIMMs), Intel DC S3520 480 GB 6G SATA SSD and 10Gbps NIC. We run on Ubuntu 18.04 (4.15.0-55-generic). We performed all the experiments on PostgreSQL version 10.10 and SQLite3 version 3.22.0. PostgreSQL was configured to run with least possible parallelism to get a baseline comparison between the two systems since SQLite runs in a single thread:\\
+\texttt{max\_parallel\_workers:} Maximum number of background processes that the system can support.
+We have set this parameter to one so that there can only be a single background worker running at any point in system.\\
+\texttt{max\_parallel\\\_workers\_per\_gather:} Maximum number of workers that can be started by a single Gather or Gather Merge node. Gather node has one child plan which requires some number of background workers to execute the rest of the portion in parallel. We set this parameter to 0 for the purpose of comparison with SQLite.
+Apart from the above mentioned parameters, the buffer pool for each system is set to 2MB.
+We first measure the execution times for both the benchmarks and then compare the query plans generated for few queries from TPCH to understand the difference in execution time.\\
+We compare results of TPC-H benchmark on PostgreSQL from previous setting with results obtained by turning parallelism on. In the new setting, \texttt{max\_parallel\_workers} is set to 1 and \texttt{max\_parallel\\\_workers\_per\_gather} is set to 0. The results are shown in Figure~\ref{fig:tpch_pg_parallel_non_parallel}.
 
 \subsection{Execution Time}
 \label{sec:time}
 
-\fig{width=\columnwidth}{tpch_result}{\textmd{TPCH result}}{fig:tpch_result}
+\fig{width=\columnwidth}{tpch_result}{\textmd{TPC-H result}}{fig:tpch_result}
 \fig{width=\columnwidth}{ssb_result}{\textmd{SSB result}}{fig:ssb_result}
+\fig{width=\columnwidth}{TPC-H_Postgres_Parallel_vs_Non-Parallel_Query_Execution}{\textmd{TPC-H result}}{fig:tpch_pg_parallel_non_parallel}
 
-
-The total execution time for TPCH is shown in Figure~\ref{fig:tpch_result}. We observe that postgres is not always faster, sqlite is competitive in some cases. The same behaviour is observed for SSB in Figure~\ref{fig:ssb_result}. These results give us an overall picture of the execution time of one system in comparison with the other.
-. 
+The total execution time for TPCH is shown in Figure~\ref{fig:tpch_result}. We observe that even though PostgreSQL is a much more complex system than the light-weight SQLite, it is not always faster. SQLite is competitive in some cases. The same behaviour is observed for SSB in Figure~\ref{fig:ssb_result}. These results give us an overall picture of the execution time of one system in comparison with the other.\\
 
 
 \subsection{Query Plan Comparison}
 \label{sec:plan}
 
 \subsubsection{Almost same time}
-\fig{width=\columnwidth}{tpch-postgres-16}{\textmd{Postgres plan for query 16}}{fig:tpch-postgres-16}
+\fig{width=\columnwidth}{tpch-postgres-16}{\textmd{PostgreSQL plan for query 16}}{fig:tpch-postgres-16}
 
 \begin{figure*}[ht]
 \centering
@@ -44,9 +46,9 @@ The total execution time for TPCH is shown in Figure~\ref{fig:tpch_result}. We o
         \label{fig:sqlite-16}
 \end{figure*}
 
-We now look at query 16 represented in Listing~\ref{q16} from the TPCH benchmark suite. In this query is the Parts/Supplier Relationship Query that returns how many suppliers can supply parts with given attributes. This query has almost same time for both, postgres and sqlite. 
+We now look at query 16 represented in Listing~\ref{q16} from the TPCH benchmark suite. In this query is the Parts/Supplier Relationship Query that returns how many suppliers can supply parts with given attributes. This query has almost same time for both, PostgreSQL and SQLite.
 
-Figure~\ref{fig:tpch-postgres-16} shows the query plan generated for this query in postgres, we observe that it does a full scan of all the tables followed by some hash joins, sort, aggregate and then sort again. If we look at the query plan for SQLite in Figure~\ref{fig:sqlite-16}, we observe that it also does a scan of all the tables and execute a similar query plan. Since the query plans generated by both are significantly similar and this query does not contain the big table, LINEITEM, therefore the scans take similar time even though SQLite does an index scan. All this add up to almost same time for this particular query in both the databases.\\
+Figure~\ref{fig:tpch-postgres-16} shows the query plan generated for this query in PostgreSQL, we observe that it does a full scan of all the tables followed by some hash joins, sort, aggregate and then sort again. If we look at the query plan for SQLite in Figure~\ref{fig:sqlite-16}, we observe that it also does a scan of all the tables and execute a similar query plan. Since the query plans generated by both are significantly similar and this query does not contain the big table, LINEITEM, therefore the scans take similar time even though SQLite does an index scan. All this add up to almost same time for this particular query in both the databases.\\
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[breaklines=true, numbers=none, label=q16, caption=Query 16]
@@ -79,8 +81,8 @@ p_size;;
 
 
 
-\subsubsection{Postgres faster}
-\fig{width=\columnwidth}{tpch-postgres-9}{\textmd{Postgres plan for query 9}}{fig:tpch-postgres-9}
+\subsubsection{PostgreSQL faster}
+\fig{width=\columnwidth}{tpch-postgres-9}{\textmd{PostgreSQL plan for query 9}}{fig:tpch-postgres-9}
 
 \begin{figure*}[ht]
 \centering
@@ -104,7 +106,7 @@ p_size;;
 %\fig{width=\columnwidth}{tpch-sqllite-9}{\textmd{TPCH result}}{fig:tpch-sqllite-9}
 Query 9 shown in Listing~\ref{q9} called Product Type Profit Measure Query which determines how much profit is made on a given line of parts, broken out by supplier nation and year. This query takes longer execution time SQLite.
 
-Figure~\ref{fig:tpch-postgres-9} shows the query plan for Postgres where we observe that it does full scan of all the tables followed by hash join and aggregate at the end. In SQLite shown in Figure~\ref{fig:sqlite-9}, we see many index scans. We also see that this query has LINEITEM which is a big table and hence, selectively for this particular query is very high. Therefore, index scan in this scan becomes expensive over full scan which is seen by the lower execution time for Postgres.
+Figure~\ref{fig:tpch-postgres-9} shows the query plan for PostgreSQL where we observe that it does full scan of all the tables followed by hash join and aggregate at the end. In SQLite shown in Figure~\ref{fig:sqlite-9}, we see many index scans. We also see that this query has LINEITEM which is a big table and hence, selectively for this particular query is very high. Therefore, index scan in this scan becomes expensive over full scan which is seen by the lower execution time for PostgreSQL.
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[breaklines=true, numbers=none, label=q9, caption=Query 9]
@@ -135,7 +137,7 @@ o_year desc;
 
 \subsubsection{SQLite faster}
 
-\fig{width=\columnwidth}{tpch-postgres-4}{\textmd{Postgres plan for query 4}}{fig:pgsql-4}
+\fig{width=\columnwidth}{tpch-postgres-4}{\textmd{PostgreSQL plan for query 4}}{fig:pgsql-4}
 
 \begin{figure*}[ht]
 \centering
@@ -159,7 +161,7 @@ o_year desc;
 %\fig{width=\columnwidth}{tpch-sqllite-4}{\textmd{TPCH result}}{fig:tpch-sqllite-4}
 Query 4 shown in Listing~\ref{q4} is called Order Priority Checking Query which finds how well the order priority system is working and gives an assessment of customer satisfaction. This query runs faster in SQLite.
 
-The query plan for Postgres is shown in Figure~\ref{fig:pgsql-4} and SQLite is shown in Figure~\ref{fig:sqlite-4}. This query has an inner query which is called a correlated subquery~\cite{ref:sqlite1} which depends on the outer query. The selectively of this query is less that 5\%. In case of Postgres we observe  that it does a full scan of all the tables whereas SQLite uses an index scan. In queries where selectively is low, index scan is faster, therefore, we see that SQLite performs better than Postgres.
+The query plan for PostgreSQL is shown in Figure~\ref{fig:pgsql-4} and SQLite is shown in Figure~\ref{fig:sqlite-4}. This query has an inner query which is called a correlated subquery~\cite{ref:sqlite1} which depends on the outer query. The selectively of this query is less that 5\%. In case of PostgreSQL we observe  that it does a full scan of all the tables whereas SQLite uses an index scan. In queries where selectively is low, index scan is faster, therefore, we see that SQLite performs better than PostgreSQL.
 
 \begin{minipage}{\linewidth}
 \begin{lstlisting}[breaklines=true, numbers=none, label=q4, caption=Query 4]

@@ -1,7 +1,7 @@
 \section{Databases}
 \label{sec:db}
 
-\subsection{Postgresql}
+\subsection{PostgreSQL}
 \fig{width=\columnwidth}{postgres}{\textmd{PostgreSQL Architecture}}{fig:postgres}
 
 PostgreSQL~\cite{ref:pg1} is a relational database management system following a client-server architecture. At the server side an instance is created comprising of PostgreSQL's processes and shared memory which handles the access to the data. Client programs connect to the instance sending read and write operations. The overview of the architecture is shown in Figure~\ref{fig:postgres}.
@@ -12,9 +12,9 @@ An instance consists of multiple processes,  postmaster process, multiple postgr
 
 \fig{width=\columnwidth}{sqlite}{\textmd{SQLite Architecture}}{fig:sqlite}
 
-SQLite is an embedded file based relational database management system which can be linked statically or dynamically with the application program. It does not have a client-server database engine which makes the SQLite applications require less configuration. SQLite is called zero-conf because it does not require service management or access control based on password and GRANT.
+SQLite~\cite{ref:sqlite2} is an embedded file based relational database management system which can be linked statically or dynamically with the application program. It does not have a client-server database engine which makes the SQLite applications require less configuration. SQLite is called zero-conf as it does not require service management or access control based on password and GRANT.
 
 
-SQLite is ACID  (atomicity, consistency, isolation, durability) compliant and implements the SQL standard. It stores the entire database as a single disk file and all reads and write takes place directly on this file. 
+SQLite complies with ACID  (atomicity, consistency, isolation, durability) properties and implements the SQL standard. It stores the entire database as a single disk file and all reads and write takes place directly on this file. 
 
-SQLite database architecture split into two different sections named as core and backend. Core section contains Interface, Tokenizer, Parser, Code generator, and the virtual machine, which create an execution order for database transactions. Backend contains B-tree, Pager and OS interface to access the file system. Tokenizer, Parser and code generator altogether named as the compiler which generates a set of opcodes that runs on a virtual machine.
+SQLite database architecture is divided into two different sections called core and backend. Core contains Interface, Tokenizer, Parser, Code generator, and the virtual machine, which create an execution order for database transactions. Backend contains B-tree, Pager and OS interface to access the file system. Tokenizer, Parser and code generator is together named as the compiler which generates a set of opcodes that runs on a virtual machine.
