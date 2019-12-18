@@ -2,7 +2,7 @@
 \label{sec:bench}
 
 \subsection{TPC-H}
-\fig{width=\columnwidth}{tpch}{\textmd{TPCH schema}}{fig:tpch}
+\fig{width=\columnwidth}{tpch}{\textmd{TPC-H schema}}{fig:tpch}
 
 TPC-H~\cite{ref:tpch} is a decision support benchmark that consists of a suite of business oriented ad-hoc queries and concurrent data modifications. The queries and the data populating the database have been chosen to have broad industry-wide relevance while maintaining a sufficient degree of ease of implementation. It  evaluates the performance of various decision support systems by the execution of sets of queries against a standard database under controlled conditions.
 
@@ -16,7 +16,7 @@ The  components  of  the  TPC-H  database  consists  of  eight  separate  and  i
 \subsection{SSB}
 \fig{width=\columnwidth}{ssb}{\textmd{SSB schema}}{fig:ssb}
 
-The Star Schema Benchmark (SSB)~\cite{ref:paper1} is designed to test star schema optimization to address the issues of TPC-H along with measuring performance of database  products  and test  a  new  materialization  strategy. The  SSB  is  a  simple  benchmark  that  consists  of  four  query flights,  four  dimensions,  and  a  simple  roll-up  hierarchy . The SSB is largely based on the TPC-H benchmark with improvements  implememting  a  traditional  pure  star-schema and allowing column and table compression.
+The Star Schema Benchmark (SSB)~\cite{ref:paper1} is designed to test star schema optimization to address the issues of TPC-H along with measuring performance of database  products  and test  a  new  materialization  strategy. The  SSB  is  a  simple  benchmark  that  consists  of  four  query flights,  four  dimensions,  and  a  simple  roll-up  hierarchy. The SSB is largely based on the TPC-H benchmark with improvements  implementing a traditional pure star-schema and allowing column and table compression.
 
 The  SSB  is  designed  to  measure the performance  of  database products  against  a  traditional  data  warehouse  scheme.  It  implements  the  same  logical  data  in  a  traditional  star  schema whereas TPC-H models the data in pseudo 3NF schema.
 
